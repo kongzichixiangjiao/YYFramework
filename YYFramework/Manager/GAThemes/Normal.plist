@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Global</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#fff</string>
+		<key>textColor</key>
+		<string>#000</string>
+		<key>barTextColor</key>
+		<string>#000</string>
+		<key>barTintColor</key>
+		<string>#F4C600</string>
+	</dict>
+</dict>
+</plist>

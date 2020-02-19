@@ -1,0 +1,172 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - CryptoSwift (0.15.0)
+  - CTMediator (25)
+  - Differentiator (4.0.1)
+  - ESPullToRefresh (2.9)
+  - Flutter (1.0.0)
+  - flutter_yyframework (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - GAAlertPresentation (0.0.7)
+  - HandyJSON (5.0.0)
+  - JTAppleCalendar (7.1.6)
+  - MJRefresh (3.2.2)
+  - OCMock (3.4.3)
+  - Player (0.13.2)
+  - PLPlayerKit (3.4.3):
+    - PLPlayerKit/universal (= 3.4.3)
+  - PLPlayerKit/universal (3.4.3)
+  - ReactiveCocoa (9.0.0):
+    - ReactiveSwift (~> 5.0)
+  - ReactiveSwift (5.0.1):
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (4.2.0)
+  - SSZipArchive (2.1.4)
+  - SwiftDate (6.1.0)
+  - SwiftTheme (0.4.3)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+  - Then (2.4.0)
+  - TransitionableTab (0.2.0)
+  - WechatOpenSDK (1.8.6)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - Alamofire
+  - AlamofireImage
+  - CryptoSwift (= 0.15.0)
+  - CTMediator
+  - ESPullToRefresh
+  - Flutter (from `../flutter_yyframework/.ios/Flutter/engine`)
+  - flutter_yyframework (from `../flutter_yyframework/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../flutter_yyframework/.ios/Flutter/FlutterPluginRegistrant`)
+  - GAAlertPresentation
+  - HandyJSON
+  - JTAppleCalendar (= 7.1.6)
+  - MJRefresh
+  - OCMock
+  - Player (~> 0.13.2)
+  - PLPlayerKit (from `https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec`)
+  - ReactiveCocoa (= 9.0.0)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit
+  - SSZipArchive (= 2.1.4)
+  - SwiftDate
+  - SwiftTheme (= 0.4.3)
+  - SwiftyRSA
+  - Then (= 2.4.0)
+  - TransitionableTab
+  - WechatOpenSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Alamofire
+    - AlamofireImage
+    - CryptoSwift
+    - CTMediator
+    - Differentiator
+    - ESPullToRefresh
+    - HandyJSON
+    - JTAppleCalendar
+    - OCMock
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SSZipArchive
+    - SwiftDate
+    - SwiftTheme
+    - SwiftyRSA
+    - Then
+    - TransitionableTab
+  trunk:
+    - GAAlertPresentation
+    - MJRefresh
+    - Player
+    - WechatOpenSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_yyframework/.ios/Flutter/engine"
+  flutter_yyframework:
+    :path: "../flutter_yyframework/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../flutter_yyframework/.ios/Flutter/FlutterPluginRegistrant"
+  PLPlayerKit:
+    :podspec: https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_yyframework: 4293a97ae95c445be94f56c3260e057fba9f3c85
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  GAAlertPresentation: d93bad5a2fef4fca14b6bce68018376676643411
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
+  MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
+  OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
+  Player: 7a2bcad3631034fa47d4b6fdedf7c4075fc236fe
+  PLPlayerKit: 5eecac081fbf4dc88a142887f82c4095d9095887
+  ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
+  ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+  TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
+
+PODFILE CHECKSUM: ede054a0e57541987ee93750a9afe13de32c6ea7
+
+COCOAPODS: 1.8.4

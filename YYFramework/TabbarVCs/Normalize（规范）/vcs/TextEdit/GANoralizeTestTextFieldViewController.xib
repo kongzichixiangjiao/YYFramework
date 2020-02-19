@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GANoralizeTestTextFieldViewController" customModule="Product_YYFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="t1" destination="JnU-tQ-wqe" id="9tu-ex-fdI"/>
+                <outlet property="t2" destination="U31-OS-WJN" id="gOq-sm-Dad"/>
+                <outlet property="t3" destination="fD6-It-xpY" id="Q2a-ij-ZBA"/>
+                <outlet property="t4" destination="yFU-bl-jva" id="BTH-Sg-sOe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入数字 max10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JnU-tQ-wqe" customClass="GANormalizeTextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="60" width="335" height="40"/>
+                    <color key="tintColor" red="0.90252087160000005" green="0.15278767100000001" blue="0.1719225516" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CDN-oX-Kid"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="mOnlyNumber" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mMaxCount">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                            <color key="value" red="0.90252087160000005" green="0.15278767100000001" blue="0.1719225516" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontSize">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入汉字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U31-OS-WJN" customClass="GANormalizeTextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="120" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="h7e-7J-p9F"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="mOnlyNumber" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="mOnlyChineseChar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="输入字母" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fD6-It-xpY" customClass="GANormalizeTextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="180" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="N7k-Hh-evy"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="mOnlyLetter" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入字母和数字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-bl-jva" customClass="GANormalizeTextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="240" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JTb-KX-Ncm"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="mOnlyLetterOrNumber" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tyq-bQ-qyJ" customClass="GATextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="300" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RCT-D0-iiR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textFieldType_yy">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textMaxCount">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor_yy">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sourceTimerCount_yy">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                            <color key="value" red="0.70588235290000001" green="0.53333333329999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderText_yy" value="请输入验证码"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textFieldLeftSpace_yy">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="verificationCodeColor_yy">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isShowVerificationCodeBorder_yy" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="verificationCodeFont_yy">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-L2-YUF" customClass="GATextField" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="20" y="360" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lL5-X9-1OX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textFieldType_yy">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textMaxCount">
+                            <integer key="value" value="11"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                            <color key="value" red="0.70588235290000001" green="0.53333333329999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderText_yy" value="请输入手机号"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textFieldLeftSpace_yy">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isMustNumber" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JnU-tQ-wqe" secondAttribute="trailing" constant="20" id="7RP-Hs-clF"/>
+                <constraint firstItem="fD6-It-xpY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8fP-Kj-BpB"/>
+                <constraint firstItem="yFU-bl-jva" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="G6c-D5-XOJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fD6-It-xpY" secondAttribute="trailing" constant="20" id="LPg-tW-1Of"/>
+                <constraint firstItem="U31-OS-WJN" firstAttribute="top" secondItem="JnU-tQ-wqe" secondAttribute="bottom" constant="20" id="MHz-7a-Jx9"/>
+                <constraint firstItem="VNK-L2-YUF" firstAttribute="top" secondItem="Tyq-bQ-qyJ" secondAttribute="bottom" constant="20" id="MTe-mS-eGv"/>
+                <constraint firstItem="Tyq-bQ-qyJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="O3a-FN-TqM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yFU-bl-jva" secondAttribute="trailing" constant="20" id="ObY-Yi-9mF"/>
+                <constraint firstItem="JnU-tQ-wqe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Rjq-83-Fd9"/>
+                <constraint firstItem="Tyq-bQ-qyJ" firstAttribute="top" secondItem="yFU-bl-jva" secondAttribute="bottom" constant="20" id="Sag-eN-KQu"/>
+                <constraint firstItem="yFU-bl-jva" firstAttribute="top" secondItem="fD6-It-xpY" secondAttribute="bottom" constant="20" id="VoP-T4-ZkZ"/>
+                <constraint firstItem="VNK-L2-YUF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wvi-IR-U4y"/>
+                <constraint firstItem="fD6-It-xpY" firstAttribute="top" secondItem="U31-OS-WJN" secondAttribute="bottom" constant="20" id="ZjI-KI-Dze"/>
+                <constraint firstItem="JnU-tQ-wqe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bLd-xa-hg9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VNK-L2-YUF" secondAttribute="trailing" constant="20" id="dMy-ao-3hp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U31-OS-WJN" secondAttribute="trailing" constant="20" id="hEH-9d-aoC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tyq-bQ-qyJ" secondAttribute="trailing" constant="20" id="jFy-Tb-iDx"/>
+                <constraint firstItem="U31-OS-WJN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xp6-GK-hm4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

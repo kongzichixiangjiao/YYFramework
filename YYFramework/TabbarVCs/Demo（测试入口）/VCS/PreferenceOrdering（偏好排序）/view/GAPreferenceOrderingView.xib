@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GAPreferenceOrderingView" customModule="FKDTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmz-B4-Ail">
+                    <rect key="frame" x="58.5" y="0.0" width="92" height="105"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferenceOrdering_icon_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-eK-Rh7">
+                            <rect key="frame" x="61" y="47.5" width="18" height="10"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-Lg-ufm">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="105"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="请选择">
+                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="b1:" destination="iN0-l3-epB" eventType="touchUpInside" id="dyM-RL-zdk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="N2Z-3D-5tc"/>
+                        <constraint firstItem="YbD-eK-Rh7" firstAttribute="centerY" secondItem="zmz-B4-Ail" secondAttribute="centerY" id="QVR-sb-aLd"/>
+                        <constraint firstAttribute="bottom" secondItem="vwd-Lg-ufm" secondAttribute="bottom" id="dhH-9W-Gr0"/>
+                        <constraint firstItem="vwd-Lg-ufm" firstAttribute="top" secondItem="zmz-B4-Ail" secondAttribute="top" id="iZj-pr-QFm"/>
+                        <constraint firstAttribute="trailing" secondItem="vwd-Lg-ufm" secondAttribute="trailing" id="ndm-1y-HV7"/>
+                        <constraint firstAttribute="trailing" secondItem="YbD-eK-Rh7" secondAttribute="trailing" constant="13" id="vFX-MD-VKT"/>
+                        <constraint firstItem="vwd-Lg-ufm" firstAttribute="leading" secondItem="zmz-B4-Ail" secondAttribute="leading" id="vYw-MN-TXH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="preferenceOrdering_icon_normal"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="积极"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ga_borderColor">
+                            <color key="value" red="0.84705882352941175" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                            <color key="value" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLinear" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="mainLineBorderColor">
+                            <color key="value" red="0.1333333333" green="0.51372549020000002" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-kt-4R0">
+                    <rect key="frame" x="174.5" y="0.0" width="92" height="105"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferenceOrdering_icon_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-qA-rTC">
+                            <rect key="frame" x="61" y="47.5" width="18" height="10"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-sD-rsp">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="105"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="请选择">
+                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="b2:" destination="iN0-l3-epB" eventType="touchUpInside" id="MKb-hE-Xk3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Dj9-sD-rsp" firstAttribute="leading" secondItem="U7K-kt-4R0" secondAttribute="leading" id="Vlg-4C-VeX"/>
+                        <constraint firstAttribute="bottom" secondItem="Dj9-sD-rsp" secondAttribute="bottom" id="da1-2r-o9h"/>
+                        <constraint firstAttribute="trailing" secondItem="wTj-qA-rTC" secondAttribute="trailing" constant="13" id="frz-at-0wU"/>
+                        <constraint firstItem="Dj9-sD-rsp" firstAttribute="top" secondItem="U7K-kt-4R0" secondAttribute="top" id="gqH-Ah-pzD"/>
+                        <constraint firstItem="wTj-qA-rTC" firstAttribute="centerY" secondItem="U7K-kt-4R0" secondAttribute="centerY" id="sh7-ay-k6a"/>
+                        <constraint firstAttribute="trailing" secondItem="Dj9-sD-rsp" secondAttribute="trailing" id="ujo-TF-bOg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ga_borderColor">
+                            <color key="value" red="0.84705882352941175" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wd-FU-5DC">
+                    <rect key="frame" x="290.5" y="0.0" width="92" height="105"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferenceOrdering_icon_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-ys-k7l">
+                            <rect key="frame" x="61" y="47.5" width="18" height="10"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3t-AT-9R8">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="105"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="请选择">
+                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="b3:" destination="iN0-l3-epB" eventType="touchUpInside" id="gaP-jV-8Nb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="v3t-AT-9R8" secondAttribute="bottom" id="Ivj-Cn-FUa"/>
+                        <constraint firstItem="v3t-AT-9R8" firstAttribute="top" secondItem="5wd-FU-5DC" secondAttribute="top" id="JJt-ju-EKx"/>
+                        <constraint firstItem="Ir7-ys-k7l" firstAttribute="centerY" secondItem="5wd-FU-5DC" secondAttribute="centerY" id="SYO-1h-igR"/>
+                        <constraint firstItem="v3t-AT-9R8" firstAttribute="leading" secondItem="5wd-FU-5DC" secondAttribute="leading" id="ec2-jz-buf"/>
+                        <constraint firstAttribute="trailing" secondItem="v3t-AT-9R8" secondAttribute="trailing" id="u9Y-CO-qte"/>
+                        <constraint firstAttribute="trailing" secondItem="Ir7-ys-k7l" secondAttribute="trailing" constant="13" id="wYN-KN-UMj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ga_borderColor">
+                            <color key="value" red="0.84705882352941175" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferenceOrdering_icon_arow.png" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-id-gyj">
+                    <rect key="frame" x="150.5" y="41.5" width="24" height="22"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferenceOrdering_icon_arow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-Mf-SjZ">
+                    <rect key="frame" x="266.5" y="41.5" width="24" height="22"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5wd-FU-5DC" firstAttribute="leading" secondItem="U7K-kt-4R0" secondAttribute="trailing" constant="24" id="12A-ba-TDl"/>
+                <constraint firstItem="5wd-FU-5DC" firstAttribute="leading" secondItem="ngZ-Mf-SjZ" secondAttribute="trailing" id="3ic-sA-UYB"/>
+                <constraint firstItem="5wd-FU-5DC" firstAttribute="width" secondItem="zmz-B4-Ail" secondAttribute="width" id="7dY-KP-GbN"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="height" secondItem="zmz-B4-Ail" secondAttribute="height" id="A5z-lj-rbD"/>
+                <constraint firstItem="ngZ-Mf-SjZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IrO-mv-03a"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="width" secondItem="zmz-B4-Ail" secondAttribute="width" id="O1K-AA-R2p"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="leading" secondItem="zmz-B4-Ail" secondAttribute="trailing" constant="24" id="Ri5-11-3E1"/>
+                <constraint firstItem="l4j-id-gyj" firstAttribute="leading" secondItem="zmz-B4-Ail" secondAttribute="trailing" id="VCt-Xv-Nce"/>
+                <constraint firstItem="zmz-B4-Ail" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hcq-Ce-bH4"/>
+                <constraint firstItem="ngZ-Mf-SjZ" firstAttribute="leading" secondItem="U7K-kt-4R0" secondAttribute="trailing" id="m6b-Qy-U0Q"/>
+                <constraint firstAttribute="bottom" secondItem="zmz-B4-Ail" secondAttribute="bottom" id="mAy-a6-jR4"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="centerY" secondItem="zmz-B4-Ail" secondAttribute="centerY" id="ncI-LV-YZx"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="leading" secondItem="l4j-id-gyj" secondAttribute="trailing" id="oHq-kx-eiB"/>
+                <constraint firstItem="5wd-FU-5DC" firstAttribute="centerY" secondItem="zmz-B4-Ail" secondAttribute="centerY" id="vab-1Z-1Eq"/>
+                <constraint firstItem="5wd-FU-5DC" firstAttribute="height" secondItem="zmz-B4-Ail" secondAttribute="height" id="wMA-5z-Zcf"/>
+                <constraint firstItem="l4j-id-gyj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xkj-Yb-Jgj"/>
+                <constraint firstItem="U7K-kt-4R0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yhw-oN-IOG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="b1" destination="vwd-Lg-ufm" id="2gg-7J-cjz"/>
+                <outlet property="b2" destination="Dj9-sD-rsp" id="3JH-sy-lk5"/>
+                <outlet property="b3" destination="v3t-AT-9R8" id="1Zx-JZ-Mrv"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="-417.8410794602699"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="preferenceOrdering_icon_arow.png" width="6" height="11"/>
+        <image name="preferenceOrdering_icon_normal.png" width="9" height="5"/>
+    </resources>
+</document>

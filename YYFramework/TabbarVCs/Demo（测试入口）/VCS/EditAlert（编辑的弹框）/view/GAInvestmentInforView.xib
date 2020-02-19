@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GAInvestmentInforView" customModule="FKDTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="357"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfH-gK-4IZ">
+                    <rect key="frame" x="0.0" y="0.0" width="425" height="357"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TG5-yk-pJe">
+                            <rect key="frame" x="37" y="70.5" width="351" height="286.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpQ-gA-Mdk" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="私募股权类"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgL-z7-4l2" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="175.5" y="0.0" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="私募证券类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwM-Ss-XGN" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="71.5" width="175.5" height="72"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="类固定收益类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-tT-WfK" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="175.5" y="71.5" width="175.5" height="72"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="保险类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmH-aZ-nBw" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="143.5" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="不动产类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cio-UG-nVN" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="175.5" y="143.5" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="信托类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICQ-H7-ydQ" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="215" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="网贷类 "/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9u8-cc-sFP" customClass="GATitleEditView" customModule="FKDTests" customModuleProvider="target">
+                                    <rect key="frame" x="175.5" y="215" width="175.5" height="71.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="未填写"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="其他类"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftSpace">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="9u8-cc-sFP" firstAttribute="width" secondItem="ICQ-H7-ydQ" secondAttribute="width" id="1BD-Yd-oRh"/>
+                                <constraint firstItem="cio-UG-nVN" firstAttribute="width" secondItem="UmH-aZ-nBw" secondAttribute="width" id="Bb9-py-ogz"/>
+                                <constraint firstItem="GwM-Ss-XGN" firstAttribute="top" secondItem="VpQ-gA-Mdk" secondAttribute="bottom" id="Cdw-mf-ehh"/>
+                                <constraint firstItem="VpQ-gA-Mdk" firstAttribute="leading" secondItem="TG5-yk-pJe" secondAttribute="leading" id="EKp-DZ-1f0"/>
+                                <constraint firstItem="qdg-tT-WfK" firstAttribute="width" secondItem="GwM-Ss-XGN" secondAttribute="width" id="EXE-QV-UaT"/>
+                                <constraint firstItem="VpQ-gA-Mdk" firstAttribute="height" secondItem="TG5-yk-pJe" secondAttribute="height" multiplier="0.25" id="EaT-Fs-ysU"/>
+                                <constraint firstItem="ICQ-H7-ydQ" firstAttribute="width" secondItem="VpQ-gA-Mdk" secondAttribute="width" id="HNd-k0-6EZ"/>
+                                <constraint firstItem="fgL-z7-4l2" firstAttribute="centerY" secondItem="VpQ-gA-Mdk" secondAttribute="centerY" id="HSk-oe-xfS"/>
+                                <constraint firstItem="GwM-Ss-XGN" firstAttribute="width" secondItem="VpQ-gA-Mdk" secondAttribute="width" id="HqU-r6-IGN"/>
+                                <constraint firstItem="GwM-Ss-XGN" firstAttribute="height" secondItem="VpQ-gA-Mdk" secondAttribute="height" id="LYe-Eg-asb"/>
+                                <constraint firstItem="9u8-cc-sFP" firstAttribute="height" secondItem="ICQ-H7-ydQ" secondAttribute="height" id="NpW-Vr-sDs"/>
+                                <constraint firstItem="cio-UG-nVN" firstAttribute="leading" secondItem="UmH-aZ-nBw" secondAttribute="trailing" id="PSG-IM-cDT"/>
+                                <constraint firstItem="ICQ-H7-ydQ" firstAttribute="top" secondItem="UmH-aZ-nBw" secondAttribute="bottom" id="Uhh-Lw-H64"/>
+                                <constraint firstItem="UmH-aZ-nBw" firstAttribute="top" secondItem="GwM-Ss-XGN" secondAttribute="bottom" id="X4y-Gf-ZcJ"/>
+                                <constraint firstItem="VpQ-gA-Mdk" firstAttribute="top" secondItem="TG5-yk-pJe" secondAttribute="top" id="Xuh-x0-shJ"/>
+                                <constraint firstItem="VpQ-gA-Mdk" firstAttribute="width" secondItem="TG5-yk-pJe" secondAttribute="width" multiplier="0.5" id="YDB-TG-d8P"/>
+                                <constraint firstItem="fgL-z7-4l2" firstAttribute="leading" secondItem="VpQ-gA-Mdk" secondAttribute="trailing" id="Z0V-aI-q85"/>
+                                <constraint firstItem="UmH-aZ-nBw" firstAttribute="width" secondItem="VpQ-gA-Mdk" secondAttribute="width" id="ZcL-Jh-aR4"/>
+                                <constraint firstItem="cio-UG-nVN" firstAttribute="centerY" secondItem="UmH-aZ-nBw" secondAttribute="centerY" id="ZsB-7M-6bK"/>
+                                <constraint firstItem="fgL-z7-4l2" firstAttribute="height" secondItem="VpQ-gA-Mdk" secondAttribute="height" id="ZvY-dM-Qfg"/>
+                                <constraint firstItem="ICQ-H7-ydQ" firstAttribute="height" secondItem="VpQ-gA-Mdk" secondAttribute="height" id="a53-94-Phi"/>
+                                <constraint firstItem="9u8-cc-sFP" firstAttribute="leading" secondItem="ICQ-H7-ydQ" secondAttribute="trailing" id="aga-uK-veq"/>
+                                <constraint firstItem="fgL-z7-4l2" firstAttribute="width" secondItem="VpQ-gA-Mdk" secondAttribute="width" id="f2q-rk-oHs"/>
+                                <constraint firstItem="UmH-aZ-nBw" firstAttribute="height" secondItem="VpQ-gA-Mdk" secondAttribute="height" id="hVp-nt-PAG"/>
+                                <constraint firstItem="cio-UG-nVN" firstAttribute="height" secondItem="UmH-aZ-nBw" secondAttribute="height" id="jt9-3R-5A2"/>
+                                <constraint firstItem="qdg-tT-WfK" firstAttribute="leading" secondItem="GwM-Ss-XGN" secondAttribute="trailing" id="oLU-Ex-Op5"/>
+                                <constraint firstItem="GwM-Ss-XGN" firstAttribute="centerX" secondItem="VpQ-gA-Mdk" secondAttribute="centerX" id="oid-Fy-vrQ"/>
+                                <constraint firstItem="qdg-tT-WfK" firstAttribute="height" secondItem="GwM-Ss-XGN" secondAttribute="height" id="opa-yN-ywm"/>
+                                <constraint firstItem="9u8-cc-sFP" firstAttribute="centerY" secondItem="ICQ-H7-ydQ" secondAttribute="centerY" id="qaf-EV-vDl"/>
+                                <constraint firstItem="UmH-aZ-nBw" firstAttribute="centerX" secondItem="VpQ-gA-Mdk" secondAttribute="centerX" id="v6h-DL-ais"/>
+                                <constraint firstItem="qdg-tT-WfK" firstAttribute="centerY" secondItem="GwM-Ss-XGN" secondAttribute="centerY" id="wcT-ky-Wsn"/>
+                                <constraint firstItem="ICQ-H7-ydQ" firstAttribute="centerX" secondItem="VpQ-gA-Mdk" secondAttribute="centerX" id="yNd-uh-1Ua"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前投资情况（万元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-Gm-o2z">
+                            <rect key="frame" x="125.5" y="30" width="174" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="TG5-yk-pJe" firstAttribute="top" secondItem="o2M-Gm-o2z" secondAttribute="bottom" constant="20" id="ZOu-Gk-api"/>
+                        <constraint firstItem="o2M-Gm-o2z" firstAttribute="top" secondItem="wfH-gK-4IZ" secondAttribute="top" constant="30" id="a1Y-fI-stm"/>
+                        <constraint firstItem="TG5-yk-pJe" firstAttribute="leading" secondItem="wfH-gK-4IZ" secondAttribute="leading" constant="37" id="kgv-7B-7PT"/>
+                        <constraint firstAttribute="bottom" secondItem="TG5-yk-pJe" secondAttribute="bottom" id="qrk-4e-qv6"/>
+                        <constraint firstItem="o2M-Gm-o2z" firstAttribute="centerX" secondItem="wfH-gK-4IZ" secondAttribute="centerX" id="uzQ-xk-mz8"/>
+                        <constraint firstAttribute="trailing" secondItem="TG5-yk-pJe" secondAttribute="trailing" constant="37" id="wE6-t9-muO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wfH-gK-4IZ" secondAttribute="trailing" id="Idy-jL-NVs"/>
+                <constraint firstAttribute="bottom" secondItem="wfH-gK-4IZ" secondAttribute="bottom" id="m15-tt-VbM"/>
+                <constraint firstItem="wfH-gK-4IZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s8m-fD-O3S"/>
+                <constraint firstItem="wfH-gK-4IZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tf1-gf-gHU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="titleEditVeiws" destination="VpQ-gA-Mdk" collectionClass="NSMutableArray" id="qoA-aV-VX5"/>
+                <outletCollection property="titleEditVeiws" destination="fgL-z7-4l2" collectionClass="NSMutableArray" id="3Eq-rc-wts"/>
+                <outletCollection property="titleEditVeiws" destination="GwM-Ss-XGN" collectionClass="NSMutableArray" id="Ekh-Pk-EFH"/>
+                <outletCollection property="titleEditVeiws" destination="qdg-tT-WfK" collectionClass="NSMutableArray" id="JdJ-XL-fUk"/>
+                <outletCollection property="titleEditVeiws" destination="UmH-aZ-nBw" collectionClass="NSMutableArray" id="eVi-7f-Pov"/>
+                <outletCollection property="titleEditVeiws" destination="cio-UG-nVN" collectionClass="NSMutableArray" id="K0I-hE-UeP"/>
+                <outletCollection property="titleEditVeiws" destination="ICQ-H7-ydQ" collectionClass="NSMutableArray" id="EfY-aB-qXt"/>
+                <outletCollection property="titleEditVeiws" destination="9u8-cc-sFP" collectionClass="NSMutableArray" id="66n-fC-Ynl"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="-34.486607142857139"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFLiveKitViewController" customModule="FKDTests" customModuleProvider="target">
+            <connections>
+                <outlet property="preView" destination="ELg-UR-RUH" id="9M3-gr-j3T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYZ-T5-mx3">
+                    <rect key="frame" x="20" y="94" width="374" height="40"/>
+                    <color key="backgroundColor" red="0.66277855630000004" green="0.5" blue="0.23170299829999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Hs1-hM-fgB"/>
+                    </constraints>
+                    <state key="normal" title="StartLive">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="mHe-V2-Xzq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3K-U7-dLc">
+                    <rect key="frame" x="20" y="154" width="374" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ghs-tc-c6X"/>
+                    </constraints>
+                    <state key="normal" title="StopLive">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="QuI-4i-ypt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-UR-RUH">
+                    <rect key="frame" x="20" y="214" width="374" height="588"/>
+                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ELg-UR-RUH" secondAttribute="trailing" constant="20" id="1ja-g6-P1B"/>
+                <constraint firstItem="NYZ-T5-mx3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="7K5-3Z-QeB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NYZ-T5-mx3" secondAttribute="trailing" constant="20" id="8Mi-9j-DRg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ELg-UR-RUH" secondAttribute="bottom" constant="60" id="8W5-KC-LQK"/>
+                <constraint firstItem="V3K-U7-dLc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FKL-uv-ZaN"/>
+                <constraint firstItem="ELg-UR-RUH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LZY-3b-FdP"/>
+                <constraint firstItem="NYZ-T5-mx3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aIe-Lu-SMM"/>
+                <constraint firstItem="ELg-UR-RUH" firstAttribute="top" secondItem="V3K-U7-dLc" secondAttribute="bottom" constant="20" id="kha-iS-hTo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V3K-U7-dLc" secondAttribute="trailing" constant="20" id="qjD-mP-Ktn"/>
+                <constraint firstItem="V3K-U7-dLc" firstAttribute="top" secondItem="NYZ-T5-mx3" secondAttribute="bottom" constant="20" id="rn9-Mj-Aho"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-135" y="11"/>
+        </view>
+    </objects>
+</document>

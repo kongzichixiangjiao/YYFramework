@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PresentTargetViewController" customModule="FKDTests" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="5Bw-uC-Lmy" id="CVy-CP-MkX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bw-uC-Lmy">
+                    <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnk-qL-YMt">
+                    <rect key="frame" x="20" y="244" width="374" height="518"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                    <state key="normal" title="别点我">
+                        <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="jxU-1u-J7O"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gnk-qL-YMt" secondAttribute="trailing" constant="20" id="0ju-ET-BAn"/>
+                <constraint firstAttribute="bottom" secondItem="5Bw-uC-Lmy" secondAttribute="bottom" id="3d0-OU-oKo"/>
+                <constraint firstItem="5Bw-uC-Lmy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AMO-YG-Ge4"/>
+                <constraint firstItem="gnk-qL-YMt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IV1-6Y-F4O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Bw-uC-Lmy" secondAttribute="trailing" id="bpR-U9-vmg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gnk-qL-YMt" secondAttribute="bottom" constant="100" id="khg-zE-5bx"/>
+                <constraint firstItem="5Bw-uC-Lmy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="llY-q7-nmb"/>
+                <constraint firstItem="gnk-qL-YMt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="nIN-7g-uBV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="136"/>
+        </view>
+    </objects>
+</document>

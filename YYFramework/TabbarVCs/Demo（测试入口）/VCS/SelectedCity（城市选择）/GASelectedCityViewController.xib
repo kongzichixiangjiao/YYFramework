@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GASelectedCityViewController" customModule="FKDTests" customModuleProvider="target">
+            <connections>
+                <outlet property="searchView" destination="6q8-6u-HGl" id="jas-hW-Z0e"/>
+                <outlet property="tableView" destination="C8L-16-4hK" id="nTB-v0-Kxi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6q8-6u-HGl" customClass="GASearchView" customModule="FKDTests" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="knV-Ud-7Wj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="输入城市名或拼音"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isShowCancleButton" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C8L-16-4hK">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kuo-aD-Xhg"/>
+                        <outlet property="delegate" destination="-1" id="yMi-GD-NBJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6q8-6u-HGl" secondAttribute="trailing" id="6Ex-9f-dg9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C8L-16-4hK" secondAttribute="trailing" id="71H-3h-JCl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="C8L-16-4hK" secondAttribute="bottom" id="8C8-k4-rSi"/>
+                <constraint firstItem="6q8-6u-HGl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DZY-zk-eGY"/>
+                <constraint firstItem="6q8-6u-HGl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J9o-fP-1ZW"/>
+                <constraint firstItem="C8L-16-4hK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JWi-R8-7gI"/>
+                <constraint firstItem="C8L-16-4hK" firstAttribute="top" secondItem="6q8-6u-HGl" secondAttribute="bottom" id="kvI-cZ-wnd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+</document>

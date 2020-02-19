@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAClockRepeatViewController" customModule="Product_YYFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="weekViews" destination="mOP-Xr-8tG" collectionClass="NSMutableArray" id="pav-OR-r2O"/>
+                <outletCollection property="weekViews" destination="sM6-IC-LQ6" collectionClass="NSMutableArray" id="g6q-aS-mss"/>
+                <outletCollection property="weekViews" destination="SH5-MP-MFy" collectionClass="NSMutableArray" id="sB6-sP-I5r"/>
+                <outletCollection property="weekViews" destination="Zuo-bC-CYh" collectionClass="NSMutableArray" id="WF4-TH-91j"/>
+                <outletCollection property="weekViews" destination="Zwl-uU-Hzr" collectionClass="NSMutableArray" id="NOB-eO-yM6"/>
+                <outletCollection property="weekViews" destination="ugL-Cw-cva" collectionClass="NSMutableArray" id="8yl-c9-buH"/>
+                <outletCollection property="weekViews" destination="YTk-lM-vBn" collectionClass="NSMutableArray" id="yPt-he-L5Q"/>
+                <outletCollection property="checkButtons" destination="EW2-dJ-nfe" collectionClass="NSMutableArray" id="BQJ-b8-5fb"/>
+                <outletCollection property="checkButtons" destination="Q40-Mr-aV0" collectionClass="NSMutableArray" id="yvT-zV-RD2"/>
+                <outletCollection property="checkButtons" destination="3my-z4-bd3" collectionClass="NSMutableArray" id="LJw-37-7zz"/>
+                <outletCollection property="checkButtons" destination="xz7-r4-n3b" collectionClass="NSMutableArray" id="QQX-Mg-DoC"/>
+                <outletCollection property="checkButtons" destination="H8D-iw-pU8" collectionClass="NSMutableArray" id="wQR-QQ-8m8"/>
+                <outletCollection property="checkButtons" destination="abM-9I-Zkl" collectionClass="NSMutableArray" id="oKA-fD-0qV"/>
+                <outletCollection property="checkButtons" destination="gwP-6N-4ya" collectionClass="NSMutableArray" id="xcx-n4-zdf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CAo-QT-b8O">
+                    <rect key="frame" x="15" y="272" width="384" height="352"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHQ-Kg-MbY" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-bj-IRf">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="QBE-FP-G3K"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ep-aY-oC1">
+                                    <rect key="frame" x="304" y="0.0" width="80" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="Nx7-Ve-jSr"/>
+                                    </constraints>
+                                    <state key="normal" title="确定"/>
+                                    <connections>
+                                        <action selector="confirm:" destination="-1" eventType="touchUpInside" id="jxF-mN-vLi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-vd-xYd">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="YT6-QK-4aZ"/>
+                                    </constraints>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancle:" destination="-1" eventType="touchUpInside" id="Z4q-cT-0LV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="3OH-1L-ddz"/>
+                                <constraint firstAttribute="trailing" secondItem="LLr-bj-IRf" secondAttribute="trailing" constant="8" id="6kH-iV-8i7"/>
+                                <constraint firstItem="7ep-aY-oC1" firstAttribute="top" secondItem="cHQ-Kg-MbY" secondAttribute="top" id="Jl0-Nm-fH3"/>
+                                <constraint firstItem="LLr-bj-IRf" firstAttribute="top" secondItem="7ep-aY-oC1" secondAttribute="bottom" id="L0a-3x-LR9"/>
+                                <constraint firstAttribute="bottom" secondItem="LLr-bj-IRf" secondAttribute="bottom" id="Qjb-gU-yUd"/>
+                                <constraint firstItem="LLr-bj-IRf" firstAttribute="top" secondItem="5AH-vd-xYd" secondAttribute="bottom" id="W5h-W8-IP5"/>
+                                <constraint firstItem="5AH-vd-xYd" firstAttribute="top" secondItem="cHQ-Kg-MbY" secondAttribute="top" id="Y7b-gf-Xb9"/>
+                                <constraint firstItem="5AH-vd-xYd" firstAttribute="leading" secondItem="cHQ-Kg-MbY" secondAttribute="leading" id="oFy-0Q-U9I"/>
+                                <constraint firstItem="LLr-bj-IRf" firstAttribute="leading" secondItem="cHQ-Kg-MbY" secondAttribute="leading" constant="8" id="uV3-B0-PZP"/>
+                                <constraint firstAttribute="trailing" secondItem="7ep-aY-oC1" secondAttribute="trailing" id="zzD-Qy-4cs"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOP-Xr-8tG" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-NV-Xig">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRL-tu-GVX">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ZoB-ml-FI5"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW2-dJ-nfe">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="DTG-rb-Bh8"/>
+                                        <constraint firstAttribute="height" constant="20" id="lja-gZ-y8n"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="EW2-dJ-nfe" firstAttribute="leading" secondItem="9Ws-NV-Xig" secondAttribute="trailing" constant="20" id="CZU-Tk-ur3"/>
+                                <constraint firstItem="9Ws-NV-Xig" firstAttribute="centerY" secondItem="EW2-dJ-nfe" secondAttribute="centerY" id="FI0-Fs-Baa"/>
+                                <constraint firstItem="9Ws-NV-Xig" firstAttribute="centerY" secondItem="mOP-Xr-8tG" secondAttribute="centerY" id="FyK-BT-jv6"/>
+                                <constraint firstAttribute="trailing" secondItem="RRL-tu-GVX" secondAttribute="trailing" constant="8" id="KMV-RZ-k5J"/>
+                                <constraint firstAttribute="height" constant="44" id="OsY-g2-pFp"/>
+                                <constraint firstItem="RRL-tu-GVX" firstAttribute="leading" secondItem="mOP-Xr-8tG" secondAttribute="leading" constant="8" id="QV0-Ui-v83"/>
+                                <constraint firstAttribute="bottom" secondItem="RRL-tu-GVX" secondAttribute="bottom" id="WKX-lK-IeK"/>
+                                <constraint firstItem="9Ws-NV-Xig" firstAttribute="centerX" secondItem="mOP-Xr-8tG" secondAttribute="centerX" id="Yn5-gn-XgJ"/>
+                            </constraints>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM6-IC-LQ6" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="88" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ3-DO-LTG">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhQ-lJ-HxD">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Ip2-7A-epN"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-Mr-aV0">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Evm-jW-Am1"/>
+                                        <constraint firstAttribute="height" constant="20" id="yJr-F4-9rH"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="hhQ-lJ-HxD" secondAttribute="trailing" constant="8" id="0QA-4r-L1S"/>
+                                <constraint firstItem="yJ3-DO-LTG" firstAttribute="centerY" secondItem="Q40-Mr-aV0" secondAttribute="centerY" id="3E9-WD-oaQ"/>
+                                <constraint firstItem="yJ3-DO-LTG" firstAttribute="centerY" secondItem="sM6-IC-LQ6" secondAttribute="centerY" id="KNa-xl-rli"/>
+                                <constraint firstItem="yJ3-DO-LTG" firstAttribute="centerX" secondItem="sM6-IC-LQ6" secondAttribute="centerX" id="TVQ-NJ-QG2"/>
+                                <constraint firstItem="hhQ-lJ-HxD" firstAttribute="leading" secondItem="sM6-IC-LQ6" secondAttribute="leading" constant="8" id="eSC-8l-HWx"/>
+                                <constraint firstItem="Q40-Mr-aV0" firstAttribute="leading" secondItem="yJ3-DO-LTG" secondAttribute="trailing" constant="20" id="oGH-a9-pZB"/>
+                                <constraint firstAttribute="height" constant="44" id="uNL-iz-8WE"/>
+                                <constraint firstAttribute="bottom" secondItem="hhQ-lJ-HxD" secondAttribute="bottom" id="vDC-wu-MAI"/>
+                            </constraints>
+                        </view>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SH5-MP-MFy" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="132" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期二" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FH-nn-txL">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bht-yG-714">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="QAj-13-APV"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3my-z4-bd3">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="jp7-LG-ok5"/>
+                                        <constraint firstAttribute="width" constant="20" id="tcX-vZ-d9x"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="bht-yG-714" secondAttribute="bottom" id="65d-AN-7M9"/>
+                                <constraint firstAttribute="trailing" secondItem="bht-yG-714" secondAttribute="trailing" constant="8" id="9yt-Aj-z4S"/>
+                                <constraint firstItem="7FH-nn-txL" firstAttribute="centerX" secondItem="SH5-MP-MFy" secondAttribute="centerX" id="B2Z-et-AsJ"/>
+                                <constraint firstItem="bht-yG-714" firstAttribute="leading" secondItem="SH5-MP-MFy" secondAttribute="leading" constant="8" id="Bzt-zU-GqU"/>
+                                <constraint firstItem="7FH-nn-txL" firstAttribute="centerY" secondItem="SH5-MP-MFy" secondAttribute="centerY" id="Qd2-XC-zY1"/>
+                                <constraint firstAttribute="height" constant="44" id="Wu3-iF-Ydy"/>
+                                <constraint firstItem="3my-z4-bd3" firstAttribute="leading" secondItem="7FH-nn-txL" secondAttribute="trailing" constant="20" id="vkc-zR-4G5"/>
+                                <constraint firstItem="7FH-nn-txL" firstAttribute="centerY" secondItem="3my-z4-bd3" secondAttribute="centerY" id="vyd-RH-bXg"/>
+                            </constraints>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zuo-bC-CYh" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="176" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBm-Ja-582">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Cs-4k8">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="coD-Vi-idJ"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz7-r4-n3b">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Dqd-AA-g4y"/>
+                                        <constraint firstAttribute="height" constant="20" id="hsv-gU-Had"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="UBm-Ja-582" firstAttribute="centerY" secondItem="xz7-r4-n3b" secondAttribute="centerY" id="3VW-uM-cjh"/>
+                                <constraint firstAttribute="bottom" secondItem="c1v-Cs-4k8" secondAttribute="bottom" id="Bit-D1-Yvv"/>
+                                <constraint firstAttribute="height" constant="44" id="JhX-fE-9em"/>
+                                <constraint firstItem="c1v-Cs-4k8" firstAttribute="leading" secondItem="Zuo-bC-CYh" secondAttribute="leading" constant="8" id="NwY-w5-sRU"/>
+                                <constraint firstAttribute="trailing" secondItem="c1v-Cs-4k8" secondAttribute="trailing" constant="8" id="dhy-e3-K7K"/>
+                                <constraint firstItem="UBm-Ja-582" firstAttribute="centerY" secondItem="Zuo-bC-CYh" secondAttribute="centerY" id="f09-kz-gad"/>
+                                <constraint firstItem="UBm-Ja-582" firstAttribute="centerX" secondItem="Zuo-bC-CYh" secondAttribute="centerX" id="kvZ-iP-AgQ"/>
+                                <constraint firstItem="xz7-r4-n3b" firstAttribute="leading" secondItem="UBm-Ja-582" secondAttribute="trailing" constant="20" id="prr-EN-vdW"/>
+                            </constraints>
+                        </view>
+                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwl-uU-Hzr" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="220" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期四" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e53-cI-hOv">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-J5-PUk">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="U2b-tR-Kei"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8D-iw-pU8">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Afc-zQ-8XW"/>
+                                        <constraint firstAttribute="width" constant="20" id="KIM-0r-TjR"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="kpf-J5-PUk" secondAttribute="bottom" id="4mB-tj-rQq"/>
+                                <constraint firstItem="kpf-J5-PUk" firstAttribute="leading" secondItem="Zwl-uU-Hzr" secondAttribute="leading" constant="8" id="CjM-Fh-nU9"/>
+                                <constraint firstItem="e53-cI-hOv" firstAttribute="centerY" secondItem="Zwl-uU-Hzr" secondAttribute="centerY" id="E8N-VS-wU4"/>
+                                <constraint firstItem="e53-cI-hOv" firstAttribute="centerX" secondItem="Zwl-uU-Hzr" secondAttribute="centerX" id="ELA-xO-54L"/>
+                                <constraint firstItem="e53-cI-hOv" firstAttribute="centerY" secondItem="H8D-iw-pU8" secondAttribute="centerY" id="Lwk-j6-87h"/>
+                                <constraint firstAttribute="height" constant="44" id="U2D-rX-Bke"/>
+                                <constraint firstItem="H8D-iw-pU8" firstAttribute="leading" secondItem="e53-cI-hOv" secondAttribute="trailing" constant="20" id="acb-7s-KNw"/>
+                                <constraint firstAttribute="trailing" secondItem="kpf-J5-PUk" secondAttribute="trailing" constant="8" id="fGX-Zh-pwy"/>
+                            </constraints>
+                        </view>
+                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugL-Cw-cva" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="264" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期五" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-YY-IGL">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igk-Z6-UGC">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="hKe-ew-fSi"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abM-9I-Zkl">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="O2B-fE-Boq"/>
+                                        <constraint firstAttribute="height" constant="20" id="xoe-Ug-TbF"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="abM-9I-Zkl" firstAttribute="leading" secondItem="tle-YY-IGL" secondAttribute="trailing" constant="20" id="2yX-v2-bZn"/>
+                                <constraint firstAttribute="bottom" secondItem="igk-Z6-UGC" secondAttribute="bottom" id="5yo-6v-dIY"/>
+                                <constraint firstAttribute="trailing" secondItem="igk-Z6-UGC" secondAttribute="trailing" constant="8" id="9Ru-vp-dTr"/>
+                                <constraint firstItem="tle-YY-IGL" firstAttribute="centerX" secondItem="ugL-Cw-cva" secondAttribute="centerX" id="GNm-3s-S1L"/>
+                                <constraint firstItem="igk-Z6-UGC" firstAttribute="leading" secondItem="ugL-Cw-cva" secondAttribute="leading" constant="8" id="TUe-5T-2Cb"/>
+                                <constraint firstAttribute="height" constant="44" id="Th1-fy-mNs"/>
+                                <constraint firstItem="tle-YY-IGL" firstAttribute="centerY" secondItem="abM-9I-Zkl" secondAttribute="centerY" id="XAc-Im-Qr1"/>
+                                <constraint firstItem="tle-YY-IGL" firstAttribute="centerY" secondItem="ugL-Cw-cva" secondAttribute="centerY" id="uiS-hy-IKA"/>
+                            </constraints>
+                        </view>
+                        <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTk-lM-vBn" customClass="GACustomCellView" customModule="Product_YYFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="308" width="384" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期六" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-PO-zAo">
+                                    <rect key="frame" x="166" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQz-ba-lLG">
+                                    <rect key="frame" x="8" y="43" width="368" height="1"/>
+                                    <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="qR6-OI-rUd"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwP-6N-4ya">
+                                    <rect key="frame" x="238" y="12" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="4ti-44-BUz"/>
+                                        <constraint firstAttribute="height" constant="20" id="Oen-Or-22S"/>
+                                    </constraints>
+                                    <state key="normal" image="clock_check_box_normal"/>
+                                    <state key="selected" image="clock_check_box_selected"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="SQz-ba-lLG" secondAttribute="trailing" constant="8" id="Cnb-12-Zhp"/>
+                                <constraint firstItem="SQz-ba-lLG" firstAttribute="leading" secondItem="YTk-lM-vBn" secondAttribute="leading" constant="8" id="FJN-Qh-Dal"/>
+                                <constraint firstItem="gwP-6N-4ya" firstAttribute="leading" secondItem="KQV-PO-zAo" secondAttribute="trailing" constant="20" id="IDx-yr-YlX"/>
+                                <constraint firstItem="KQV-PO-zAo" firstAttribute="centerX" secondItem="YTk-lM-vBn" secondAttribute="centerX" id="Tbb-ci-GaS"/>
+                                <constraint firstAttribute="bottom" secondItem="SQz-ba-lLG" secondAttribute="bottom" id="dtS-RY-KCK"/>
+                                <constraint firstAttribute="height" constant="44" id="e3G-tY-FOL"/>
+                                <constraint firstItem="KQV-PO-zAo" firstAttribute="centerY" secondItem="YTk-lM-vBn" secondAttribute="centerY" id="rLE-rN-wdg"/>
+                                <constraint firstItem="KQV-PO-zAo" firstAttribute="centerY" secondItem="gwP-6N-4ya" secondAttribute="centerY" id="wGe-Xk-ZcL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CAo-QT-b8O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5AU-2P-fHM"/>
+                <constraint firstItem="CAo-QT-b8O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gVi-Cy-2Fr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CAo-QT-b8O" secondAttribute="trailing" constant="15" id="nmr-0o-pB3"/>
+                <constraint firstItem="CAo-QT-b8O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="sBT-v4-O1W"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clock_check_box_normal" width="32" height="32"/>
+        <image name="clock_check_box_selected" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYCardIOViewController" customModule="YYFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="resultLabel" destination="iFY-io-yNe" id="2Re-S1-jCh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO0-7x-T8s">
+                    <rect key="frame" x="145.5" y="120" width="84" height="30"/>
+                    <state key="normal" title="身份证-正面"/>
+                    <connections>
+                        <action selector="idCardFront:" destination="-1" eventType="touchUpInside" id="sqG-kc-u8Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCt-n1-dFd">
+                    <rect key="frame" x="145" y="180" width="84" height="30"/>
+                    <state key="normal" title="身份证-背面"/>
+                    <connections>
+                        <action selector="idCardBack:" destination="-1" eventType="touchUpInside" id="bqr-MT-VRw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAJ-ez-XKv">
+                    <rect key="frame" x="164.5" y="240" width="46" height="30"/>
+                    <state key="normal" title="银行卡"/>
+                    <connections>
+                        <action selector="bankCard:" destination="-1" eventType="touchUpInside" id="eM7-ad-4vx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFY-io-yNe">
+                    <rect key="frame" x="10" y="320" width="355" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dO0-7x-T8s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="0A7-PH-vmN"/>
+                <constraint firstItem="iFY-io-yNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Mey-Zf-W6I"/>
+                <constraint firstItem="iFY-io-yNe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O8H-jW-8zs"/>
+                <constraint firstItem="dO0-7x-T8s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OPh-LU-aZA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iFY-io-yNe" secondAttribute="trailing" constant="10" id="Z9U-YM-5G2"/>
+                <constraint firstItem="wAJ-ez-XKv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bz7-pB-a0b"/>
+                <constraint firstItem="FCt-n1-dFd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oQl-D9-znh"/>
+                <constraint firstItem="FCt-n1-dFd" firstAttribute="top" secondItem="dO0-7x-T8s" secondAttribute="bottom" constant="30" id="q14-hl-RgF"/>
+                <constraint firstItem="wAJ-ez-XKv" firstAttribute="top" secondItem="FCt-n1-dFd" secondAttribute="bottom" constant="30" id="rzZ-0d-etK"/>
+                <constraint firstItem="iFY-io-yNe" firstAttribute="top" secondItem="wAJ-ez-XKv" secondAttribute="bottom" constant="50" id="uMj-aT-Obd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

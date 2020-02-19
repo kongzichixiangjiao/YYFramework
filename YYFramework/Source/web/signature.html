@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+                    <title>无纸化签名</title>
+                    <meta content="yes" name="apple-mobile-web-app-capable">
+                        <meta content="yes" name="apple-touch-fullscreen">
+                            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--                             <script src = "https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js "> </script>-->
+                            <script src="signature.js"></script>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/example/css/signature-pad.css">
+    </head>
+    <body>
+        <div id="signature-pad" class="signature-pad">
+            <div class="description tc">签名区域</div>
+            <div class="signature-pad--body">
+                <canvas id="signature-canvas"></canvas>
+                <i class="leftup lefta"></i>
+                <i class="leftup rightup"></i>
+                <i class="leftup leftdown"></i>
+                <i class="leftup rightdown"></i>
+            </div>
+            <div class="signature-pad--footer">
+                <button type="button" class="buttonclear clear" id="clear" data-action="clear">重签</button>
+                <button type="button" class="buttonclear clear" id="save" data-action="clear">确定</button>
+            </div>
+        </div>
+    </body>
+    <script type="text/javaScript">
+        var canvas = document.getElementById('signature-canvas');
+        var signaturePad = new SignaturePad(canvas, { backgroundColor: '#DEDEDE', penColor: 'rgb(0, 0, 0)' });
+        var saveButton = document.getElementById('save');
+        var cancelButton = document.getElementById('clear');
+        saveButton.addEventListener('click', function (event) {
+                                    // 签名为空的判断
+                                    if(signaturePad.isEmpty()){
+                                    alert("不能为空")
+                                    }
+                                    // signaturePad.jSignature('getData');
+                                    var imgStr = signaturePad.toDataURL('image/png');
+                                    //获取到image的base64 可以把这个传到后台解析成图片
+                                    //imgStr = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAL2CAYAAA......
+                                    //去掉data:image/png;base64,我们只要后面的部分iVBORw0KGgoAAAANSUhEUgAAAfgAAAL2CAYAAA......
+                                    imgStr=imgStr.substring(22,imgStr.length);
+                                    $.ajax({
+                                           type: "POST",
+                                           url: "",
+                                           data:{
+                                           imgStr:imgStr
+                                           },
+                                           dataType:"json",
+                                           success: function(data){
+                                           
+                                           }
+                                           });
+                                    
+                                    });
+                                    cancelButton.addEventListener('click', function (event) {
+                                                                  signaturePad.clear();
+                                                                  });
+                                                                  function resizeCanvas() {
+                                                                      var ratio = Math.max(window.devicePixelRatio || 1, 1); // 清除画布
+                                                                      canvas.width = canvas.offsetWidth * ratio;
+                                                                      canvas.height = canvas.offsetHeight * ratio;
+                                                                      canvas.getContext("2d").scale(ratio, ratio);
+                                                                      signaturePad.clear();
+                                                                  }
+    window.onresize = resizeCanvas;
+    resizeCanvas();
+    
+        </script>
+</html>

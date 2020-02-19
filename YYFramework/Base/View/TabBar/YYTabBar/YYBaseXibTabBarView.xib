@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YYBaseXibTabBarView" customModule="Product_YYFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_shaddow" translatesAutoresizingMaskIntoConstraints="NO" id="hAx-1K-oPe">
+                    <rect key="frame" x="0.0" y="-32" width="532" height="32"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1s7-dr-bMZ" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="tabbar_icon07"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="tabbar_icon07"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelSelectedColor" value="000000"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="UI组件"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelNormalColor" value="cccccc"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMX-sr-SSN" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="106.5" y="0.0" width="106.5" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="tabbar_icon01"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="tabbar_icon01"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelSelectedColor" value="000000"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="闹表"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelNormalColor" value="cccccc"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHs-T4-sAu" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="213" y="0.0" width="106" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="tabbar_icon02"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="tabbar_icon02"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelSelectedColor" value="000000"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="demo"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelNormalColor" value="cccccc"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-NG-HOm" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="319" y="0.0" width="106.5" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="tabbar_icon05"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="tabbar_icon05"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelSelectedColor" value="000000"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="demo"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelNormalColor" value="cccccc"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-NI-rcj" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="425.5" y="0.0" width="106.5" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="tabbar_icon05"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="tabbar_icon05"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="RxSwift"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelSelectedColor" value="000000"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelNormalColor" value="cccccc"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aMX-sr-SSN" firstAttribute="leading" secondItem="1s7-dr-bMZ" secondAttribute="trailing" id="3Tq-eG-PmS"/>
+                <constraint firstItem="Eeh-NI-rcj" firstAttribute="width" secondItem="BK9-NG-HOm" secondAttribute="width" id="AMJ-pA-KvT"/>
+                <constraint firstItem="BK9-NG-HOm" firstAttribute="width" secondItem="vHs-T4-sAu" secondAttribute="width" id="AUt-Rl-Z4s"/>
+                <constraint firstItem="1s7-dr-bMZ" firstAttribute="top" secondItem="hAx-1K-oPe" secondAttribute="bottom" id="GQU-O2-Rv0"/>
+                <constraint firstItem="Eeh-NI-rcj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="HMb-Sc-9QU"/>
+                <constraint firstItem="BK9-NG-HOm" firstAttribute="height" secondItem="vHs-T4-sAu" secondAttribute="height" id="HvZ-Qt-5E6"/>
+                <constraint firstItem="Eeh-NI-rcj" firstAttribute="top" secondItem="hAx-1K-oPe" secondAttribute="bottom" id="LBm-cX-pNb"/>
+                <constraint firstItem="hAx-1K-oPe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NbQ-cX-n8A"/>
+                <constraint firstItem="Eeh-NI-rcj" firstAttribute="leading" secondItem="BK9-NG-HOm" secondAttribute="trailing" id="OSC-ch-cLE"/>
+                <constraint firstItem="1s7-dr-bMZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Viu-Bm-17k"/>
+                <constraint firstAttribute="bottom" secondItem="aMX-sr-SSN" secondAttribute="bottom" id="YIC-oa-s5e"/>
+                <constraint firstItem="vHs-T4-sAu" firstAttribute="width" secondItem="aMX-sr-SSN" secondAttribute="width" id="ZCO-1I-FrP"/>
+                <constraint firstAttribute="bottom" secondItem="1s7-dr-bMZ" secondAttribute="bottom" id="ZSE-Qq-qM2"/>
+                <constraint firstItem="aMX-sr-SSN" firstAttribute="width" secondItem="1s7-dr-bMZ" secondAttribute="width" id="cUM-f0-RRf"/>
+                <constraint firstAttribute="bottom" secondItem="vHs-T4-sAu" secondAttribute="bottom" id="frP-D7-Gix"/>
+                <constraint firstItem="BK9-NG-HOm" firstAttribute="centerY" secondItem="vHs-T4-sAu" secondAttribute="centerY" id="gsy-aB-Alx"/>
+                <constraint firstItem="vHs-T4-sAu" firstAttribute="top" secondItem="hAx-1K-oPe" secondAttribute="bottom" id="has-ag-KoG"/>
+                <constraint firstAttribute="trailing" secondItem="hAx-1K-oPe" secondAttribute="trailing" id="jNp-Yt-DXf"/>
+                <constraint firstItem="vHs-T4-sAu" firstAttribute="top" secondItem="hAx-1K-oPe" secondAttribute="bottom" id="k8e-Se-JaC"/>
+                <constraint firstItem="aMX-sr-SSN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pdf-8d-Lkf"/>
+                <constraint firstItem="1s7-dr-bMZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ph0-w0-ccw"/>
+                <constraint firstItem="BK9-NG-HOm" firstAttribute="leading" secondItem="vHs-T4-sAu" secondAttribute="trailing" id="uSB-c5-mIQ"/>
+                <constraint firstItem="vHs-T4-sAu" firstAttribute="leading" secondItem="aMX-sr-SSN" secondAttribute="trailing" id="vL7-ek-Ehx"/>
+                <constraint firstItem="1s7-dr-bMZ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="w9y-Ej-BdH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="buttons" destination="1s7-dr-bMZ" collectionClass="NSMutableArray" id="dH2-ma-fwe"/>
+                <outletCollection property="buttons" destination="aMX-sr-SSN" collectionClass="NSMutableArray" id="OU1-AE-U1v"/>
+                <outletCollection property="buttons" destination="vHs-T4-sAu" collectionClass="NSMutableArray" id="J4D-Wd-78N"/>
+                <outletCollection property="buttons" destination="BK9-NG-HOm" collectionClass="NSMutableArray" id="Ee8-6v-pWj"/>
+                <outletCollection property="buttons" destination="Eeh-NI-rcj" collectionClass="NSMutableArray" id="laa-Jf-vfW"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="-132.23388305847078"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_shaddow" width="375" height="32"/>
+    </resources>
+</document>

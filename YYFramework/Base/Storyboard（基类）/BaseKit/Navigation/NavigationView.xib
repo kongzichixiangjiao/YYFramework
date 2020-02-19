@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Oyd-AJ-tCs" customClass="NavigationView" customModule="eduOnline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-wd-LWh">
+                    <rect key="frame" x="0.0" y="-40" width="372" height="88"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="BJR-b7-ncI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYo-m1-YcS" customClass="NavigationBarBackButton" customModule="eduOnline" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="blq-eG-EyW"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="btn_arrow_left_white_44"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-Yo-ayj">
+                    <rect key="frame" x="44" y="0.0" width="284" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g9A-8r-6rM" customClass="ImageView" customModule="eduOnline" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="47" width="372" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="82u-PD-Wgj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="onePix" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g9A-8r-6rM" secondAttribute="bottom" id="1vZ-bC-cod"/>
+                <constraint firstAttribute="trailing" secondItem="YJa-Yo-ayj" secondAttribute="trailing" constant="44" id="366-S2-d8I"/>
+                <constraint firstItem="8tm-wd-LWh" firstAttribute="leading" secondItem="Oyd-AJ-tCs" secondAttribute="leading" id="3nN-Hs-zq8"/>
+                <constraint firstItem="g9A-8r-6rM" firstAttribute="leading" secondItem="Oyd-AJ-tCs" secondAttribute="leading" id="7en-VA-NFO"/>
+                <constraint firstItem="YJa-Yo-ayj" firstAttribute="top" secondItem="Oyd-AJ-tCs" secondAttribute="top" id="Dvw-im-YdQ"/>
+                <constraint firstAttribute="trailing" secondItem="8tm-wd-LWh" secondAttribute="trailing" id="Q7T-yf-H9C"/>
+                <constraint firstAttribute="trailing" secondItem="g9A-8r-6rM" secondAttribute="trailing" id="WOI-vg-xES"/>
+                <constraint firstAttribute="bottom" secondItem="8tm-wd-LWh" secondAttribute="bottom" id="aXr-pU-Xkd"/>
+                <constraint firstItem="BYo-m1-YcS" firstAttribute="top" secondItem="Oyd-AJ-tCs" secondAttribute="top" id="dei-eu-c0g"/>
+                <constraint firstItem="YJa-Yo-ayj" firstAttribute="leading" secondItem="Oyd-AJ-tCs" secondAttribute="leading" constant="44" id="hjo-vb-x9J"/>
+                <constraint firstAttribute="bottom" secondItem="BYo-m1-YcS" secondAttribute="bottom" id="pO2-ng-LYf"/>
+                <constraint firstAttribute="bottom" secondItem="YJa-Yo-ayj" secondAttribute="bottom" id="sXf-Bd-AiN"/>
+                <constraint firstItem="BYo-m1-YcS" firstAttribute="leading" secondItem="Oyd-AJ-tCs" secondAttribute="leading" id="wrr-Gx-jZ2"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="BYo-m1-YcS" id="LV1-FY-L0l"/>
+                <outlet property="backgroundImageView" destination="8tm-wd-LWh" id="gEU-kH-8hd"/>
+                <outlet property="shadowImageView" destination="g9A-8r-6rM" id="hbg-GB-gg9"/>
+                <outlet property="titleLabel" destination="YJa-Yo-ayj" id="DG9-XK-KQc"/>
+            </connections>
+            <point key="canvasLocation" x="-275.19999999999999" y="-313.94302848575717"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_arrow_left_white_44" width="22" height="22"/>
+    </resources>
+</document>

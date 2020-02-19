@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GALocalVideoPlayerViewController" customModule="Product_YYFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="O71-NC-9Xy" id="IMw-cy-HaA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击播放本地视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-YY-Z3t">
+                    <rect key="frame" x="118" y="323" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O71-NC-9Xy">
+                    <rect key="frame" x="0.0" y="40" width="375" height="220"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="wgt-yw-Olt"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYO-2C-gas">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AiX-cD-Czv"/>
+                    </constraints>
+                    <state key="normal" title="七牛云播放器"/>
+                    <connections>
+                        <action selector="plRooter:" destination="-1" eventType="touchUpInside" id="5F8-8T-nzE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tYO-2C-gas" secondAttribute="bottom" id="DEB-k0-HNq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O71-NC-9Xy" secondAttribute="trailing" id="Pn9-E1-9yn"/>
+                <constraint firstItem="O71-NC-9Xy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QDH-9a-hUX"/>
+                <constraint firstItem="O71-NC-9Xy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="XGU-VU-Tgz"/>
+                <constraint firstItem="Jyo-YY-Z3t" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XKO-Co-d0a"/>
+                <constraint firstItem="tYO-2C-gas" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zsr-gy-Rpg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tYO-2C-gas" secondAttribute="trailing" id="odL-wO-4r6"/>
+                <constraint firstItem="Jyo-YY-Z3t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sIX-hp-c8p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+    </objects>
+</document>

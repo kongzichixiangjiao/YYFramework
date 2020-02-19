@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAVideoRooterViewController" customModule="FKDTests" customModuleProvider="target">
+            <connections>
+                <outlet property="imageV" destination="oIv-G3-i8x" id="FPt-x5-Ljk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxH-Ny-vPw">
+                    <rect key="frame" x="20" y="124" width="374" height="45"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.42745098040000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="oiw-ZP-T39"/>
+                    </constraints>
+                    <state key="normal" title="GAVideoRooter（相册、拍照、录像）">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="systemVideo:" destination="-1" eventType="touchUpInside" id="Cg2-o5-l3q"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIv-G3-i8x">
+                    <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="F29-DE-HQv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rY-Ig-vLm">
+                    <rect key="frame" x="20" y="185" width="374" height="45"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.42745098040000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="tL6-7k-bNu"/>
+                    </constraints>
+                    <state key="normal" title="自定义录视频">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="customVideo:" destination="-1" eventType="touchUpInside" id="c2Z-iz-zvH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7rY-Ig-vLm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rqm-P8-oVZ"/>
+                <constraint firstItem="7rY-Ig-vLm" firstAttribute="top" secondItem="NxH-Ny-vPw" secondAttribute="bottom" constant="16" id="UwJ-3J-Xrx"/>
+                <constraint firstItem="NxH-Ny-vPw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="Y8P-Tj-kcW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7rY-Ig-vLm" secondAttribute="trailing" constant="20" id="axl-cA-A0S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oIv-G3-i8x" secondAttribute="trailing" id="b9b-B1-tk0"/>
+                <constraint firstItem="oIv-G3-i8x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dxz-TL-gHe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NxH-Ny-vPw" secondAttribute="trailing" constant="20" id="qHD-jC-6vQ"/>
+                <constraint firstItem="NxH-Ny-vPw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rzC-rT-bXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oIv-G3-i8x" secondAttribute="bottom" id="v34-ap-CSN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+</document>

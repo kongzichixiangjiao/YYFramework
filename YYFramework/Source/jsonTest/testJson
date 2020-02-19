@@ -1,0 +1,37 @@
+{
+"returnCode": 200,
+"message": "查询成功",
+"dic": {
+"a": "",
+"b": ""
+},
+"result": {
+"curPage": "1",
+"pageSize": "10",
+"total": "30",
+"isNextPage": "false",
+"data": [{
+"id": 1,
+"dic": {
+"a": "",
+"b": ""
+},
+"code_string": "活动编码",
+"name": "活动名称",
+"dic": {
+"a": "",
+"b": ""
+}
+},
+{
+"id": 2,
+"code": "活动编码",
+"name": "活动名称",
+"dic": {
+"a": "",
+"b": ""
+}
+}
+]
+}
+}

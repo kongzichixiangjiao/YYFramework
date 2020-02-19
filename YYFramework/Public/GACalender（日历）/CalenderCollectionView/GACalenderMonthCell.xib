@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GACalenderMonthCell" id="gTV-IL-0wX" customClass="GACalenderMonthCell" customModule="Product_YYFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yib-MY-HWz">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="176"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewLayout key="collectionViewLayout" id="3bl-g4-UYS" customClass="GACalenderMonthCellFlowLayout" customModule="Product_YYFramework" customModuleProvider="target"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="P7T-g4-48a"/>
+                            <outlet property="delegate" destination="-1" id="rIR-cP-zcT"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yib-MY-HWz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0hd-Oz-GBV"/>
+                <constraint firstAttribute="trailing" secondItem="yib-MY-HWz" secondAttribute="trailing" id="DoJ-LK-p7p"/>
+                <constraint firstItem="yib-MY-HWz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VGG-Rt-Cd8"/>
+                <constraint firstAttribute="bottom" secondItem="yib-MY-HWz" secondAttribute="bottom" id="wg0-dm-Yf8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="178" height="176"/>
+            <connections>
+                <outlet property="collectionView" destination="yib-MY-HWz" id="Pl2-o5-3RQ"/>
+            </connections>
+            <point key="canvasLocation" x="35.200000000000003" y="210.49475262368819"/>
+        </collectionViewCell>
+    </objects>
+</document>

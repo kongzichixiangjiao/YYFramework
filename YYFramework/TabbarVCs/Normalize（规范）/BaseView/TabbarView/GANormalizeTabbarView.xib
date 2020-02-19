@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GANormalizeTabbarView" customModule="Product_YYFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKO-yG-KaI" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="238.5" height="88"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="展示1"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                            <color key="value" red="0.1450980392" green="0.52156862749999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="ic_close"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="ic_close"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsS-Eb-ye2" customClass="YYXibTabBarItem" customModule="Product_YYFramework" customModuleProvider="target">
+                    <rect key="frame" x="238.5" y="0.0" width="238.5" height="88"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="展示2"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mTag">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                            <color key="value" red="0.90252087160000005" green="0.15278767100000001" blue="0.1719225516" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageDefaultName" value="ic_code"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageHighlightName" value="ic_code"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UKO-yG-KaI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AHA-qd-T6x"/>
+                <constraint firstItem="JsS-Eb-ye2" firstAttribute="leading" secondItem="UKO-yG-KaI" secondAttribute="trailing" id="EQA-8L-HTj"/>
+                <constraint firstItem="JsS-Eb-ye2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="YJn-IZ-2Wq"/>
+                <constraint firstItem="JsS-Eb-ye2" firstAttribute="width" secondItem="UKO-yG-KaI" secondAttribute="width" id="aue-zu-Sfb"/>
+                <constraint firstItem="JsS-Eb-ye2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sHb-9I-SDQ"/>
+                <constraint firstItem="UKO-yG-KaI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="sJh-H9-fj6"/>
+                <constraint firstItem="UKO-yG-KaI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vLH-p8-8Zn"/>
+                <constraint firstAttribute="bottom" secondItem="UKO-yG-KaI" secondAttribute="bottom" id="zRS-KX-Mcf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="buttons" destination="UKO-yG-KaI" collectionClass="NSMutableArray" id="131-sC-GE7"/>
+                <outletCollection property="buttons" destination="JsS-Eb-ye2" collectionClass="NSMutableArray" id="Rv1-B2-rj0"/>
+            </connections>
+            <point key="canvasLocation" x="84.5" y="-236"/>
+        </view>
+    </objects>
+</document>

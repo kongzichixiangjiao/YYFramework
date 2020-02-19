@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GARxRootViewController" customModule="FKDTests" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhp-0Z-CHB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wnv-r2-Pry">
+                            <rect key="frame" x="0.0" y="100" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-lq-Hd4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Lzx-r4-6zz"/>
+                                    </constraints>
+                                    <state key="normal" title="去练习"/>
+                                    <connections>
+                                        <action selector="action:" destination="-1" eventType="touchUpInside" id="zH0-w3-NvW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Wnv-r2-Pry" secondAttribute="trailing" id="C81-wy-oK5"/>
+                        <constraint firstItem="Wnv-r2-Pry" firstAttribute="top" secondItem="Nhp-0Z-CHB" secondAttribute="top" constant="100" id="Kik-eL-cx5"/>
+                        <constraint firstItem="Wnv-r2-Pry" firstAttribute="leading" secondItem="Nhp-0Z-CHB" secondAttribute="leading" id="YIZ-SC-vMf"/>
+                        <constraint firstAttribute="bottom" secondItem="Wnv-r2-Pry" secondAttribute="bottom" id="arh-Ax-5Xj"/>
+                        <constraint firstItem="Wnv-r2-Pry" firstAttribute="width" secondItem="Nhp-0Z-CHB" secondAttribute="width" id="vAe-qh-DDD"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Nhp-0Z-CHB" secondAttribute="bottom" id="2zh-PM-hB5"/>
+                <constraint firstItem="Nhp-0Z-CHB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="39S-Xe-V3J"/>
+                <constraint firstAttribute="trailing" secondItem="Nhp-0Z-CHB" secondAttribute="trailing" id="Y7Q-VE-Nat"/>
+                <constraint firstItem="Nhp-0Z-CHB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qn6-7z-ri4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+</document>

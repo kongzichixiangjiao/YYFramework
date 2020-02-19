@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PLShortVideoKitView" customModule="FKDTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-td-y09">
+                    <rect key="frame" x="162" y="706" width="90" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLK-s3-6T7">
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="pl_record_start.png"/>
+                            <state key="selected" image="pl_record_end.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ga_cornerRadius">
+                                    <real key="value" value="35"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="record:" destination="iN0-l3-epB" eventType="touchUpInside" id="4B0-9D-hpm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="4cL-uI-uHb"/>
+                        <constraint firstAttribute="trailing" secondItem="GLK-s3-6T7" secondAttribute="trailing" id="D7F-ji-iKc"/>
+                        <constraint firstItem="GLK-s3-6T7" firstAttribute="leading" secondItem="JuX-td-y09" secondAttribute="leading" id="Krw-P8-PSl"/>
+                        <constraint firstItem="GLK-s3-6T7" firstAttribute="top" secondItem="JuX-td-y09" secondAttribute="top" id="PcG-MS-T4p"/>
+                        <constraint firstAttribute="width" secondItem="JuX-td-y09" secondAttribute="height" id="Tiu-no-e4f"/>
+                        <constraint firstAttribute="bottom" secondItem="GLK-s3-6T7" secondAttribute="bottom" id="tbD-qS-e6j"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ga_cornerRadius">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ga_masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-Wj-FqK">
+                    <rect key="frame" x="0.0" y="706" width="162" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9E-UN-okg">
+                            <rect key="frame" x="55" y="30" width="52" height="30"/>
+                            <state key="normal" image="pl_back_icon.png"/>
+                            <connections>
+                                <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="k92-bm-Of2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="E9E-UN-okg" firstAttribute="centerX" secondItem="kn6-Wj-FqK" secondAttribute="centerX" id="WjZ-L3-MNT"/>
+                        <constraint firstItem="E9E-UN-okg" firstAttribute="centerY" secondItem="kn6-Wj-FqK" secondAttribute="centerY" id="wWG-MG-DD0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-sN-wqX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.50071022727272729" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="a2i-Lu-CEs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpf-gT-ctr">
+                    <rect key="frame" x="30" y="186" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="上传"/>
+                    <connections>
+                        <action selector="upload:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Rg-cq-wKP"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkS-lF-g3o">
+                    <rect key="frame" x="252" y="706" width="162" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-Zx-Wmg">
+                            <rect key="frame" x="48" y="18" width="66" height="54"/>
+                            <state key="normal" image="pl_position_icon.png"/>
+                            <connections>
+                                <action selector="position:" destination="iN0-l3-epB" eventType="touchUpInside" id="8u6-s8-8bm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RUI-Zx-Wmg" firstAttribute="centerY" secondItem="wkS-lF-g3o" secondAttribute="centerY" id="77z-3s-MAy"/>
+                        <constraint firstItem="RUI-Zx-Wmg" firstAttribute="centerX" secondItem="wkS-lF-g3o" secondAttribute="centerX" id="ymo-o8-gQb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KOy-Dh-BFQ" firstAttribute="trailing" secondItem="wkS-lF-g3o" secondAttribute="trailing" id="4Ty-sg-yap"/>
+                <constraint firstItem="wkS-lF-g3o" firstAttribute="top" secondItem="JuX-td-y09" secondAttribute="top" id="680-JX-H3h"/>
+                <constraint firstItem="JuX-td-y09" firstAttribute="leading" secondItem="kn6-Wj-FqK" secondAttribute="trailing" id="7TD-5q-BU0"/>
+                <constraint firstItem="JuX-td-y09" firstAttribute="bottom" secondItem="kn6-Wj-FqK" secondAttribute="bottom" id="APN-MS-ooN"/>
+                <constraint firstItem="KOy-Dh-BFQ" firstAttribute="trailing" secondItem="Xuy-sN-wqX" secondAttribute="trailing" id="BbB-vm-IYx"/>
+                <constraint firstItem="Xuy-sN-wqX" firstAttribute="top" secondItem="KOy-Dh-BFQ" secondAttribute="top" id="CuL-1x-Tk6"/>
+                <constraint firstItem="wkS-lF-g3o" firstAttribute="leading" secondItem="JuX-td-y09" secondAttribute="trailing" id="JYG-5Q-VdC"/>
+                <constraint firstItem="wkS-lF-g3o" firstAttribute="bottom" secondItem="JuX-td-y09" secondAttribute="bottom" id="RI4-Tu-LeO"/>
+                <constraint firstItem="kn6-Wj-FqK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TkL-Q5-sLR"/>
+                <constraint firstAttribute="bottom" secondItem="JuX-td-y09" secondAttribute="bottom" constant="100" id="XSW-JS-Wt5"/>
+                <constraint firstItem="JuX-td-y09" firstAttribute="top" secondItem="kn6-Wj-FqK" secondAttribute="top" id="dLP-0q-K3P"/>
+                <constraint firstItem="Xuy-sN-wqX" firstAttribute="leading" secondItem="KOy-Dh-BFQ" secondAttribute="leading" id="nIO-un-j8g"/>
+                <constraint firstItem="JuX-td-y09" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xqg-qn-1gc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="KOy-Dh-BFQ"/>
+            <connections>
+                <outlet property="positionButton" destination="RUI-Zx-Wmg" id="fGq-uy-3zE"/>
+                <outlet property="recordButton" destination="GLK-s3-6T7" id="gh0-B2-j5y"/>
+                <outlet property="timeLabel" destination="Xuy-sN-wqX" id="G0t-z7-Fue"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pl_back_icon.png" width="26" height="15"/>
+        <image name="pl_position_icon.png" width="33" height="27"/>
+        <image name="pl_record_end.png" width="67" height="67"/>
+        <image name="pl_record_start.png" width="67" height="67"/>
+    </resources>
+</document>
