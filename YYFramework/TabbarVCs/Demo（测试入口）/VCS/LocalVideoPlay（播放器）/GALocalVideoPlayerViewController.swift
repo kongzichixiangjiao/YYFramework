@@ -127,6 +127,11 @@ class GALocalVideoPlayerViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func liveDetails(_ sender: Any) {
+        let vc = GALiveDetailsViewController(nibName: "GALiveDetailsViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         //        _playerView.resetPlayer()

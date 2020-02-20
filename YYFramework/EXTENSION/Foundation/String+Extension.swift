@@ -329,14 +329,15 @@ extension String {
         return self.trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
-    func ga_indexOf(_ target: Character) -> Int? {
-//        String.Index(utf16Offset:in:)
-        return self.firstIndex(of: target)?.encodedOffset
+    func ga_indexOf(_ target: String) -> Int? {
+        return target.endIndex.utf16Offset(in: target)
+//        return self.firstIndex(of: target)?.encodedOffset
 //        return self.firstIndex(of: target)?.utf16Offset(in: .utf)
     }
     
     func ga_subString(to: Int) -> String {
-        let endIndex = String.Index.init(encodedOffset: to)
+//        let endIndex = String.Index.init(encodedOffset: to)
+        let endIndex = String.Index.init(utf16Offset: to, in: self)
         let subStr = self[self.startIndex..<endIndex]
         return String(subStr)
     }
@@ -349,7 +350,8 @@ extension String {
             print("WARNING.... ga_subString (from > self.count)")
             return self
         }
-        let startIndex = String.Index.init(encodedOffset: from)
+//        let startIndex = String.Index.init(encodedOffset: from)
+        let startIndex = String.Index.init(utf16Offset: from, in: self)
         let subStr = self[startIndex..<self.endIndex]
         return String(subStr)
     }
@@ -384,7 +386,8 @@ extension String {
             else {
                 return ""
         }
-        if(endIndex.encodedOffset <= end_Index.encodedOffset){
+        if(endIndex.utf16Offset(in: self) <= end_Index.utf16Offset(in: self)){
+//        if(endIndex.encodedOffset <= end_Index.encodedOffset){
             return String(self[start_Index..<endIndex])
         }
         return String(self[start_Index...end_Index])
@@ -393,22 +396,30 @@ extension String {
     // 校验字符串位置是否合理
     func ga_validIndex(original: Int) -> String.Index {
         switch original {
-        case ...startIndex.encodedOffset:
+        case ...startIndex.utf16Offset(in: self):
             return startIndex
-        case endIndex.encodedOffset...:
+        case endIndex.utf16Offset(in: self)...:
             return endIndex
         default:
             return index(startIndex, offsetBy: original)
         }
+//        switch original {
+//        case ...startIndex.encodedOffset:
+//            return startIndex
+//        case endIndex.encodedOffset...:
+//            return endIndex
+//        default:
+//            return index(startIndex, offsetBy: original)
+//        }
     }
     // 校验是否是合法的起始位置
     func ga_validStartIndex(original: Int) -> String.Index? {
-        guard original <= endIndex.encodedOffset else { return nil }
+        guard original <= endIndex.utf16Offset(in: self) else { return nil }
         return ga_validIndex(original:original)
     }
     // 校验是否是合法的结束位置
     func ga_validEndIndex(original: Int) -> String.Index? {
-        guard original >= startIndex.encodedOffset else { return nil }
+        guard original >= startIndex.utf16Offset(in: self) else { return nil }
         return ga_validIndex(original:original)
     }
     

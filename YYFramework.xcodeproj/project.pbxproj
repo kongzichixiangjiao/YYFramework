@@ -2917,13 +2917,13 @@
 			path = "Demo（测试入口）";
 			sourceTree = "<group>";
 		};
-		DC02027621A4F36600FC8620 /* CardIOVC */ = {
+		DC02027621A4F36600FC8620 /* CardIOVC（百度人脸识别） */ = {
 			isa = PBXGroup;
 			children = (
 				DC02027721A4F36600FC8620 /* YYCardIOViewController.swift */,
 				DC02027821A4F36600FC8620 /* YYCardIOViewController.xib */,
 			);
-			path = CardIOVC;
+			path = "CardIOVC（百度人脸识别）";
 			sourceTree = "<group>";
 		};
 		DC02027921A4F36600FC8620 /* Home */ = {
@@ -3047,7 +3047,7 @@
 			path = video;
 			sourceTree = "<group>";
 		};
-		DC06244622EE973700C83012 /* LocalVideoPlay */ = {
+		DC06244622EE973700C83012 /* LocalVideoPlay（播放器） */ = {
 			isa = PBXGroup;
 			children = (
 				DC06244722EE975700C83012 /* GALocalVideoPlayerViewController.swift */,
@@ -3059,7 +3059,7 @@
 				DC56A4D923FBB2960036C408 /* GALiveDetailsViewController.swift */,
 				DC56A4DA23FBB2960036C408 /* GALiveDetailsViewController.xib */,
 			);
-			path = LocalVideoPlay;
+			path = "LocalVideoPlay（播放器）";
 			sourceTree = "<group>";
 		};
 		DC08FDAB221CEF2E00F08535 /* BaseView */ = {
@@ -3509,7 +3509,7 @@
 			path = web;
 			sourceTree = "<group>";
 		};
-		DC2312C0224B1A3100B60C4D /* Signature */ = {
+		DC2312C0224B1A3100B60C4D /* Signature（签名、PDF预览） */ = {
 			isa = PBXGroup;
 			children = (
 				DC5E15D82249FECE008736A5 /* YYImageSignatureViewController.swift */,
@@ -3519,7 +3519,7 @@
 				DC8FE4032248B59E004C6664 /* GAPDFSignatureViewController.swift */,
 				DC2312BD224B1A2D00B60C4D /* GAWordFileSignatureViewController.swift */,
 			);
-			path = Signature;
+			path = "Signature（签名、PDF预览）";
 			sourceTree = "<group>";
 		};
 		DC2312C1224B1A4A00B60C4D /* TestJson */ = {
@@ -3575,12 +3575,12 @@
 				DC34686C22F2CAED00156B85 /* WebView */,
 				DC34686B22F2CAC300156B85 /* WebViewPreview */,
 				DC571D5922EEDF7E003BF5A0 /* StackView */,
-				DC06244622EE973700C83012 /* LocalVideoPlay */,
+				DC06244622EE973700C83012 /* LocalVideoPlay（播放器） */,
 				05DD80B922A10444009CEA6A /* videoController */,
 				DC2312C1224B1A4A00B60C4D /* TestJson */,
-				DC2312C0224B1A3100B60C4D /* Signature */,
+				DC2312C0224B1A3100B60C4D /* Signature（签名、PDF预览） */,
 				DCB2E73322015783009594DB /* HTMLTag */,
-				DC02027621A4F36600FC8620 /* CardIOVC */,
+				DC02027621A4F36600FC8620 /* CardIOVC（百度人脸识别） */,
 			);
 			path = VCS;
 			sourceTree = "<group>";

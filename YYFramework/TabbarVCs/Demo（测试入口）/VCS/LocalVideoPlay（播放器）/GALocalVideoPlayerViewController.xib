@@ -34,6 +34,7 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYO-2C-gas">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="AiX-cD-Czv"/>
                     </constraints>
@@ -42,17 +43,31 @@
                         <action selector="plRooter:" destination="-1" eventType="touchUpInside" id="5F8-8T-nzE"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akk-B6-HsL">
+                    <rect key="frame" x="0.0" y="567" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="X8A-5g-5YL"/>
+                    </constraints>
+                    <state key="normal" title="直播详情"/>
+                    <connections>
+                        <action selector="liveDetails:" destination="-1" eventType="touchUpInside" id="6ns-Wu-rlt"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="akk-B6-HsL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3AW-8c-oZa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tYO-2C-gas" secondAttribute="bottom" id="DEB-k0-HNq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O71-NC-9Xy" secondAttribute="trailing" id="Pn9-E1-9yn"/>
                 <constraint firstItem="O71-NC-9Xy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QDH-9a-hUX"/>
                 <constraint firstItem="O71-NC-9Xy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="XGU-VU-Tgz"/>
                 <constraint firstItem="Jyo-YY-Z3t" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XKO-Co-d0a"/>
+                <constraint firstItem="tYO-2C-gas" firstAttribute="top" secondItem="akk-B6-HsL" secondAttribute="bottom" id="YGr-Ef-LLk"/>
                 <constraint firstItem="tYO-2C-gas" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zsr-gy-Rpg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tYO-2C-gas" secondAttribute="trailing" id="odL-wO-4r6"/>
                 <constraint firstItem="Jyo-YY-Z3t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sIX-hp-c8p"/>
+                <constraint firstItem="akk-B6-HsL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yMk-Po-MWX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140" y="154"/>

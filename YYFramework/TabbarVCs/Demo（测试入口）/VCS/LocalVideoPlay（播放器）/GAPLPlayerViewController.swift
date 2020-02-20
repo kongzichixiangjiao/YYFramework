@@ -12,8 +12,6 @@ class GAPLPlayerViewController: UIViewController {
     
     @IBOutlet weak var bgPlayerView: UIView!
     
-    var ql_player: PLPlayer!
-    
     lazy var playerControlView: YYPlayerControlView = {
         let v = "YYPlayerControlView".xibLoadView() as! YYPlayerControlView
         v.backgroundColor = UIColor.clear
@@ -41,7 +39,7 @@ class GAPLPlayerViewController: UIViewController {
     deinit {
         print("----")
     }
-    
+    var playerWindow = GAPlayerWindow(frame: UIScreen.main.bounds)
 }
 
 extension GAPLPlayerViewController: PLPlayerDelegate {
@@ -55,27 +53,9 @@ extension GAPLPlayerViewController: YYPlayerControlViewDelegate {
                 return
             }
             if button.isSelected {
-                GAPlayerWindow.share.exitFullScreen(subView: self.view, isXIB: true)
-                
-                self.view.addSubview(v)
-                
-                for layout in v.constraints {
-                    if layout.firstItem as? NSObject == v {
-                        v.removeConstraint(layout)
-                    }
-                }
-                view.addSubview(bgPlayerView)
-                
-                view.addConstraint(NSLayoutConstraint(item: v, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0))
-                view.addConstraint(NSLayoutConstraint(item: v, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0))
-                v.addConstraint(NSLayoutConstraint(item: v, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: min(kScreenWidth, kScreenHeight)))
-                v.addConstraint(NSLayoutConstraint(item: v, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: min(kScreenWidth, kScreenHeight) * 9 / 16))
-                UIView.animate(withDuration: 0.5, animations: {
-                    v.transform = CGAffineTransform.identity
-                }) { (isFinished) in
-                }
+                playerWindow.exitFullScreen(subView: self.view, isXIB: true)
             } else {
-                GAPlayerWindow.share.enterFullScreen(v: v, isXIB: true)
+                playerWindow.enterFullScreen(v: v, isXIB: true)
             }
             
             //        if button.isSelected {

@@ -26,15 +26,15 @@ class GAExerciseViewController: GANavViewController {
     
     private func _bindLabel() {
         //Observable序列（每隔1秒钟发出一个索引数）
-        let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
-        
-        observable
-            .map { "当前索引数：\($0 )"}
-            .bind { [weak self](text) in
-                //收到发出的索引数后显示到label上
-                self?.label.text = text
-        }
-        .disposed(by: disposeBag)
+//        let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+//        
+//        observable
+//            .map { "当前索引数：\($0 )"}
+//            .bind { [weak self](text) in
+//                //收到发出的索引数后显示到label上
+//                self?.label.text = text
+//        }
+//        .disposed(by: disposeBag)
     }
     
 }

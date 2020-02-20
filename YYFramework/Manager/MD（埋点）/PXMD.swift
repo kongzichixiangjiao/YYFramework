@@ -339,7 +339,7 @@ class PXMD {
 extension PXMD {
     
     private func md_realTimeReuqest(detailsType: String, duration: Double, id: String, pdfUrl: String, date: String, videoPath: String, successHandler: @escaping () -> (), errorHandler: @escaping () -> ()) {
-        let params = ["type":1,
+        _ = ["type":1,
                       "detailsType":detailsType,
                       "employeeId":"CacheTool.getDefault(cacheKey: .employeeId)",
                       "duration":Int(duration),

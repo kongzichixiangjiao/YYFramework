@@ -62,7 +62,6 @@ class YYPlayerControlView: UIView {
     
     var timer: Timer?
     
-    
     private func _setup() {
         guard let playerView = ql_player.playerView else {
             return
@@ -80,7 +79,6 @@ class YYPlayerControlView: UIView {
     }
     
     func play() {
-    
         if _getPlayerState() == .statusPlaying {
             return
         }
@@ -295,8 +293,6 @@ extension YYPlayerControlView: PLPlayerDelegate {
     }
 
 }
-
-
 
 // 写一个Timer的分类。
 extension Timer {

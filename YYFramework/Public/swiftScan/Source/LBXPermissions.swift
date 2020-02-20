@@ -30,6 +30,8 @@ class LBXPermissions: NSObject {
                     comletion(status == PHAuthorizationStatus.authorized ? true:false)
                 }
             })
+        @unknown default:
+            break
         }
     }
     
@@ -54,6 +56,8 @@ class LBXPermissions: NSObject {
                     comletion(granted)
                 }
             })
+        @unknown default:
+            break 
         }
     }
     

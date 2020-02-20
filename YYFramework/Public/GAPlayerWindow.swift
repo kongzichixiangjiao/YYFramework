@@ -32,7 +32,7 @@ class GAPlayerWindowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.clear
     }
     
 }
@@ -61,7 +61,7 @@ class GAPlayerWindow: UIWindow {
         
         self.makeKeyAndVisible()
         self.windowLevel = .alert + 3
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear 
         self.rootViewController = vc
         
         if isXIB {
@@ -102,10 +102,23 @@ class GAPlayerWindow: UIWindow {
     // 退出全屏
     func exitFullScreen(subView: UIView, isXIB: Bool = false) {
         if isXIB {
-//            UIView.animate(withDuration: 0.5, animations: {
-//                self.targetView.transform = CGAffineTransform.identity
-//            }) { (isFinished) in
-//            }
+            subView.addSubview(targetView)
+            
+            for layout in targetView.constraints {
+                if layout.firstItem as? NSObject == targetView {
+                    targetView.removeConstraint(layout)
+                }
+            }
+            subView.addSubview(targetView)
+            
+            subView.addConstraint(NSLayoutConstraint(item: targetView!, attribute: .centerX, relatedBy: .equal, toItem: subView, attribute: .centerX, multiplier: 1, constant: 0))
+            subView.addConstraint(NSLayoutConstraint(item: targetView!, attribute: .centerY, relatedBy: .equal, toItem: subView, attribute: .centerY, multiplier: 1, constant: 0))
+            targetView.addConstraint(NSLayoutConstraint(item: targetView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: min(kScreenWidth, kScreenHeight)))
+            targetView.addConstraint(NSLayoutConstraint(item: targetView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: min(kScreenWidth, kScreenHeight) * 9 / 16))
+            UIView.animate(withDuration: 0.5, animations: {
+                self.targetView.transform = CGAffineTransform.identity
+            }) { (isFinished) in
+            }
         } else {
             let frame = subView.convert(self.smallPreViewFrame, to: self)
             

@@ -157,7 +157,8 @@ open class ZHReuqest {
     }
     
     private func _validatedApi(s: String) -> Bool {
-        let endIndex = String.Index.init(encodedOffset: 1)
+//        let endIndex = String.Index.init(encodedOffset: 1)
+        let endIndex = String.Index.init(utf16Offset: 1, in: s)
         let subStr = s[s.startIndex..<endIndex]
         return String(subStr) == "/"
     }

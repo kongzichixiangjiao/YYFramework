@@ -78,7 +78,7 @@ class GACalanderDataViewController: GANavViewController {
     }
     
     func getMonthHasDays(y: Int, m: Int) -> Int {
-        GADate.getCountOfDaysInMonth(year: 0, month: 0)
+//        GADate.getCountOfDaysInMonth(year: 0, month: 0)
         return calendar.ordinality(of: Calendar.Component.day, in: Calendar.Component.month, for: Date()) ?? -1
     }
 

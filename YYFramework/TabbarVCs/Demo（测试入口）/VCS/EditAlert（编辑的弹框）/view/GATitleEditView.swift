@@ -137,7 +137,8 @@ extension GATitleEditView: UITextFieldDelegate {
     
     func _subString(to: Int) -> String {
         let text: String = textField.text!
-        let endIndex = String.Index.init(encodedOffset: to)
+//        let endIndex = String.Index.init(encodedOffset: to)
+        let endIndex = String.Index.init(utf16Offset: to, in: text)
         let subStr = text[text.startIndex..<endIndex]
         return String(subStr)
     }

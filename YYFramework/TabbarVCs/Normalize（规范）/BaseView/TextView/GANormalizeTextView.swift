@@ -232,7 +232,8 @@ extension GANormalizeTextView: GANormalizeTextEditMaxCountProtocol {
     
     func _subString(to: Int) -> String {
         let text: String = self.text
-        let endIndex = String.Index.init(encodedOffset: to)
+//        let endIndex = String.Index.init(encodedOffset: to)
+        let endIndex = String.Index.init(utf16Offset: to, in: text)
         let subStr = text[text.startIndex..<endIndex]
         return String(subStr)
     }
