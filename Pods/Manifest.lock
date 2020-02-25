@@ -17,8 +17,12 @@ PODS:
   - Alamofire (4.9.0)
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
+  - Bond (7.6.1):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
   - CryptoSwift (0.15.0)
   - CTMediator (25)
+  - Differ (1.4.3)
   - Differentiator (4.0.1)
   - ESPullToRefresh (2.9)
   - Flutter (1.0.0)
@@ -29,6 +33,10 @@ PODS:
   - GAAlertPresentation (0.0.7)
   - HandyJSON (5.0.0)
   - JTAppleCalendar (7.1.6)
+  - Kingfisher (4.10.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - MJRefresh (3.2.2)
   - OCMock (3.4.3)
   - Player (0.13.2)
@@ -37,6 +45,7 @@ PODS:
   - PLPlayerKit/universal (3.4.3)
   - ReactiveCocoa (9.0.0):
     - ReactiveSwift (~> 5.0)
+  - ReactiveKit (3.15.4)
   - ReactiveSwift (5.0.1):
     - Result (~> 4.1)
   - Result (4.1.0)
@@ -65,6 +74,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Alamofire
   - AlamofireImage
+  - Bond
   - CryptoSwift (= 0.15.0)
   - CTMediator
   - ESPullToRefresh
@@ -74,6 +84,8 @@ DEPENDENCIES:
   - GAAlertPresentation
   - HandyJSON
   - JTAppleCalendar (= 7.1.6)
+  - Kingfisher
+  - MagicalRecord
   - MJRefresh
   - OCMock
   - Player (~> 0.13.2)
@@ -96,14 +108,19 @@ SPEC REPOS:
     - AFNetworking
     - Alamofire
     - AlamofireImage
+    - Bond
     - CryptoSwift
     - CTMediator
+    - Differ
     - Differentiator
     - ESPullToRefresh
     - HandyJSON
     - JTAppleCalendar
+    - Kingfisher
+    - MagicalRecord
     - OCMock
     - ReactiveCocoa
+    - ReactiveKit
     - ReactiveSwift
     - Result
     - RxCocoa
@@ -137,8 +154,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Bond: 8aed9330723da630fccacf745d7fcbf58182d0df
   CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  Differ: 6c7477d6187e8c36d02ec342a3c321061b85a0ea
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
@@ -147,11 +166,14 @@ SPEC CHECKSUMS:
   GAAlertPresentation: d93bad5a2fef4fca14b6bce68018376676643411
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
   Player: 7a2bcad3631034fa47d4b6fdedf7c4075fc236fe
   PLPlayerKit: 5eecac081fbf4dc88a142887f82c4095d9095887
   ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
+  ReactiveKit: 9d1d8b600f9f1ae61a36c9d3f1aa47f5b0c8ea8f
   ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
@@ -167,6 +189,6 @@ SPEC CHECKSUMS:
   TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
   WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
 
-PODFILE CHECKSUM: ede054a0e57541987ee93750a9afe13de32c6ea7
+PODFILE CHECKSUM: f745b0b0115dee2c8468db5e5ccbf6515ef9d3a8
 
 COCOAPODS: 1.8.4

@@ -1508,6 +1508,10 @@
 		DCB9BBB723D44A130088D4C7 /* AppDelegate+Bugly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9BBB623D44A130088D4C7 /* AppDelegate+Bugly.swift */; };
 		DCB9BBB823D44A130088D4C7 /* AppDelegate+Bugly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9BBB623D44A130088D4C7 /* AppDelegate+Bugly.swift */; };
 		DCB9BBB923D44A140088D4C7 /* AppDelegate+Bugly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9BBB623D44A130088D4C7 /* AppDelegate+Bugly.swift */; };
+		DCBBDF4D2400D675002C6E22 /* SwizzledMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBDF4C2400D675002C6E22 /* SwizzledMethod.swift */; };
+		DCBBDF4E2400D675002C6E22 /* SwizzledMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBDF4C2400D675002C6E22 /* SwizzledMethod.swift */; };
+		DCBBDF7624024D41002C6E22 /* GAImageFItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBDF7524024D41002C6E22 /* GAImageFItViewController.swift */; };
+		DCBBDF7924024DD4002C6E22 /* launchAdTest001.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBBDF7824024DD4002C6E22 /* launchAdTest001.png */; };
 		DCBD4944221E516100B9F88F /* GAThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD4943221E516100B9F88F /* GAThemes.swift */; };
 		DCBD4945221E516100B9F88F /* GAThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD4943221E516100B9F88F /* GAThemes.swift */; };
 		DCBD4954221E51DF00B9F88F /* Red.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCBD4951221E51DE00B9F88F /* Red.plist */; };
@@ -1568,6 +1572,9 @@
 		DCC0A41823A78BAA00CCD916 /* GABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC0A41423A78BAA00CCD916 /* GABasicAnimationViewController.xib */; };
 		DCC0A41923A78BAA00CCD916 /* GABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC0A41423A78BAA00CCD916 /* GABasicAnimationViewController.xib */; };
 		DCC0A41A23A78BAA00CCD916 /* GABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC0A41423A78BAA00CCD916 /* GABasicAnimationViewController.xib */; };
+		DCC0AD4124052A3A008F20C0 /* GAToastRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0AD3F24052A3A008F20C0 /* GAToastRootViewController.swift */; };
+		DCC0AD4224052A3A008F20C0 /* GAToastRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC0AD4024052A3A008F20C0 /* GAToastRootViewController.xib */; };
+		DCC0AD4624052F00008F20C0 /* GAShowWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0AD4524052F00008F20C0 /* GAShowWindow.swift */; };
 		DCC24282235ED33A00DF49FD /* GAVibrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC24280235ED33A00DF49FD /* GAVibrationViewController.swift */; };
 		DCC24283235ED33A00DF49FD /* GAVibrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC24280235ED33A00DF49FD /* GAVibrationViewController.swift */; };
 		DCC24284235ED33A00DF49FD /* GAVibrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC24280235ED33A00DF49FD /* GAVibrationViewController.swift */; };
@@ -1796,6 +1803,11 @@
 		DCD832F423AE38B300099CB0 /* GAStrokeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD832F323AE38B300099CB0 /* GAStrokeLabel.swift */; };
 		DCD832F523AE38B300099CB0 /* GAStrokeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD832F323AE38B300099CB0 /* GAStrokeLabel.swift */; };
 		DCD832F623AE38B300099CB0 /* GAStrokeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD832F323AE38B300099CB0 /* GAStrokeLabel.swift */; };
+		DCD869A8240378D600AF3F4B /* GACoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD869A6240378D600AF3F4B /* GACoreDataViewController.swift */; };
+		DCD869A9240378D600AF3F4B /* GACoreDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD869A7240378D600AF3F4B /* GACoreDataViewController.xib */; };
+		DCD869B12403A07E00AF3F4B /* GATestModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD869B02403A07E00AF3F4B /* GATestModel+CoreDataClass.swift */; };
+		DCD869B22403A07E00AF3F4B /* GATestModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD869AF2403A07E00AF3F4B /* GATestModel+CoreDataProperties.swift */; };
+		DCD869B72403AA0000AF3F4B /* AppDelegate+MagicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD869B62403AA0000AF3F4B /* AppDelegate+MagicalRecord.swift */; };
 		DCDA15BD237AA41900A2151D /* GAStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */; };
 		DCDA15BE237AA41900A2151D /* GAStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */; };
 		DCDA15BF237AA41900A2151D /* GAStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */; };
@@ -1871,6 +1883,8 @@
 		DCEBC5B32121563E00A268D6 /* img_003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCEBC5B02121563E00A268D6 /* img_003.jpg */; };
 		DCEBC5BA2121754F00A268D6 /* GATimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBC5B92121754F00A268D6 /* GATimer.swift */; };
 		DCEBC5BE2121815200A268D6 /* YYGIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBC5BD2121815200A268D6 /* YYGIFImage.swift */; };
+		DCED540724036A23007B50E6 /* GATestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCED540524036A23007B50E6 /* GATestModel.xcdatamodeld */; };
+		DCED54212403751A007B50E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCED542024037519007B50E6 /* CoreData.framework */; };
 		DCEE8BEF22F80E6B00439535 /* GA_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE8BEE22F80E6B00439535 /* GA_UIViewController.swift */; };
 		DCEE8BF022F80E6B00439535 /* GA_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE8BEE22F80E6B00439535 /* GA_UIViewController.swift */; };
 		DCEE8BF322F80ED600439535 /* GA_VantUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE8BF122F80ED600439535 /* GA_VantUIViewController.swift */; };
@@ -2639,6 +2653,9 @@
 		DCB9BBAE23D449CB0088D4C7 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		DCB9BBAF23D449CB0088D4C7 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
 		DCB9BBB623D44A130088D4C7 /* AppDelegate+Bugly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Bugly.swift"; sourceTree = "<group>"; };
+		DCBBDF4C2400D675002C6E22 /* SwizzledMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzledMethod.swift; sourceTree = "<group>"; };
+		DCBBDF7524024D41002C6E22 /* GAImageFItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAImageFItViewController.swift; sourceTree = "<group>"; };
+		DCBBDF7824024DD4002C6E22 /* launchAdTest001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchAdTest001.png; sourceTree = "<group>"; };
 		DCBD4943221E516100B9F88F /* GAThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAThemes.swift; sourceTree = "<group>"; };
 		DCBD4951221E51DE00B9F88F /* Red.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Red.plist; sourceTree = "<group>"; };
 		DCBD4952221E51DF00B9F88F /* Night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Night.plist; sourceTree = "<group>"; };
@@ -2667,6 +2684,9 @@
 		DCBE3E0E233CC51E00849A25 /* YYReuseTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYReuseTimer.swift; sourceTree = "<group>"; };
 		DCC0A41323A78BAA00CCD916 /* GABasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GABasicAnimationViewController.swift; sourceTree = "<group>"; };
 		DCC0A41423A78BAA00CCD916 /* GABasicAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GABasicAnimationViewController.xib; sourceTree = "<group>"; };
+		DCC0AD3F24052A3A008F20C0 /* GAToastRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAToastRootViewController.swift; sourceTree = "<group>"; };
+		DCC0AD4024052A3A008F20C0 /* GAToastRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAToastRootViewController.xib; sourceTree = "<group>"; };
+		DCC0AD4524052F00008F20C0 /* GAShowWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAShowWindow.swift; sourceTree = "<group>"; };
 		DCC24280235ED33A00DF49FD /* GAVibrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVibrationViewController.swift; sourceTree = "<group>"; };
 		DCC24281235ED33A00DF49FD /* GAVibrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAVibrationViewController.xib; sourceTree = "<group>"; };
 		DCC40E2723ACC1DA0085D545 /* GAFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAFormViewController.swift; sourceTree = "<group>"; };
@@ -2751,6 +2771,12 @@
 		DCD60E7E236B0E0500AEE4B9 /* PresentTargetCustomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTargetCustomeViewController.swift; sourceTree = "<group>"; };
 		DCD60E7F236B0E0500AEE4B9 /* PresentTargetCustomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentTargetCustomeViewController.xib; sourceTree = "<group>"; };
 		DCD832F323AE38B300099CB0 /* GAStrokeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAStrokeLabel.swift; sourceTree = "<group>"; };
+		DCD869A6240378D600AF3F4B /* GACoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GACoreDataViewController.swift; sourceTree = "<group>"; };
+		DCD869A7240378D600AF3F4B /* GACoreDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GACoreDataViewController.xib; sourceTree = "<group>"; };
+		DCD869AA24039F9100AF3F4B /* GATestModelV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GATestModelV2.xcdatamodel; sourceTree = "<group>"; };
+		DCD869AF2403A07E00AF3F4B /* GATestModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GATestModel+CoreDataProperties.swift"; path = "/Users/houjianan/Documents/GitHub/iOS/YYFramework/YYFramework/TabbarVCs/Demo（测试入口）/VCS/CoreData（数据存储）/GATestModel+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		DCD869B02403A07E00AF3F4B /* GATestModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GATestModel+CoreDataClass.swift"; path = "/Users/houjianan/Documents/GitHub/iOS/YYFramework/YYFramework/TabbarVCs/Demo（测试入口）/VCS/CoreData（数据存储）/GATestModel+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		DCD869B62403AA0000AF3F4B /* AppDelegate+MagicalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+MagicalRecord.swift"; sourceTree = "<group>"; };
 		DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAStorageSpace.swift; sourceTree = "<group>"; };
 		DCDA15C0237ABAEB00A2151D /* GATitleEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATitleEditView.swift; sourceTree = "<group>"; };
 		DCDA15C4237AD37B00A2151D /* PXAmountAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAmountAlertViewController.swift; sourceTree = "<group>"; };
@@ -2784,6 +2810,8 @@
 		DCEBC5B02121563E00A268D6 /* img_003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_003.jpg; sourceTree = "<group>"; };
 		DCEBC5B92121754F00A268D6 /* GATimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATimer.swift; sourceTree = "<group>"; };
 		DCEBC5BD2121815200A268D6 /* YYGIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYGIFImage.swift; sourceTree = "<group>"; };
+		DCED540624036A23007B50E6 /* GATestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GATestModel.xcdatamodel; sourceTree = "<group>"; };
+		DCED542024037519007B50E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DCEE8BEE22F80E6B00439535 /* GA_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA_UIViewController.swift; sourceTree = "<group>"; };
 		DCEE8BF122F80ED600439535 /* GA_VantUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA_VantUIViewController.swift; sourceTree = "<group>"; };
 		DCEE8BF722F8181E00439535 /* GA_VantUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA_VantUICell.swift; sourceTree = "<group>"; };
@@ -2852,6 +2880,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCED54212403751A007B50E6 /* CoreData.framework in Frameworks */,
 				DCAE403223C5B6910030F1B7 /* AuthenticationServices.framework in Frameworks */,
 				DCCFD49123B5B61A0019DED8 /* libz.tbd in Frameworks */,
 				DCCFD48F23B5B6100019DED8 /* AudioToolbox.framework in Frameworks */,
@@ -2885,6 +2914,7 @@
 		2FD5FA7B71C23ECD8D2874AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCED542024037519007B50E6 /* CoreData.framework */,
 				DC690FF023F143AE00C5F5F2 /* libresolv.tbd */,
 				DC690FEF23F143A400C5F5F2 /* libresolv.9.tbd */,
 				DCAE403123C5B6910030F1B7 /* AuthenticationServices.framework */,
@@ -3490,6 +3520,7 @@
 		DC2312BB224B197D00B60C4D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DCBBDF7824024DD4002C6E22 /* launchAdTest001.png */,
 				DCFAD56C21524FB100575B93 /* launchImage */,
 				DC5E15DE2249FF30008736A5 /* tianmolei.jpg */,
 				DCFC8202223634C8003D8B9B /* newPage */,
@@ -3534,6 +3565,9 @@
 		DC2667AD21D4B6F50010AC31 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
+				DCC0AD3E24052A1F008F20C0 /* Toast（吐司） */,
+				DCED5404240367B3007B50E6 /* CoreData（数据存储） */,
+				DCBBDF7724024D47002C6E22 /* ImageFit（图片适配） */,
 				DC72BD7523E55EA900CCB7DB /* Codable（JSON转Model Model转JSON） */,
 				DCF23BE723D7F0BA005B733D /* GAChars（图表） */,
 				DCC7AB6123D590FA0071D6E5 /* FlutterRooter */,
@@ -4412,6 +4446,7 @@
 			isa = PBXGroup;
 			children = (
 				DC87C560211E9E4A00E9FA9F /* AppDelegate.swift */,
+				DCD869B62403AA0000AF3F4B /* AppDelegate+MagicalRecord.swift */,
 				DCBD496A221E8AB000B9F88F /* AppDelegate+Theme.swift */,
 				DC729DC22160B3D300E0150E /* AppDelegate+StatusBarOrientation.swift */,
 				DC27F92622EEEE0200066B0F /* AppDelegate+GIO.swift */,
@@ -4743,7 +4778,8 @@
 				DCFF9E42231CBB720044716E /* source */,
 				DC82883D2317768500038D74 /* GAToast.swift */,
 				DC828843231776F500038D74 /* GAToast.xib */,
-				DC828840231776DD00038D74 /* View+Toast.swift */,
+				DCC0AD4424052EB4008F20C0 /* toast2 */,
+				DCC0AD4324052EAB008F20C0 /* toast1 */,
 			);
 			path = GAToast;
 			sourceTree = "<group>";
@@ -5188,6 +5224,14 @@
 			path = JSPatch;
 			sourceTree = "<group>";
 		};
+		DCBBDF7724024D47002C6E22 /* ImageFit（图片适配） */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBDF7524024D41002C6E22 /* GAImageFItViewController.swift */,
+			);
+			path = "ImageFit（图片适配）";
+			sourceTree = "<group>";
+		};
 		DCBD4946221E51AF00B9F88F /* GAThemes */ = {
 			isa = PBXGroup;
 			children = (
@@ -5249,6 +5293,31 @@
 				DC4888C423B21F0700A66C45 /* GATestPlayerView.xib */,
 			);
 			path = "BasicAnimation（动画）";
+			sourceTree = "<group>";
+		};
+		DCC0AD3E24052A1F008F20C0 /* Toast（吐司） */ = {
+			isa = PBXGroup;
+			children = (
+				DCC0AD3F24052A3A008F20C0 /* GAToastRootViewController.swift */,
+				DCC0AD4024052A3A008F20C0 /* GAToastRootViewController.xib */,
+			);
+			path = "Toast（吐司）";
+			sourceTree = "<group>";
+		};
+		DCC0AD4324052EAB008F20C0 /* toast1 */ = {
+			isa = PBXGroup;
+			children = (
+				DC828840231776DD00038D74 /* View+Toast.swift */,
+			);
+			path = toast1;
+			sourceTree = "<group>";
+		};
+		DCC0AD4424052EB4008F20C0 /* toast2 */ = {
+			isa = PBXGroup;
+			children = (
+				DCC0AD4524052F00008F20C0 /* GAShowWindow.swift */,
+			);
+			path = toast2;
 			sourceTree = "<group>";
 		};
 		DCC24288235ED34800DF49FD /* Vibratin（震动） */ = {
@@ -5581,8 +5650,21 @@
 				DC51BAA521C37DEC004052E2 /* GAIphoneType.swift */,
 				DC1E10802123D7C80096FC86 /* YYTableViewDataSource.swift */,
 				DCBD4946221E51AF00B9F88F /* GAThemes */,
+				DCBBDF4C2400D675002C6E22 /* SwizzledMethod.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		DCED5404240367B3007B50E6 /* CoreData（数据存储） */ = {
+			isa = PBXGroup;
+			children = (
+				DCD869B02403A07E00AF3F4B /* GATestModel+CoreDataClass.swift */,
+				DCD869AF2403A07E00AF3F4B /* GATestModel+CoreDataProperties.swift */,
+				DCED540524036A23007B50E6 /* GATestModel.xcdatamodeld */,
+				DCD869A6240378D600AF3F4B /* GACoreDataViewController.swift */,
+				DCD869A7240378D600AF3F4B /* GACoreDataViewController.xib */,
+			);
+			path = "CoreData（数据存储）";
 			sourceTree = "<group>";
 		};
 		DCEE8BE922F8086900439535 /* Vant_iOS_UI */ = {
@@ -6317,10 +6399,12 @@
 				DCCFD48723B5B5690019DED8 /* LFLiveKitViewController.xib in Resources */,
 				DC8EB853239B4795009D940D /* mosaic_bg_alert@2x.png in Resources */,
 				DC2312C5224B20BD00B60C4D /* apple2.docx in Resources */,
+				DCC0AD4224052A3A008F20C0 /* GAToastRootViewController.xib in Resources */,
 				DC729DE02160D4BE00E0150E /* pxLoginTextfield_secret_open_icon@2x.png in Resources */,
 				DC3D861922530A3E0031401D /* GANormalizeTabsCell.xib in Resources */,
 				DCC40E3123ACC3230085D545 /* GAFormCell.xib in Resources */,
 				DCDFAD8723C6D3BD004D5E38 /* GASelectedDateViewController.xib in Resources */,
+				DCBBDF7924024DD4002C6E22 /* launchAdTest001.png in Resources */,
 				DC60C6092229885B007D266B /* YYAlertSelectedCell.xib in Resources */,
 				DC1E10852123DBE10096FC86 /* TableViewCell1.xib in Resources */,
 				DC37E98A237D3E98006819DC /* GASelectedCityHeaderView.xib in Resources */,
@@ -6351,6 +6435,7 @@
 				DC0202A421A544AC00FC8620 /* ZHVIPCollectionCell.xib in Resources */,
 				DCAD22F22223CF6C000325C5 /* YYPlayerViewController.xib in Resources */,
 				DC7120D52213F7FF00064A9B /* GANormalizeAlertsViewController.xib in Resources */,
+				DCD869A9240378D600AF3F4B /* GACoreDataViewController.xib in Resources */,
 				DC61347B239F446500689C5E /* GAPXBannerCell.xib in Resources */,
 				DCD44D6023921B6A00E5E651 /* 5.jpg in Resources */,
 				DC56A4D123FA8DCE0036C408 /* YYPlayerControlView.xib in Resources */,
@@ -6995,6 +7080,7 @@
 				DC2784BA2317C1BE00C73FD4 /* GABD_FaceRootViewController.swift in Sources */,
 				DC7120FD2215750400064A9B /* GANoralizeTestTextViewViewController.swift in Sources */,
 				DC87C594211FD58700E9FA9F /* UIImageView+Extension.swift in Sources */,
+				DCD869B12403A07E00AF3F4B /* GATestModel+CoreDataClass.swift in Sources */,
 				DC3878F421F9C66600497D6E /* GANormalizeBaseViewController.swift in Sources */,
 				DCFC82102236423A003D8B9B /* GASimulationDataManager.swift in Sources */,
 				DCCD6263237FC96500DEE94E /* GACalenderController1.swift in Sources */,
@@ -7171,6 +7257,7 @@
 				DC729DBE216063C400E0150E /* YYHomeViewController.swift in Sources */,
 				DC51BAA921C3985F004052E2 /* GAPageControlCell.swift in Sources */,
 				DCBD4996221E94E300B9F88F /* UIView+Shot.swift in Sources */,
+				DCD869A8240378D600AF3F4B /* GACoreDataViewController.swift in Sources */,
 				DC3152C021F713F300AA9B54 /* GANormalizeOther.swift in Sources */,
 				DC911D4422C9FD3600473B51 /* UITableView.swift in Sources */,
 				DCF653A0213A8EC30081BEC8 /* GARegular.swift in Sources */,
@@ -7187,6 +7274,7 @@
 				DC02029A21A542EB00FC8620 /* ZHHomeViewController.swift in Sources */,
 				DCCA93D122B2317800E5AC32 /* GAEmoji.m in Sources */,
 				DC11C3952339BB6B009FCFEE /* String+RSA.swift in Sources */,
+				DCD869B22403A07E00AF3F4B /* GATestModel+CoreDataProperties.swift in Sources */,
 				DCFF0A2B21D5BDA900DE6004 /* GATagFlowLayout.swift in Sources */,
 				DC87C577211FC20600E9FA9F /* GraphicsEndImageCell.swift in Sources */,
 				DC02028521A4FC4800FC8620 /* YYADViewModel.swift in Sources */,
@@ -7235,6 +7323,7 @@
 				DCC7AB6B23D591D90071D6E5 /* AppDelegate+Flutter.swift in Sources */,
 				DC28B33621BE737B0089BFBC /* GAPageControlViewController.swift in Sources */,
 				DC774B0323BED8410079B67F /* PLShortVideoKitViewController.swift in Sources */,
+				DCBBDF4D2400D675002C6E22 /* SwizzledMethod.swift in Sources */,
 				DC7BDA04215491A4003F3384 /* YYInterlockView.swift in Sources */,
 				DC6BA7E721ED8A5300D1ED3C /* ZHCodeStandardViewController.swift in Sources */,
 				DC911D5422C9FD3600473B51 /* UIButton.swift in Sources */,
@@ -7269,6 +7358,7 @@
 				DC2EDCA2228F9B5C00B5DD2E /* GACalenderWeekHeaderView.swift in Sources */,
 				DC8EC19223CF037600C403C4 /* GATextFieldEmailAlertView.swift in Sources */,
 				DCFAD5612152486200575B93 /* YYNewPaperView.swift in Sources */,
+				DCC0AD4624052F00008F20C0 /* GAShowWindow.swift in Sources */,
 				DC7BDA0F21549CC4003F3384 /* GAAppRootViewController.swift in Sources */,
 				DCB5096E23150CCC00180E20 /* GAClockTagViewController.swift in Sources */,
 				DCB2E72D22015779009594DB /* GATransitionableTabViewController.swift in Sources */,
@@ -7350,11 +7440,13 @@
 				DCE4B86823C84582006A4B4C /* GAPickerDataCell.swift in Sources */,
 				DC911D3022C9FD3600473B51 /* CustomView.swift in Sources */,
 				DC0202A721A5450800FC8620 /* ZHSortItemCollectionCell.swift in Sources */,
+				DCC0AD4124052A3A008F20C0 /* GAToastRootViewController.swift in Sources */,
 				DCAAAD2722AE305800F4B41F /* GANormalizeTabsStackView.swift in Sources */,
 				DC70410423796BCD00142ABC /* GATagsEditView.swift in Sources */,
 				DC73F011215CE415009CB4AF /* UIButton+Extension.swift in Sources */,
 				DC7120F222156D0A00064A9B /* GANormalizeTestCollectionReusableView.swift in Sources */,
 				DCF39FF62321006F001D58D4 /* UI.swift in Sources */,
+				DCBBDF7624024D41002C6E22 /* GAImageFItViewController.swift in Sources */,
 				DC7120D82215494500064A9B /* GANormalizeBaseTableViewController.swift in Sources */,
 				DC454785225C892200BD1788 /* GAPopMenuCell.swift in Sources */,
 				DC7120D32213F7FF00064A9B /* GANormalizeAlertsViewController.swift in Sources */,
@@ -7391,6 +7483,7 @@
 				DC31520921F1A57500AA9B54 /* InternalApis.swift in Sources */,
 				DC3EFBDD238040A2005BEBDA /* GACalenderContentCell.swift in Sources */,
 				DC7120DC22155BD400064A9B /* GANormalizeTestTableViewController.swift in Sources */,
+				DCED540724036A23007B50E6 /* GATestModel.xcdatamodeld in Sources */,
 				DCE37A662154E2F1007C0293 /* UITextField+Extension.swift in Sources */,
 				DC911D5822C9FD3600473B51 /* UIViewController.swift in Sources */,
 				DC6BB7F6237D2AEE00218F27 /* GALocationView.swift in Sources */,
@@ -7411,6 +7504,7 @@
 				DC2C7E342360558900585617 /* GAAreaPickerCollectionCell.swift in Sources */,
 				DC7120AE2212A4CF00064A9B /* GAStorageModel.swift in Sources */,
 				DC911D5022C9FD3600473B51 /* TipsXibView.swift in Sources */,
+				DCD869B72403AA0000AF3F4B /* AppDelegate+MagicalRecord.swift in Sources */,
 				DC605CE4235D5CDE0062B5CA /* UIView+Watermark.swift in Sources */,
 				DC28B2F121BDFE2C0089BFBC /* YYProgressView.swift in Sources */,
 				DC1E10842123DBE10096FC86 /* TableViewCell1.swift in Sources */,
@@ -7681,6 +7775,7 @@
 				DCB2E8222202C950009594DB /* GANormalizeViewController.swift in Sources */,
 				DCB2E8232202C950009594DB /* YYTabBarViewController.swift in Sources */,
 				DC16CE36236D49D10046D39A /* GACalenderCalenderHeaderView.swift in Sources */,
+				DCBBDF4E2400D675002C6E22 /* SwizzledMethod.swift in Sources */,
 				DCBD4992221E908500B9F88F /* YYMosaicViewController.swift in Sources */,
 				DC911D5122C9FD3600473B51 /* TipsXibView.swift in Sources */,
 				DC16CE2E236D48D10046D39A /* GACalenderCollectionViewCell.swift in Sources */,
@@ -8410,6 +8505,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DCED540524036A23007B50E6 /* GATestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCD869AA24039F9100AF3F4B /* GATestModelV2.xcdatamodel */,
+				DCED540624036A23007B50E6 /* GATestModel.xcdatamodel */,
+			);
+			currentVersion = DCD869AA24039F9100AF3F4B /* GATestModelV2.xcdatamodel */;
+			path = GATestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DC87C555211E9E4A00E9FA9F /* Project object */;
 }

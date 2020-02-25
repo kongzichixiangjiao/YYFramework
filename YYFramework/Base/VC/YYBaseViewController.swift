@@ -140,7 +140,6 @@ class YYBaseViewController: UIViewController {
     
     deinit {
         removeDeviceOrientationNotification()
-        print("baseVC deinit")
     }
 }
 

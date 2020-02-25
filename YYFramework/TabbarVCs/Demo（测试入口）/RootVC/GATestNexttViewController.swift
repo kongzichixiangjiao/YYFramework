@@ -45,7 +45,10 @@ class GATestNexttViewController: YYBaseTableViewController {
                       "20、runtime",
                       "21、flutter入口",
                       "22、图表📈",
-                      "23、JSON转Model Model转JSON"
+                      "23、JSON转Model Model转JSON",
+                      "24、图片适配屏幕",
+                      "25、CoreData",
+                      "26、吐司吐司吐司"
         ]
     }
 }
@@ -90,7 +93,10 @@ extension GATestNexttViewController {
             dataSource[20] as! String : GARuntimeViewController(nibName: "GARuntimeViewController", bundle: nil),
             dataSource[21] as! String : GAFlutterRooterViewController(nibName: "GAFlutterRooterViewController", bundle: nil),
             dataSource[22] as! String : GAChartsViewController(nibName: "GAChartsViewController", bundle: nil),
-            dataSource[23] as! String : GACodableViewController(nibName: "GACodableViewController", bundle: nil)
+            dataSource[23] as! String : GACodableViewController(nibName: "GACodableViewController", bundle: nil),
+            dataSource[24] as! String : GAImageFItViewController(),
+            dataSource[25] as! String : GACoreDataViewController(nibName: "GACoreDataViewController", bundle: nil),
+            dataSource[26] as! String : GAToastRootViewController(nibName: "GAToastRootViewController", bundle: nil)
             
         ]
         

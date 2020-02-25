@@ -9,17 +9,47 @@
 import UIKit
 import SwiftTheme
 import Flutter
-import FlutterPluginRegistrant // Used to connect plugins.
+import CoreData
 
 @UIApplicationMain
 // 集成FlutterAppDelegate之后代理方法要override
 class AppDelegate: FlutterAppDelegate {
 
     var _player: AVAudioPlayer!
-    lazy var flutterEngine = FlutterEngine(name: "my flutter engine")
+    
+    lazy var managedObjectModel: NSManagedObjectModel = {
+        guard let modelURL = Bundle.main.url(forResource: "GATestModel", withExtension: "momd") else {
+            fatalError("failed to find data model")
+        }
+        guard let mom = NSManagedObjectModel(contentsOf: modelURL) else {
+            fatalError("Failed to create model from file: \(modelURL)")
+        }
+        return mom
+    }()
+    
+    lazy var persistanceCoordinator: NSPersistentStoreCoordinator = {
+        let psc = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
+        let dirURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
+        let fileURL = URL(string: "db.sqlite", relativeTo: dirURL)
+        
+        do {
+            try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: fileURL, options: nil)
+        } catch {
+            fatalError("Error configuring persistent store: \(error)")
+        }
+        return psc
+    }()
+    
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        let moc = NSManagedObjectContext(concurrencyType:.mainQueueConcurrencyType)
+        moc.persistentStoreCoordinator = persistanceCoordinator
+        return moc
+    }()
     
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print(NSHomeDirectory())
+        
+        mrCoreData_init()
         
         flutter_run()
         

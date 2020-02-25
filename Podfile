@@ -13,6 +13,7 @@ target 'YYFramework' do
   use_frameworks!
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'Kingfisher'
   pod 'AFNetworking', '~> 3.0'
   pod 'JTAppleCalendar', '7.1.6'
   pod 'SwiftDate'
@@ -20,18 +21,23 @@ target 'YYFramework' do
   pod 'SnapKit'
   pod 'SwiftyRSA'
   pod 'MJRefresh'
+  #CoreData
+  pod 'MagicalRecord'
   
   # RxSwift系列
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'ReactiveCocoa', '9.0.0'
+  
+  # 绑定
+  pod 'Bond'
   
   pod 'GAAlertPresentation'
   
   pod 'CTMediator'
   # pod 'LayoutKit', '7.0.3'
   pod 'TransitionableTab'
-  pod 'ReactiveCocoa', '9.0.0'
   
   # 刷新
   pod 'ESPullToRefresh'

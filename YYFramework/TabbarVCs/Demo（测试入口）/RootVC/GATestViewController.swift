@@ -19,7 +19,6 @@ class GATestViewController: YYBaseTableViewController {
         initData()
         base_showNavigationView(title: "Demo", isShow: true)
         base_initTableView()
-        
     }
     
     override func base_initTableView() {

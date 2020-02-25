@@ -75,9 +75,6 @@ class GAViewController: UIViewController {
         if b_isAddOrientationNotification {
             _removeDeviceOrientationNotification()
         }
-        #if DEBUG
-        print("baseVC deinit")
-        #endif
     }
 }
 
