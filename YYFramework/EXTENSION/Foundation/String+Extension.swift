@@ -538,14 +538,15 @@ extension String {
     ///
     /// - Parameter lowercased: 是否小写（默认大写）
     func ga_transformToPinyinHead(lowercased: Bool = false) -> String {
-        let pinyin = self.sc_transformToPinyin(hasBlank: true).capitalized // 字符串转换为首字母大写
+        let pinyin = self.ga_transformToPinyin(hasBlank: true).capitalized // 字符串转换为首字母大写
         var headPinyinStr = ""
-        for ch in pinyin.sc_enumChar() {
+        for ch in pinyin.ga_enumChar() {
             if ch <= "Z" && ch >= "A" {
                 headPinyinStr.append(ch) // 获取所有大写字母
             }
         }
         return lowercased ? headPinyinStr.lowercased() : headPinyinStr
     }
+    
 }
 

@@ -36,3 +36,4 @@ extension GANormalizeNavigationController: UINavigationControllerDelegate {
         super.pushViewController(viewController, animated: true)
     }
 }
+

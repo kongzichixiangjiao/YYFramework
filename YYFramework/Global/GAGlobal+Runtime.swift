@@ -62,3 +62,44 @@ func global_getClassMethod(cls: AnyClass) -> [Selector] {
     free(list)
     return selecters
 }
+
+// MARK: Swizzle
+
+extension NSObject {
+    func global_swizzleinstanceSelector(origSel: Selector, replaceSel: Selector) {
+        guard let origMethod = class_getInstanceMethod(self.classForCoder, origSel) else {
+            return
+        }
+        guard let replaceMethod = class_getInstanceMethod(self.classForCoder, replaceSel) else {
+            return
+        }
+        
+        let didAddMethod = class_addMethod(self.classForCoder, origSel, method_getImplementation(replaceMethod), method_getTypeEncoding(replaceMethod))
+        if didAddMethod {
+            class_replaceMethod(self.classForCoder, replaceSel, method_getImplementation(replaceMethod), method_getTypeEncoding(replaceMethod))
+        } else {
+            method_exchangeImplementations(origMethod, replaceMethod)
+        }
+    }
+    
+    func global_swizzleClassSelector(origSel: Selector, replaceSel: Selector) {
+        global_swizzleinstanceSelector(origSel: origSel, replaceSel: replaceSel)
+    }
+    
+    func global_swizzleInstanceSelector(origSel: Selector, fromClass: AnyClass, replaceSel: Selector) {
+        guard let origMethod = class_getInstanceMethod(fromClass, origSel) else {
+            return
+        }
+        guard let replaceMethod = class_getInstanceMethod(fromClass, replaceSel) else {
+            return
+        }
+        let didAddMethod = class_addMethod(fromClass, replaceSel, method_getImplementation(replaceMethod), method_getTypeEncoding(replaceMethod))
+        if didAddMethod {
+            guard let origReplaceMeth = class_getInstanceMethod(fromClass, replaceSel) else { return }
+            method_exchangeImplementations(origMethod, origReplaceMeth)
+        } else {
+            method_exchangeImplementations(origMethod, replaceMethod)
+        }
+    }
+    
+}

@@ -20,7 +20,6 @@ class GARxSwiftViewController: GANavViewController {
         
         _textRxSwift()
     }
-    
     private func _textRxSwift() {
       
     }

@@ -10,12 +10,12 @@ import UIKit
 
 protocol YYMosaicViewDelegate: class {
     func mosaicViewTouchesBegan()
-//    func mosaicViewTouchesMoved()
-//    func mosaicViewTouchesEnded()
+    //    func mosaicViewTouchesMoved()
+    //    func mosaicViewTouchesEnded()
 }
 
 open class YYMosaicView: UIView {
-
+    
     weak var delegate: YYMosaicViewDelegate?
     
     var saveView: UIView = {
@@ -94,7 +94,52 @@ open class YYMosaicView: UIView {
     }
     
     public func setupViews(frame: CGRect) {
-        saveView.frame = CGRect(x: space + frame.origin.x, y: space, width: frame.size.width - space * 2, height: frame.size.height - space * 2)
+        let w: CGFloat = frame.size.width - space * 2
+        let h: CGFloat = frame.size.height - space * 2
+        let x: CGFloat = space + frame.origin.x
+        let y: CGFloat = space
+        saveView.frame = CGRect(x: x, y: y, width: w, height: h)
+        imageView.frame = saveView.bounds
+        imageLayer.frame = saveView.bounds
+        shapeLayer.frame = saveView.bounds
+    }
+    
+    public func setupViews(size: CGSize) {
+        mSize = size
+        layoutSubviews()
+        
+    }
+    
+    var mSize: CGSize = CGSize.zero
+    var mX: CGFloat = 0.0
+    var mY: CGFloat = 0.0
+    
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let sW = max(self.size.width, self.size.height)
+        let sH = min(self.size.width, self.size.height)
+        
+        let w: CGFloat = mSize.width - space * 2
+        let h: CGFloat = mSize.height - space * 2
+        
+        var x: CGFloat = 0.0
+        if mSize.width > sW {
+            x = space - (mSize.width - sW) / 2
+        } else {
+            x = space + (sW - mSize.width) / 2
+        }
+        var y: CGFloat = 0.0
+        if mSize.height > sH {
+            y = space - (mSize.height - sH) / 2
+        } else {
+            y = space + (sH - mSize.height) / 2
+        }
+        mX = x
+        mY = y
+        
+        saveView.frame = CGRect(x: x, y: y, width: w, height: h)
+
         imageView.frame = saveView.bounds
         imageLayer.frame = saveView.bounds
         shapeLayer.frame = saveView.bounds
@@ -107,7 +152,7 @@ open class YYMosaicView: UIView {
         if !self.imageView.frame.contains(point!) {
             return
         }
-        self.path.move(to: CGPoint(x: point!.x - space, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2)))
+        self.path.move(to: CGPoint(x: point!.x - space - mX, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2) - mY))
         self.shapeLayer.path = self.path.mutableCopy()
         paths["begin"] = [point] as? [CGPoint]
         
@@ -121,7 +166,7 @@ open class YYMosaicView: UIView {
         if !self.imageView.frame.contains(point!) {
             return
         }
-        self.path.addLine(to: CGPoint(x: point!.x - space, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2)))
+        self.path.addLine(to: CGPoint(x: point!.x - space - mX, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2) - mY))
         self.shapeLayer.path = self.path.mutableCopy()
         movePoint.append(point!)
         paths["move"] = movePoint
@@ -131,7 +176,7 @@ open class YYMosaicView: UIView {
         super.touchesEnded(touches, with: event)
         let touch = touches.first
         let point = touch?.location(in: self)
-        paths["end"] = [CGPoint(x: point!.x - space, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2))]
+        paths["end"] = [CGPoint(x: point!.x - space - mX, y: point!.y - space - (self.saveView.height / 2 - self.imageView.height / 2) - mY)]
         appendPaths.append(paths)
         
         movePoint.removeAll()
@@ -181,7 +226,7 @@ open class YYMosaicView: UIView {
     private func _screenshot(size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContext(size)
         //        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
-        self.layer.render(in: UIGraphicsGetCurrentContext()!)
+        saveView.layer.render(in: UIGraphicsGetCurrentContext()!)
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return img

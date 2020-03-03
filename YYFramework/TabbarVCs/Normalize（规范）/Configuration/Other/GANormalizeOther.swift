@@ -17,7 +17,9 @@ let kScreenWidth = GANormalizeDevice.width
 let kScreenHeight = GANormalizeDevice.height
 let kStatusBarHeight = GANormalizeDevice.stateHeight
 let kTabBarHeight: CGFloat = GANormalizeDevice.tabbarHeight
+let kLandscapeTabBarHeight: CGFloat = 30 // 横屏tabbar高度
 let kNavigationHeight: CGFloat = 44.0
+let kLandscapeNavigationHeight: CGFloat = 30.0 // 横屏nav高度
 let kTopHeight: CGFloat = kTabBarHeight + kNavigationHeight
 // MARK: Device
 let kDeviceVersion = UIDevice.current.systemVersion

@@ -8,10 +8,6 @@
 
 import UIKit
 
-public let kLandscapeNavigationHeight: CGFloat = 30
-
-public let kLandscapeTabBarHeight: CGFloat = 30
-
 class YYBaseViewController: UIViewController {
     
     // 是否展示导航栏

@@ -6,7 +6,7 @@
 //  Copyright © 2020 houjianan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class GAShowViewController: UIViewController {
     
@@ -19,13 +19,11 @@ class GAShowViewController: UIViewController {
 
 class GAShowWindow: UIWindow {
     
-    static let share: GAShowWindow = GAShowWindow(frame: UIScreen.main.bounds)
-    
     var targetView: UIView!
     var smallPreViewFrame: CGRect!
     
-    static func ga_initWindow() -> GAShowWindow {
-        let window = GAShowWindow(frame: UIScreen.main.bounds)
+    static func ga_initWindow(frame: CGRect = CGRect.zero) -> GAShowWindow {
+        let window = GAShowWindow(frame: frame == CGRect.zero ? UIScreen.main.bounds : frame)
         let vc = GAShowViewController()
         
         window.rootViewController = vc
@@ -36,8 +34,9 @@ class GAShowWindow: UIWindow {
         window.tag = 2020022501
         return window
     }
-    static func ga_init(message: String = "", type: GAToastType, delay: TimeInterval, touchEnable: Bool) {
-        let window = ga_initWindow()
+    
+    static func ga_init(windowFrame: CGRect, message: String = "", type: GAToastType, duration: TimeInterval, touchEnable: Bool) {
+        let window = ga_initWindow(frame: windowFrame)
         
         if touchEnable {
             let tap = UITapGestureRecognizer(target: window, action: #selector(show_removeFromSuperview))
@@ -55,22 +54,22 @@ class GAShowWindow: UIWindow {
         
         window.addSubview(toastV)
         
-        window.perform(#selector(show_removeFromSuperview), with: nil, afterDelay: delay)
+        window.perform(#selector(show_removeFromSuperview), with: nil, afterDelay: duration)
+    }
+    
+    // MARK: 文案提醒
+    static func ga_show(windowFrame: CGRect = CGRect.zero, message: String, duration: TimeInterval = 2.5, touchEnable:Bool = false) {
+        ga_init(windowFrame: windowFrame, message: message, type: .message, duration: duration, touchEnable: touchEnable)
     }
     
     // MARK:
-    static func ga_show(message: String, delay: TimeInterval = 2.5, touchEnable:Bool = false) {
-        ga_init(message: message, type: .message, delay: delay, touchEnable: touchEnable)
+    static func ga_show(windowFrame: CGRect = CGRect.zero, type: GAToastType, duration: TimeInterval = 2.5, touchEnable:Bool = false) {
+        ga_init(windowFrame: windowFrame, type: type, duration: duration, touchEnable: touchEnable)
     }
     
-    // MARK:
-    static func ga_show(type: GAToastType, delay: TimeInterval = 2.5, touchEnable:Bool = false) {
-        ga_init(type: type, delay: delay, touchEnable: touchEnable)
-    }
-    
-    // MARK:
-    static func ga_show(toastV: UIView, delay: TimeInterval = 2.5, touchEnable:Bool = false) {
-        let window = ga_initWindow()
+    // MARK: 自定义View提醒
+    static func ga_show(windowFrame: CGRect = CGRect.zero, toastV: UIView, duration: TimeInterval = 2.5, touchEnable:Bool = false) {
+        let window = ga_initWindow(frame: windowFrame)
         
         if touchEnable {
             let tap = UITapGestureRecognizer(target: window, action: #selector(show_removeFromSuperview))
@@ -83,11 +82,11 @@ class GAShowWindow: UIWindow {
         
         window.addSubview(toastV)
         
-        window.perform(#selector(show_removeFromSuperview), with: nil, afterDelay: delay)
+        window.perform(#selector(show_removeFromSuperview), with: nil, afterDelay: duration)
     }
     
-    static func ga_showLoading() {
-        ga_show(type: .loading, delay: 100000)
+    static func ga_showLoading(windowFrame: CGRect = CGRect.zero) {
+        ga_show(windowFrame: windowFrame, type: .loading, duration: 100000)
     }
     
     static func ga_hideLoading() {

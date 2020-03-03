@@ -24,7 +24,7 @@ extension AppDelegate {
     
     func statistics() {
         let _ = UIViewController.ga_share
-        let _ = UIButton.ga_share
+        let _ = UIControl.ga_share
     }
 
 }

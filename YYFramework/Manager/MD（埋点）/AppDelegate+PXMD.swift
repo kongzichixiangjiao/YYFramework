@@ -15,6 +15,7 @@ extension AppDelegate {
         PXMD.share.md_launched()
         
         let _ = UIViewController.ga_share
+        let _ = UIView.ga_share
     }
     
     // 进入前台

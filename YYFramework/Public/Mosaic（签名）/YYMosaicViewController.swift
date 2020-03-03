@@ -56,11 +56,12 @@ class YYMosaicViewController: YYBaseViewController {
     }
     
     func mosaic() {
-        let size = CGSize(width: self.view.height, height: self.view.width - 94 - 20)
+//        let size = CGSize(width: self.view.height, height: self.view.width - 94 - 20)
+        let size = CGSize(width: 750, height: 350)
         mosaicView.surfaceImage = UIColor.white.ga_image(viewSize: size)
         mosaicView.image = UIColor.black.ga_image(viewSize: size)
 
-        mosaicView.setupViews(frame: CGRect(origin: CGPoint(x: 0, y: 54), size: size))
+        mosaicView.setupViews(size: size)
     }
     
     @IBAction func save(_ sender: UIButton) {
