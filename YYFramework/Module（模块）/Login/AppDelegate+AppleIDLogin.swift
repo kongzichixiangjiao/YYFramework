@@ -6,6 +6,10 @@
 //  Copyright © 2020 houjianan. All rights reserved.
 //
 
+//func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//    apple_login()
+//}
+
 import Foundation
 import AuthenticationServices
 

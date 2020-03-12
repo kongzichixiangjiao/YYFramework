@@ -8,8 +8,10 @@ A struct for accessing generic password keychain items.
 import Foundation
 
 
-
 struct KeychainItem {
+    static let mKeychainService = "jianan.YYFramework"
+    static let mKeychainAccount = "userIdentifier"
+
     enum KeychainError: Error {
         case noPassword
         case unexpectedPasswordData
@@ -132,7 +134,7 @@ struct KeychainItem {
      */
     static var currentUserIdentifier: String {
         do {
-            let storedIdentifier = try KeychainItem(service: "jianan.YYFramework", account: "userIdentifier").readItem()
+            let storedIdentifier = try KeychainItem(service: KeychainItem.mKeychainService, account: KeychainItem.mKeychainAccount).readItem()
             return storedIdentifier
         } catch {
             return ""
@@ -141,7 +143,7 @@ struct KeychainItem {
     
     static func deleteUserIdentifierFromKeychain() {
         do {
-            try KeychainItem(service: "jianan.YYFramework", account: "userIdentifier").deleteItem()
+            try KeychainItem(service: KeychainItem.mKeychainService, account: KeychainItem.mKeychainAccount).deleteItem()
         } catch {
             print("Unable to delete userIdentifier from keychain")
         }

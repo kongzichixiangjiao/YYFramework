@@ -11,9 +11,11 @@ import Foundation
 extension UIViewController {
     
     /** 获取当前控制器 */
-    static func ga_currentVC() -> UIViewController {
-        let vc = UIApplication.shared.keyWindow?.rootViewController
-        return UIViewController.findBest(vc: vc!)
+    static func ga_currentVC() -> UIViewController? {
+        guard let vc = UIApplication.shared.keyWindow?.rootViewController else {
+            return nil
+        }
+        return UIViewController.findBest(vc: vc)
     }
     
     private static func findBest(vc: UIViewController) -> UIViewController {

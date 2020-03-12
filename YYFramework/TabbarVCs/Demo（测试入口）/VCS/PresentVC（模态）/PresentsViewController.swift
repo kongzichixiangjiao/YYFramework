@@ -10,23 +10,25 @@ import UIKit
 import GAAlertPresentation
 
 class PresentsViewController: GANavViewController {
-
+    
     @IBAction func defaultPresent(_ sender: Any) {
         let vc = PresentTargetViewController()
         self.present(vc, animated: true, completion: nil)
     }
-
+    
     @IBAction func custome(_ sender: Any) {
         GATimer(sourceTimerCount: 3, isRepeat: false).addTimer {
             [weak self] c, b in
             if let weakSelf = self {
-                let d = YYPresentationDelegate(animationType: .alert)
-                let vc = PresentTargetCustomeViewController(nibName: "PresentTargetCustomeViewController", bundle: nil, delegate: d)
-                guard let p = weakSelf._getPresentVC(vc: weakSelf) else {
-                    return
+                DispatchQueue.main.async {
+                    let d = YYPresentationDelegate(animationType: .alert)
+                    let vc = PresentTargetCustomeViewController(nibName: "PresentTargetCustomeViewController", bundle: nil, delegate: d)
+                    guard let p = weakSelf._getPresentVC(vc: weakSelf) else {
+                        return
+                    }
+                    //                vc.tLabel.text = c.toString()
+                    p.present(vc, animated: true, completion: nil)
                 }
-//                vc.tLabel.text = c.toString()
-                p.present(vc, animated: true, completion: nil)
             }
         }
         
@@ -41,7 +43,7 @@ class PresentsViewController: GANavViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         b_showNavigationView(title: "PresentVC")
     }
     

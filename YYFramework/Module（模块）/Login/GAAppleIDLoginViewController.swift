@@ -6,18 +6,34 @@
 //  Copyright © 2020 houjianan. All rights reserved.
 //
 
+//override func viewDidLoad() {
+//       super.viewDidLoad()
+//       
+//       if #available(iOS 13.0, *) {
+//           let v = initAuthorizationAppleIDButton()
+//           v.frame = CGRect(x: 0, y: 0, width: kScreenWidth - 20.0 * 2, height: 50)
+//           appleIDButton.addSubview(v)
+//       } else {
+//           
+//       }
+//}
+
+//override func loginSuccess(_ userIdentifier: String, _ personName: PersonNameComponents?, _ email: String) {
+//    print("请求后台验证")
+//}
+
 import UIKit
 import AuthenticationServices
 
 class GAAppleIDLoginViewController: UIViewController {
     
+    // 子类重写此方法进行回调
     func loginSuccess(_ userIdentifier: String, _ personName: PersonNameComponents?, _ email: String) {
-        
+
     }
 
     func showLogin() {
         if #available(iOS 13.0, *) {
-            
             let appleIDProvider = ASAuthorizationAppleIDProvider()
             let request = appleIDProvider.createRequest()
             request.requestedScopes = [.fullName, .email]
@@ -31,6 +47,7 @@ class GAAppleIDLoginViewController: UIViewController {
         }
     }
     
+    // 子类调用此方法初始化UI
     @available(iOS 13.0, *)
     func initAuthorizationAppleIDButton() -> ASAuthorizationAppleIDButton {
         let authorizationButton = ASAuthorizationAppleIDButton()
@@ -38,36 +55,32 @@ class GAAppleIDLoginViewController: UIViewController {
         return authorizationButton
     }
     
-    @objc
-    func handleAuthorizationAppleIDButtonPress() {
+    @objc func handleAuthorizationAppleIDButtonPress() {
+        GAShowWindow.ga_show(type: .loading, duration: 10)
         showLogin()
     }
+    
 }
-
 
 extension GAAppleIDLoginViewController: ASAuthorizationControllerDelegate {
     
     @available(iOS 13.0, *)
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email ?? ""
             
-            loginSuccess(userIdentifier, fullName, email)
-            // Create an account in your system.
-            // For the purpose of this demo app, store the userIdentifier in the keychain.
             do {
-                try KeychainItem(service: "jianan.YYFramework", account: "userIdentifier").saveItem(userIdentifier)
+                try KeychainItem(service: KeychainItem.mKeychainService, account: KeychainItem.mKeychainAccount).saveItem(userIdentifier)
+                loginSuccess(userIdentifier, fullName, email)
             } catch {
                 print("Unable to save userIdentifier to keychain.")
             }
-            
         } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
-            // Sign in using an existing iCloud Keychain credential.
             let _ = passwordCredential.user
             let _ = passwordCredential.password
+        } else {
             
         }
     }

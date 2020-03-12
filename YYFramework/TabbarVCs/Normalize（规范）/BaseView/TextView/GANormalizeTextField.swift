@@ -97,7 +97,8 @@ class GANormalizeTextField: UITextField {
     
     private func _initPlaceholder()  {
         if let color = placeholderTextColor {
-            self.setValue(color, forKeyPath: "_placeholderLabel.textColor")
+//            self.setValue(color, forKeyPath: "_placeholderLabel.textColor")
+            self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : color])
         }
         let font = UIFont.systemFont(ofSize: placeholderFontSize)
         self.setValue(font, forKeyPath: "_placeholderLabel.font")

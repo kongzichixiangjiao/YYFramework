@@ -12,7 +12,8 @@ extension UITextField {
     
     func ga_changeselfiledPlaceHolderColor(colors:UIColor) -> Void {
         // 占位符字体颜色
-        self.setValue(colors, forKeyPath: "_placeholderLabel.textColor")
+//        self.setValue(colors, forKeyPath: "_placeholderLabel.textColor")
+        self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : colors])
     }
     
     func ga_changeselfiledPlaceHolderFont(fonts:UIFont) -> Void {

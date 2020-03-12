@@ -12,7 +12,7 @@ import Foundation
 /*
  class_copyPropertyList: 通过类名获得类的属性变量。
  class_copyIvarList: 通过类名获得类的实例变量。
-
+ 
  class_copyPropertyList获得的是由@property修饰过的变量，
  class_copyIvarList获得的是class_copyPropertyList修饰的以及在m文件的中@implementation内定义的变量
  */
@@ -101,5 +101,23 @@ extension NSObject {
             method_exchangeImplementations(origMethod, replaceMethod)
         }
     }
+    
+    func global_swizzleClassSelector(origSel: Selector, origClass: AnyClass, replaceSel: Selector, replaceClass: AnyClass) {
+        guard let swizzleMethod = class_getInstanceMethod(replaceClass, replaceSel) else {
+            return
+        }
+        
+        let didAddMethod = class_addMethod(origClass, replaceSel, method_getImplementation(swizzleMethod), method_getTypeEncoding(swizzleMethod))
+        if didAddMethod{
+            guard let didSelectOriginalMethod = class_getInstanceMethod(origClass, replaceSel) else {
+                return
+            }
+            guard let didSelectSwizzledMethod = class_getInstanceMethod(origClass, origSel) else {
+                return
+            }
+            method_exchangeImplementations(didSelectOriginalMethod, didSelectSwizzledMethod)
+        }
+    }
+    
     
 }

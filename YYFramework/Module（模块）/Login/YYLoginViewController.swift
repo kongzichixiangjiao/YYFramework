@@ -31,6 +31,17 @@ class YYLoginViewController: GAAppleIDLoginViewController {
         } else {
             
         }
+        
+        if #available(iOS 13.0, *) {
+            if (UITraitCollection.current.userInterfaceStyle == .dark) {
+                
+            }
+            else {
+                
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func didReceiveMemoryWarning() {
