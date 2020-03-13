@@ -301,6 +301,8 @@
 		DC59A6B42390FA5300050506 /* GAFloatWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A6B22390FA5300050506 /* GAFloatWindowViewController.swift */; };
 		DC59A6B72390FA5300050506 /* GAFloatWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC59A6B32390FA5300050506 /* GAFloatWindowViewController.xib */; };
 		DC59A6BB2391128200050506 /* GANextWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A6BA2391128200050506 /* GANextWindow.swift */; };
+		DC5CA13F241A395F00A0A3A3 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CA13E241A395F00A0A3A3 /* NotificationCenter+Extension.swift */; };
+		DC5CA147241B3CB900A0A3A3 /* GASpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */; };
 		DC5E15DA2249FECE008736A5 /* YYImageSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E15D82249FECE008736A5 /* YYImageSignatureViewController.swift */; };
 		DC5E15DC2249FECE008736A5 /* YYImageSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5E15D92249FECE008736A5 /* YYImageSignatureViewController.xib */; };
 		DC5E15DF2249FF30008736A5 /* tianmolei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5E15DE2249FF30008736A5 /* tianmolei.jpg */; };
@@ -1179,6 +1181,8 @@
 		DC59A6B22390FA5300050506 /* GAFloatWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAFloatWindowViewController.swift; sourceTree = "<group>"; };
 		DC59A6B32390FA5300050506 /* GAFloatWindowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAFloatWindowViewController.xib; sourceTree = "<group>"; };
 		DC59A6BA2391128200050506 /* GANextWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANextWindow.swift; sourceTree = "<group>"; };
+		DC5CA13E241A395F00A0A3A3 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
+		DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASpeech.swift; sourceTree = "<group>"; };
 		DC5E15D82249FECE008736A5 /* YYImageSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYImageSignatureViewController.swift; sourceTree = "<group>"; };
 		DC5E15D92249FECE008736A5 /* YYImageSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYImageSignatureViewController.xib; sourceTree = "<group>"; };
 		DC5E15DE2249FF30008736A5 /* tianmolei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tianmolei.jpg; sourceTree = "<group>"; };
@@ -2220,6 +2224,7 @@
 				DC87C58F211FD58700E9FA9F /* Path+Extension.swift */,
 				DC87C589211FD58700E9FA9F /* String+Extension.swift */,
 				DC87C57E211FD58700E9FA9F /* UIColor+Extension.swift */,
+				DC5CA13E241A395F00A0A3A3 /* NotificationCenter+Extension.swift */,
 				DC87C57D211FD58700E9FA9F /* UIDevice+Extension.swift */,
 				DC87C58B211FD58700E9FA9F /* UIStoryboard+Extension.swift */,
 				DC87C588211FD58700E9FA9F /* URL+Extension.swift */,
@@ -3075,6 +3080,14 @@
 				DC59A6BA2391128200050506 /* GANextWindow.swift */,
 			);
 			path = "GANextWindow（操作步骤window）";
+			sourceTree = "<group>";
+		};
+		DC5CA145241B3CA100A0A3A3 /* Speech（语音识别） */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */,
+			);
+			path = "Speech（语音识别）";
 			sourceTree = "<group>";
 		};
 		DC5F0BA423A9D9BF00AC4768 /* Video（录像） */ = {
@@ -4550,6 +4563,7 @@
 		DCEBC5B82121752B00A268D6 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				DC5CA145241B3CA100A0A3A3 /* Speech（语音识别） */,
 				DCAE402023C5ABE40030F1B7 /* KeychainItem.swift */,
 				DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */,
 				DC1559CA233B53B600D0F30F /* WeChat（登录、分享） */,
@@ -5343,6 +5357,7 @@
 				DC87C59C211FD58700E9FA9F /* UIImage+Extension.swift in Sources */,
 				DC6D96B5237B982200AC7061 /* GAInvestmentInforView.swift in Sources */,
 				DC7120C02212D34800064A9B /* GANormalizeTestCollectionViewController.swift in Sources */,
+				DC5CA13F241A395F00A0A3A3 /* NotificationCenter+Extension.swift in Sources */,
 				DC08FDBB221CF34900F08535 /* GANormalizeDatePickerView.swift in Sources */,
 				DC0FC8F0216DE45800F3AB12 /* YYInterlockTableView.swift in Sources */,
 				DC59A6B42390FA5300050506 /* GAFloatWindowViewController.swift in Sources */,
@@ -5569,6 +5584,7 @@
 				DC16CE35236D49D10046D39A /* GACalenderCalenderHeaderView.swift in Sources */,
 				DC7B75CD237994A700E81D89 /* PXEditAlertViewController.swift in Sources */,
 				DCB2E74522019AFA009594DB /* GATemplateImageView.swift in Sources */,
+				DC5CA147241B3CB900A0A3A3 /* GASpeech.swift in Sources */,
 				DCD44D3223921A3900E5E651 /* XCHomeViewController.swift in Sources */,
 				DCCFD48423B5B5690019DED8 /* LFLiveKitViewController.swift in Sources */,
 				DC08FDB7221CF2F700F08535 /* GANormalizePickerView.swift in Sources */,

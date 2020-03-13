@@ -550,3 +550,8 @@ extension String {
     
 }
 
+extension String {
+    var ga_notificationName: NSNotification.Name {
+        return NSNotification.Name("GA" + self)
+    }
+}
