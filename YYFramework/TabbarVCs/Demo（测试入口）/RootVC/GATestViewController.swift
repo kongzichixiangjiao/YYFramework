@@ -19,6 +19,7 @@ class GATestViewController: YYBaseTableViewController {
         initData()
         base_showNavigationView(title: "Demo", isShow: true)
         base_initTableView()
+        
     }
     
     override func base_initTableView() {
@@ -47,7 +48,8 @@ class GATestViewController: YYBaseTableViewController {
                       "32、七牛云-直播流",
                       "33、七牛云-短视频",
                       "34、录制完成-选择-视频播放",
-                      "35、发送邮件"
+                      "35、发送邮件",
+                      "36、一键登录（友盟）"
                       
         ]
     }
@@ -106,6 +108,8 @@ extension GATestViewController {
             dataSource[33] as! String : PLShortVideoKitViewController(nibName: "PLShortVideoKitViewController", bundle: nil),
             dataSource[34] as! String : PLSelectedVideoListViewController(),
             dataSource[35] as! String : GASendEmailViewController(nibName: "GASendEmailViewController", bundle: nil),
+            dataSource[35] as! String : GAUMLoginVeiwController()
+            
             
         ]
         

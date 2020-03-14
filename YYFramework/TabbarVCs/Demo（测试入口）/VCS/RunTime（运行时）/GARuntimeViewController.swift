@@ -70,6 +70,7 @@ extension GARuntimeViewController: GANormalizeTextViewDelegate {
 }
 
 @objcMembers class GARuntimeModel: NSObject {
+    
     var a: String = ""
     var b: String?
     var c: Int! // class_copyPropertyList 获取不到

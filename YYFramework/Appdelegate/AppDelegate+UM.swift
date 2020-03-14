@@ -11,14 +11,15 @@ import Foundation
 extension AppDelegate {
     
     func ga_configUMengAnalytics() {
-//        DispatchQueue.global().async {
+        DispatchQueue.global().async {
 //            UMCommonLogManager.setUp()
-//            // um账号 kongzichixiangjiao
-//            UMConfigure.initWithAppkey("5d43cc4a0cafb2603500084d", channel: "App Store")
-//            UMConfigure.setLogEnabled(true)
-//            
+            // um账号 kongzichixiangjiao
+            UMConfigure.initWithAppkey("5d43cc4a0cafb2603500084d", channel: "App Store")
+            UMConfigure.setLogEnabled(true)
+            
 //            MobClick.setAutoPageEnabled(false)
-//        }
+        }
+
         self.statistics()
     }
     

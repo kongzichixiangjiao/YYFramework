@@ -17,6 +17,69 @@ class XCHomeViewController: UIViewController {
         
         circleView.start()
         
+        
+        
+//           float timeout = self.tf_timeout.text.floatValue;
+//           [ProgressHUD show:@"请稍等..." Interaction:YES];
+//           __weak typeof(self) weakSelf = self;
+//
+//           //1. 调用check接口检查及准备接口调用环境
+//           [UMCommonHandler checkEnvAvailableWithComplete:^(NSDictionary * _Nullable resultDic) {
+//               if ([PNSCodeSuccess isEqualToString:[resultDic objectForKey:@"resultCode"]] == NO) {
+//                   [ProgressHUD showError:@"check 接口检查失败，环境不满足"];
+//                   [weakSelf showResult:resultDic];
+//                   return;
+//               }
+//
+//               //2. 调用取号接口，加速授权页的弹起
+//               [UMCommonHandler accelerateLoginPageWithTimeout:timeout complete:^(NSDictionary * _Nonnull resultDic) {
+//                   if ([PNSCodeSuccess isEqualToString:[resultDic objectForKey:@"resultCode"]] == NO) {
+//                       [ProgressHUD showError:@"取号，加速授权页弹起失败"];
+//                       [weakSelf showResult:resultDic];
+//                       return ;
+//                   }
+//
+//                   //3. 调用获取登录Token接口，可以立马弹起授权页
+//                   [ProgressHUD dismiss];
+//                   UMCustomModel *model = [weakSelf buildCustomModel:NO];
+//                   model.supportedInterfaceOrientations = UIInterfaceOrientationMaskAllButUpsideDown;
+//                   [UMCommonHandler getLoginTokenWithTimeout:timeout controller:weakSelf model:model complete:^(NSDictionary * _Nonnull resultDic) {
+//
+//                       NSString *code = [resultDic objectForKey:@"resultCode"];
+//                       if ([PNSCodeLoginControllerPresentSuccess isEqualToString:code]) {
+//                           [ProgressHUD showSuccess:@"弹起授权页成功"];
+//                       } else if ([PNSCodeLoginControllerClickCancel isEqualToString:code]) {
+//                           [ProgressHUD showSuccess:@"点击了授权页的返回"];
+//                       } else if ([PNSCodeLoginControllerClickChangeBtn isEqualToString:code]) {
+//                           [ProgressHUD showSuccess:@"点击切换其他登录方式按钮"];
+//                       } else if ([PNSCodeLoginControllerClickLoginBtn isEqualToString:code]) {
+//                           if ([[resultDic objectForKey:@"isChecked"] boolValue] == YES) {
+//                               [ProgressHUD showSuccess:@"点击了登录按钮，check box选中，SDK内部接着会去获取登陆Token"];
+//                           } else {
+//                               [ProgressHUD showSuccess:@"点击了登录按钮，check box选中，SDK内部不会去获取登陆Token"];
+//                           }
+//                       } else if ([PNSCodeLoginControllerClickCheckBoxBtn isEqualToString:code]) {
+//                           [ProgressHUD showSuccess:@"点击check box"];
+//                       } else if ([PNSCodeLoginControllerClickProtocol isEqualToString:code]) {
+//                           [ProgressHUD showSuccess:@"点击了协议富文本"];
+//                       } else if ([PNSCodeSuccess isEqualToString:code]) {
+//                           //点击登录按钮获取登录Token成功回调
+//                           NSString *token = [resultDic objectForKey:@"token"];
+//                           dispatch_async(dispatch_get_main_queue(), ^{
+//                               [UMCommonHandler cancelLoginVCAnimated:YES complete:nil];
+//                           });
+//                           [weakSelf showResult:resultDic];
+//
+//                           //拿Token去服务器换手机号
+//
+//                       } else {
+//                      //     [ProgressHUD showError:@"获取登录Token失败"];
+//                       }
+//                       [weakSelf showResult:resultDic];
+//                   }];
+//               }];
+//           }];
+        
     }
     lazy var circleView: GACircleView = {
         let v = GACircleView(frame: CGRect(x: 0, y: 100, width: kScreenWidth, height: 130))

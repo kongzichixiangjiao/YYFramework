@@ -303,6 +303,11 @@
 		DC59A6BB2391128200050506 /* GANextWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A6BA2391128200050506 /* GANextWindow.swift */; };
 		DC5CA13F241A395F00A0A3A3 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CA13E241A395F00A0A3A3 /* NotificationCenter+Extension.swift */; };
 		DC5CA147241B3CB900A0A3A3 /* GASpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */; };
+		DC5CA14A241B896200A0A3A3 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CA149241B896200A0A3A3 /* UMCommon.framework */; };
+		DC5CA14E241B896C00A0A3A3 /* ATAuthSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC5CA14B241B896B00A0A3A3 /* ATAuthSDK.bundle */; };
+		DC5CA14F241B896C00A0A3A3 /* TYRZResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC5CA14C241B896B00A0A3A3 /* TYRZResource.bundle */; };
+		DC5CA150241B896C00A0A3A3 /* UMVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CA14D241B896C00A0A3A3 /* UMVerify.framework */; };
+		DC5CA153241B926600A0A3A3 /* GAUMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CA152241B926600A0A3A3 /* GAUMLoginViewController.swift */; };
 		DC5E15DA2249FECE008736A5 /* YYImageSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E15D82249FECE008736A5 /* YYImageSignatureViewController.swift */; };
 		DC5E15DC2249FECE008736A5 /* YYImageSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5E15D92249FECE008736A5 /* YYImageSignatureViewController.xib */; };
 		DC5E15DF2249FF30008736A5 /* tianmolei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5E15DE2249FF30008736A5 /* tianmolei.jpg */; };
@@ -1183,6 +1188,11 @@
 		DC59A6BA2391128200050506 /* GANextWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANextWindow.swift; sourceTree = "<group>"; };
 		DC5CA13E241A395F00A0A3A3 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASpeech.swift; sourceTree = "<group>"; };
+		DC5CA149241B896200A0A3A3 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		DC5CA14B241B896B00A0A3A3 /* ATAuthSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ATAuthSDK.bundle; sourceTree = "<group>"; };
+		DC5CA14C241B896B00A0A3A3 /* TYRZResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TYRZResource.bundle; sourceTree = "<group>"; };
+		DC5CA14D241B896C00A0A3A3 /* UMVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMVerify.framework; sourceTree = "<group>"; };
+		DC5CA152241B926600A0A3A3 /* GAUMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAUMLoginViewController.swift; sourceTree = "<group>"; };
 		DC5E15D82249FECE008736A5 /* YYImageSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYImageSignatureViewController.swift; sourceTree = "<group>"; };
 		DC5E15D92249FECE008736A5 /* YYImageSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYImageSignatureViewController.xib; sourceTree = "<group>"; };
 		DC5E15DE2249FF30008736A5 /* tianmolei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tianmolei.jpg; sourceTree = "<group>"; };
@@ -1765,11 +1775,13 @@
 				DCED54212403751A007B50E6 /* CoreData.framework in Frameworks */,
 				DCAE403223C5B6910030F1B7 /* AuthenticationServices.framework in Frameworks */,
 				DCCFD49123B5B61A0019DED8 /* libz.tbd in Frameworks */,
+				DC5CA14A241B896200A0A3A3 /* UMCommon.framework in Frameworks */,
 				DCCFD48F23B5B6100019DED8 /* AudioToolbox.framework in Frameworks */,
 				DCCFD48D23B5B6090019DED8 /* VideoToolbox.framework in Frameworks */,
 				DCCFD48B23B5B6000019DED8 /* AVFoundation.framework in Frameworks */,
 				DC1559C0233B1DCD00D0F30F /* libWXWorkApi.a in Frameworks */,
 				DFD33E312FDDB6CD548C01C5 /* Pods_YYFramework.framework in Frameworks */,
+				DC5CA150241B896C00A0A3A3 /* UMVerify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2257,6 +2269,7 @@
 		DC1559BB233B1D9600D0F30F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DC5CA148241B894B00A0A3A3 /* 友盟一键登录 */,
 				DCB9BBAC23D449CB0088D4C7 /* JSPatch */,
 				DC1559BC233B1DA800D0F30F /* wxLib */,
 			);
@@ -2447,6 +2460,7 @@
 		DC2667AD21D4B6F50010AC31 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
+				DC5CA151241B924E00A0A3A3 /* 一键登录 */,
 				DCC0AD3E24052A1F008F20C0 /* Toast（吐司） */,
 				DCED5404240367B3007B50E6 /* CoreData（数据存储） */,
 				DCBBDF7724024D47002C6E22 /* ImageFit（图片适配） */,
@@ -3088,6 +3102,25 @@
 				DC5CA146241B3CB900A0A3A3 /* GASpeech.swift */,
 			);
 			path = "Speech（语音识别）";
+			sourceTree = "<group>";
+		};
+		DC5CA148241B894B00A0A3A3 /* 友盟一键登录 */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CA14B241B896B00A0A3A3 /* ATAuthSDK.bundle */,
+				DC5CA14C241B896B00A0A3A3 /* TYRZResource.bundle */,
+				DC5CA14D241B896C00A0A3A3 /* UMVerify.framework */,
+				DC5CA149241B896200A0A3A3 /* UMCommon.framework */,
+			);
+			path = "友盟一键登录";
+			sourceTree = "<group>";
+		};
+		DC5CA151241B924E00A0A3A3 /* 一键登录 */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CA152241B926600A0A3A3 /* GAUMLoginViewController.swift */,
+			);
+			path = "一键登录";
 			sourceTree = "<group>";
 		};
 		DC5F0BA423A9D9BF00AC4768 /* Video（录像） */ = {
@@ -5154,6 +5187,7 @@
 				DCD44D6323921B6A00E5E651 /* 2.jpg in Resources */,
 				DC11462E237C0C71004A17DD /* searchView_icon_glass@3x.png in Resources */,
 				DCFAD57621524FB100575B93 /* launchImage750-1334.png in Resources */,
+				DC5CA14E241B896C00A0A3A3 /* ATAuthSDK.bundle in Resources */,
 				DC9AE3D821AE2916002FBFA4 /* ZHCalendarScrollViewController.xib in Resources */,
 				DC11463E237C309E004A17DD /* GASearchView.xib in Resources */,
 				DC6BA86721EEFC9A00D1ED3C /* test.html in Resources */,
@@ -5220,6 +5254,7 @@
 				DC774BB923BF0A0C0079B67F /* PLSPlayerViewController.xib in Resources */,
 				DCD44D4223921B0100E5E651 /* GABannerBaseCell.xib in Resources */,
 				DC3EFBE0238040A2005BEBDA /* GACalenderContentCell.xib in Resources */,
+				DC5CA14F241B896C00A0A3A3 /* TYRZResource.bundle in Resources */,
 				DCF7718123BB156900DD14BE /* GAScreeningViewController.xib in Resources */,
 				DCAD23192223D2A3000325C5 /* player_bottom_shadel@2x.png in Resources */,
 				DC08FDD3221D4B4300F08535 /* ZHDatePickerViewController.xib in Resources */,
@@ -5311,6 +5346,7 @@
 				DC87C5A7211FD58700E9FA9F /* Path+Extension.swift in Sources */,
 				DC2784BA2317C1BE00C73FD4 /* GABD_FaceRootViewController.swift in Sources */,
 				DC7120FD2215750400064A9B /* GANoralizeTestTextViewViewController.swift in Sources */,
+				DC5CA153241B926600A0A3A3 /* GAUMLoginViewController.swift in Sources */,
 				DC87C594211FD58700E9FA9F /* UIImageView+Extension.swift in Sources */,
 				DCD869B12403A07E00AF3F4B /* GATestModel+CoreDataClass.swift in Sources */,
 				DC3878F421F9C66600497D6E /* GANormalizeBaseViewController.swift in Sources */,
@@ -5997,6 +6033,7 @@
 					"$(PROJECT_DIR)/YYFramework/Lib/baiduLib",
 					"$(PROJECT_DIR)/YYFramework/Lib/Ali/ARM_NO_BITCODE",
 					"$(PROJECT_DIR)/YYFramework/Lib/Ali/ARM",
+					"$(PROJECT_DIR)/YYFramework/Lib/友盟一键登录",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -6043,6 +6080,7 @@
 					"$(PROJECT_DIR)/YYFramework/Lib/baiduLib",
 					"$(PROJECT_DIR)/YYFramework/Lib/Ali/ARM_NO_BITCODE",
 					"$(PROJECT_DIR)/YYFramework/Lib/Ali/ARM",
+					"$(PROJECT_DIR)/YYFramework/Lib/友盟一键登录",
 				);
 				INFOPLIST_FILE = YYFramework/System/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

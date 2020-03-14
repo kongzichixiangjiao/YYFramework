@@ -163,7 +163,7 @@ class GADate {
         let firstDay = dateFormatter.string(from: firstDayOfWeek!)
         let lastDay = dateFormatter.string(from: lastDayOfWeek!)
         let weekArr = [firstDay, lastDay]
-
+        
         return weekArr;
     }
     
@@ -248,7 +248,7 @@ class GADate {
     static func dateStringToDate(_ dateStr: String, fromateType: GADateFormatType) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//        dateFormatter.dateFormat = GADateFormatType.y_m_d.rawValue
+        //        dateFormatter.dateFormat = GADateFormatType.y_m_d.rawValue
         dateFormatter.dateFormat = fromateType.rawValue
         let date = dateFormatter.date(from: dateStr)
         return date!
@@ -424,5 +424,22 @@ class GADate {
         
         df.dateFormat = "HH:mm:ss"
         return df.string(from: date)
+    }
+}
+
+extension Date {
+    /// 获取当前 秒级 时间戳 - 10位
+    var timeStamp : String {
+        let date = Date()
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        return "\(timeStamp)"
+    }
+    
+    /// 获取当前 毫秒级 时间戳 - 13位
+    var milliStamp : String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let millisecond = CLongLong(round(timeInterval*1000))
+        return "\(millisecond)"
     }
 }

@@ -63,7 +63,7 @@ class AppDelegate: FlutterAppDelegate {
         wx_register(type: .qywx)
         wx_register(type: .wx)
 //        growingIO_start()
-//        ga_configUMengAnalytics()
+        ga_configUMengAnalytics()
 //        ga_configBaiduMobStat
         bdMap_register()
         bdMap_location()

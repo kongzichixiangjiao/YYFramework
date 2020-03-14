@@ -14,9 +14,11 @@
 #import <OCMock/OCMock.h>
 
 // 友盟统计
-//#import <UMCommon/UMCommon.h>
+#import <UMCommon/UMCommon.h>
+#import <UMVerify/UMVerify.h>
 //#import <UMCommonLog/UMCommonLogHeaders.h>
 //#import <UMAnalytics/MobClick.h>
+
 
 //#import "VZInspector/VZInspector.h" // debug调试工具
 
