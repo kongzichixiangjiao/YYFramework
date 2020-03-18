@@ -64,7 +64,9 @@ class SimpleValidationViewController: GARxSwiftBaseViewController {
     func showAlert() {
         GAAlertWindow.share.ga_show(type: .normal, touchEnable: true, handler: {
             [weak self] tag, model in
-            
+            if let _ = self {
+                
+            }
         })
     }
 

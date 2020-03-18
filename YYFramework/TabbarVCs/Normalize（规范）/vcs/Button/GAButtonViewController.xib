@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAButtonViewController" customModule="YYFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-kn-Bht">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EB-Z6-vI8" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="802" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="PMZ-pk-0aq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="普通按钮"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和NormalBgColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrF-YR-3zL">
+                            <rect key="frame" x="20" y="785" width="374" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-uZ-lBk" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="735" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ZAO-VN-bRV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="已选择按钮"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSelected" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" red="0.7599158654" green="0.57312609270000003" blue="0.0348284528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" red="0.94901960780000005" green="0.42745098040000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和SelectedBgColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aie-Ca-Rxv">
+                            <rect key="frame" x="20" y="718" width="374" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-ST-E0d" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="668" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YBa-kQ-Ssv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="不可点击"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" red="0.7599158654" green="0.57312609270000003" blue="0.0348284528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOC-gz-nrE">
+                            <rect key="frame" x="20" y="651" width="374" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghg-Ee-wnv" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="561" width="100" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="ZQc-B6-m2m"/>
+                                <constraint firstAttribute="width" constant="100" id="hHx-id-CKk"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="有icon"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="recording_icon_ recording"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconWidth">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor，按钮在顶部，按钮和文字的间距是10" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-52-AYP">
+                            <rect key="frame" x="20" y="496" width="100" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fym-nd-2tf" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="140" y="561" width="80" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="1zH-MB-lcd"/>
+                                <constraint firstAttribute="width" constant="80" id="uPi-mG-5HM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="有icon"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="recording_icon_ recording"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconWidth">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor，icon在底部，按钮和文字的间距是0，圆形" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmX-8q-e3J">
+                            <rect key="frame" x="140" y="484" width="80" height="72"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeg-Fp-xxs" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="240" y="561" width="80" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="Viv-hG-Ja3"/>
+                                <constraint firstAttribute="width" constant="80" id="y6x-bh-SBZ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="有icon"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="recording_icon_ recording"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                    <color key="value" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconWidth">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor，icon在底部，按钮和文字的间距是0，圆形，设置icon颜色，字体颜色" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-PO-ZW4">
+                            <rect key="frame" x="240" y="460.5" width="80" height="95.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4i-Ik-yIb" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ac0-7u-yjV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="icon在右侧"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" red="0.7599158654" green="0.57312609270000003" blue="0.0348284528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="recording_icon_ recording"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconWidth">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor，icon在右侧，按钮和文字的间距是10" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkg-d3-hvi">
+                            <rect key="frame" x="20" y="361.5" width="374" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-hg-RDl" customClass="GAIconButton" customModule="GAIconButton" customModuleProvider="target">
+                            <rect key="frame" x="20" y="291.5" width="80" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="gtQ-rz-WxP"/>
+                                <constraint firstAttribute="height" constant="50" id="h6K-um-kic"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="播放"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconDirection">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBgColor">
+                                    <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBgColor">
+                                    <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="recording_icon_ recording"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="elementSpace">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightBgColor">
+                                    <color key="value" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconWidth">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通按钮：设置titleString和EnableBgColor，icon在左侧，按钮和文字的间距是10" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bir-Ze-mRR">
+                            <rect key="frame" x="20" y="214.5" width="80" height="72"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Aie-Ca-Rxv" firstAttribute="top" secondItem="EDO-ST-E0d" secondAttribute="bottom" constant="10" id="3BM-RP-Iln"/>
+                        <constraint firstAttribute="trailing" secondItem="nrF-YR-3zL" secondAttribute="trailing" constant="20" id="4J6-FU-kwu"/>
+                        <constraint firstItem="jeg-Fp-xxs" firstAttribute="leading" secondItem="fym-nd-2tf" secondAttribute="trailing" constant="20" id="4Pw-U3-6by"/>
+                        <constraint firstItem="C4i-Ik-yIb" firstAttribute="trailing" secondItem="fkg-d3-hvi" secondAttribute="trailing" id="4rT-Tz-P8L"/>
+                        <constraint firstItem="ucK-hg-RDl" firstAttribute="trailing" secondItem="bir-Ze-mRR" secondAttribute="trailing" id="68L-uQ-HNX"/>
+                        <constraint firstItem="EOC-gz-nrE" firstAttribute="top" secondItem="fym-nd-2tf" secondAttribute="bottom" constant="10" id="7gX-SN-BQ6"/>
+                        <constraint firstItem="1EB-Z6-vI8" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="7ly-Ge-lMl"/>
+                        <constraint firstItem="C5J-PO-ZW4" firstAttribute="top" secondItem="C4i-Ik-yIb" secondAttribute="bottom" constant="20" id="8Oc-Rx-rK4"/>
+                        <constraint firstItem="EOC-gz-nrE" firstAttribute="top" secondItem="jeg-Fp-xxs" secondAttribute="bottom" constant="10" id="8bm-hR-JaT"/>
+                        <constraint firstItem="ucK-hg-RDl" firstAttribute="leading" secondItem="bir-Ze-mRR" secondAttribute="leading" id="8oj-BG-igW"/>
+                        <constraint firstItem="C4i-Ik-yIb" firstAttribute="top" secondItem="fkg-d3-hvi" secondAttribute="bottom" constant="5" id="Bjy-xh-YMU"/>
+                        <constraint firstItem="nrF-YR-3zL" firstAttribute="top" secondItem="9s1-uZ-lBk" secondAttribute="bottom" constant="10" id="DiK-dA-wmw"/>
+                        <constraint firstItem="ucK-hg-RDl" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="IqK-lt-BID"/>
+                        <constraint firstAttribute="trailing" secondItem="C4i-Ik-yIb" secondAttribute="trailing" constant="20" id="IyI-Rb-3Nw"/>
+                        <constraint firstItem="EOC-gz-nrE" firstAttribute="top" secondItem="ghg-Ee-wnv" secondAttribute="bottom" constant="10" id="JLP-vX-ZFZ"/>
+                        <constraint firstItem="jeg-Fp-xxs" firstAttribute="leading" secondItem="C5J-PO-ZW4" secondAttribute="leading" id="LzC-Ok-QVj"/>
+                        <constraint firstItem="fym-nd-2tf" firstAttribute="leading" secondItem="ghg-Ee-wnv" secondAttribute="trailing" constant="20" id="Ocm-Py-IZ0"/>
+                        <constraint firstItem="1EB-Z6-vI8" firstAttribute="top" secondItem="nrF-YR-3zL" secondAttribute="bottom" constant="5" id="PVh-hs-Dcj"/>
+                        <constraint firstItem="ucK-hg-RDl" firstAttribute="top" secondItem="bir-Ze-mRR" secondAttribute="bottom" constant="5" id="Pvf-sc-yTa"/>
+                        <constraint firstItem="9s1-uZ-lBk" firstAttribute="trailing" secondItem="Aie-Ca-Rxv" secondAttribute="trailing" id="Q1n-vj-Z2N"/>
+                        <constraint firstItem="fym-nd-2tf" firstAttribute="top" secondItem="LmX-8q-e3J" secondAttribute="bottom" constant="5" id="S1s-zK-gu5"/>
+                        <constraint firstItem="EDO-ST-E0d" firstAttribute="leading" secondItem="EOC-gz-nrE" secondAttribute="leading" id="SLz-Ch-teb"/>
+                        <constraint firstItem="9s1-uZ-lBk" firstAttribute="leading" secondItem="Aie-Ca-Rxv" secondAttribute="leading" id="SiP-4v-Fry"/>
+                        <constraint firstItem="ghg-Ee-wnv" firstAttribute="top" secondItem="hbd-52-AYP" secondAttribute="bottom" constant="5" id="TIj-ep-dpB"/>
+                        <constraint firstItem="ghg-Ee-wnv" firstAttribute="trailing" secondItem="hbd-52-AYP" secondAttribute="trailing" id="U1c-MN-Sjo"/>
+                        <constraint firstItem="jeg-Fp-xxs" firstAttribute="trailing" secondItem="C5J-PO-ZW4" secondAttribute="trailing" id="VfZ-br-eds"/>
+                        <constraint firstItem="C4i-Ik-yIb" firstAttribute="leading" secondItem="fkg-d3-hvi" secondAttribute="leading" id="Vhh-S7-S6I"/>
+                        <constraint firstItem="fym-nd-2tf" firstAttribute="trailing" secondItem="LmX-8q-e3J" secondAttribute="trailing" id="W4K-yh-ghK"/>
+                        <constraint firstAttribute="trailing" secondItem="1EB-Z6-vI8" secondAttribute="trailing" constant="20" id="WAp-BP-MZN"/>
+                        <constraint firstItem="EDO-ST-E0d" firstAttribute="top" secondItem="EOC-gz-nrE" secondAttribute="bottom" constant="5" id="WHh-cO-UkB"/>
+                        <constraint firstItem="ghg-Ee-wnv" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="Yjf-GL-Kdc"/>
+                        <constraint firstItem="9s1-uZ-lBk" firstAttribute="top" secondItem="Aie-Ca-Rxv" secondAttribute="bottom" constant="5" id="Zh5-Fw-kh5"/>
+                        <constraint firstItem="ghg-Ee-wnv" firstAttribute="leading" secondItem="hbd-52-AYP" secondAttribute="leading" id="ath-q9-GA7"/>
+                        <constraint firstItem="nrF-YR-3zL" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="e6m-mW-Feu"/>
+                        <constraint firstItem="EDO-ST-E0d" firstAttribute="trailing" secondItem="EOC-gz-nrE" secondAttribute="trailing" id="gkc-XT-Abx"/>
+                        <constraint firstItem="9s1-uZ-lBk" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="hnQ-6K-OK5"/>
+                        <constraint firstAttribute="trailing" secondItem="EDO-ST-E0d" secondAttribute="trailing" constant="20" id="l9s-C0-S8M"/>
+                        <constraint firstItem="EDO-ST-E0d" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="ltZ-Bd-1vv"/>
+                        <constraint firstItem="fym-nd-2tf" firstAttribute="leading" secondItem="LmX-8q-e3J" secondAttribute="leading" id="nJC-yn-dYe"/>
+                        <constraint firstAttribute="trailing" secondItem="9s1-uZ-lBk" secondAttribute="trailing" constant="20" id="oJR-71-BTv"/>
+                        <constraint firstItem="fkg-d3-hvi" firstAttribute="top" secondItem="ucK-hg-RDl" secondAttribute="bottom" constant="20" id="rJP-pU-SvI"/>
+                        <constraint firstAttribute="bottom" secondItem="1EB-Z6-vI8" secondAttribute="bottom" constant="20" id="sne-Eg-tfX"/>
+                        <constraint firstItem="jeg-Fp-xxs" firstAttribute="top" secondItem="C5J-PO-ZW4" secondAttribute="bottom" constant="5" id="xwn-aW-7hP"/>
+                        <constraint firstItem="C4i-Ik-yIb" firstAttribute="leading" secondItem="CSb-kn-Bht" secondAttribute="leading" constant="20" id="ysC-Lm-EJo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CSb-kn-Bht" secondAttribute="bottom" id="403-6w-BbX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CSb-kn-Bht" secondAttribute="trailing" id="LeR-EE-glh"/>
+                <constraint firstItem="CSb-kn-Bht" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oeJ-WD-d4e"/>
+                <constraint firstItem="CSb-kn-Bht" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pvB-ZA-jgg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>

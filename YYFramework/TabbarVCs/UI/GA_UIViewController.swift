@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GA_UIViewController: YYBaseViewController {
+class GA_UIViewController: GAViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -218,8 +218,7 @@ class GATextField: UIView {
     // 占位字体颜色
     @IBInspectable var placeholderColor_yy: UIColor! {
         didSet {
-//            textField.setValue(placeholderColor_yy, forKeyPath: "_placeholderLabel.textColor")
-            self.textField.attributedPlaceholder = NSAttributedString(string: self.textField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : placeholderColor_yy])
+            self.textField.attributedPlaceholder = NSAttributedString(string: self.textField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : placeholderColor_yy ?? UIColor.black])
         }
     }
     

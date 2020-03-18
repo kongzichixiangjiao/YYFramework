@@ -80,8 +80,8 @@ class GACoreDataViewController: UIViewController {
     
     func look_mr_coreData() {
         let models = GATestModel.mr_findAll() ?? []
-        for model in models {
-            print("mr-", (model as! GATestModel).name)
+        for _ in models {
+            
         }
     }
     
@@ -97,7 +97,7 @@ class GACoreDataViewController: UIViewController {
             if let results = fetchedResults {
                 for reuslt in results {
                     let model = reuslt as! GATestModel
-                    print(model.name)
+                    print(model)
                 }
             }
         } catch  {

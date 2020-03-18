@@ -104,7 +104,7 @@ class GAAlertWindow1: GAAlertWindow {
         let v = GAAlertCustomerView.loadView(type: type) as! GAAlertCustomerView
         v.handler = {
             [weak self] tag, model in
-            if let weakSelf = self {
+            if let _ = self {
                 
             }
         }

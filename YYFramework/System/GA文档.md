@@ -47,7 +47,7 @@
 46.     重复点击按钮Extension
 47.     tabs 切换样式  GANormalizeTabsBaseViewController  GANormalizeTabsStackViewController
 48.     GAPopMenuView
-49.     GANormalizeIconButton   上下左右位置 icon颜色可改变
+49.     GAIconButton   上下左右位置 icon颜色可改变
 50.     GACalenderView 日历控件
 51.     PXVideoViewController 压缩视频  视频压缩发
 52.     Storyboard framework

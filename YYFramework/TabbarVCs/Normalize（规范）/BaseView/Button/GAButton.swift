@@ -8,21 +8,13 @@
 
 import UIKit
 
-enum GANormalizeButtonTouchState: Int {
-    case began = 0, ended = 1
-}
-
-enum GANormalizeButtonState: Int {
-    case normal = 0, selected = 1, enabled = 2, highlight = 3
-}
-
-class GANormalizeButton: UIButton {
+class GAButton: UIButton {
 
     // 是否描边
     @IBInspectable var isLinear: Bool = false
     // 字体大小
     @IBInspectable var mainTitleFontSize: CGFloat = 14
-    // 
+    
     @IBInspectable var mainNormalColor: UIColor = kMainButtonDefaultColor!
     @IBInspectable var mainHighlightColor: UIColor = kMainButtonHighlightColor!
     @IBInspectable var mainSelectedColor: UIColor = kMainButtonSelectedColor!
@@ -38,21 +30,24 @@ class GANormalizeButton: UIButton {
     @IBInspectable var mainSelectedTitleColor: UIColor?
     @IBInspectable var mainDisabledTitleColor: UIColor?
     
-    @IBInspectable var mainLineBorderColor: UIColor = kMainButtonDisabledColor!
-    @IBInspectable var mainCornerRadius: CGFloat = kCircularBead_2_4_LevelRadius
+    @IBInspectable var lineBorderColor: UIColor = kMainButtonDisabledColor!
+    @IBInspectable var cornerRadius: CGFloat = kCircularBead_2_4_LevelRadius
     
-    typealias TargetHandler = (_ touchState: GANormalizeButtonTouchState, _ state: GANormalizeButtonState) -> ()
+    typealias TargetHandler = (_ touchState: GAButtonTouchState, _ state: GAButtonState) -> ()
     private var _beganHandler: TargetHandler?
     private var _endedHandler: TargetHandler?
     
-    public func addBeganAction(startState: GANormalizeButtonState = .normal, handler: @escaping TargetHandler) {
+    public func addBeganAction(startState: GAButtonState = .normal, handler: @escaping TargetHandler) {
+        stateType = startState
         _beganHandler = handler
     }
-    public func addEndAction(startState: GANormalizeButtonState = .normal, handler: @escaping TargetHandler) {
+    
+    public func addEndAction(startState: GAButtonState = .normal, handler: @escaping TargetHandler) {
+        stateType = startState
         _endedHandler = handler
     }
     
-    var stateType: GANormalizeButtonState! {
+    var stateType: GAButtonState! {
         didSet {
             switch stateType {
             case .normal?:
@@ -91,13 +86,12 @@ class GANormalizeButton: UIButton {
     }
     
     private func _updateView() {
-        
         self.titleLabel?.font = UIFont.systemFont(ofSize: mainTitleFontSize)
-        self.layer.cornerRadius = mainCornerRadius
+        self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
         if isLinear {
             self.layer.borderWidth = kBorderWidth
-            self.layer.borderColor = mainLineBorderColor.cgColor
+            self.layer.borderColor = lineBorderColor.cgColor
         }
         stateType = .normal
     }

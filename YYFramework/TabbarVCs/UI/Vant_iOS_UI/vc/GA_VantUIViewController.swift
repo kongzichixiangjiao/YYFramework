@@ -74,6 +74,8 @@ extension GA_VantUIViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         super.tableView(tableView, didSelectRowAt: indexPath)
+        
+        
     }
 }
 

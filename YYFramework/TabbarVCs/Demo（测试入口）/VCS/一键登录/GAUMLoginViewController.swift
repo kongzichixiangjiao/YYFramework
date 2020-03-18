@@ -26,7 +26,7 @@ class GAUMLoginVeiwController: UIViewController {
         UMCommonHandler.setVerifySDKInfo(s) { (resultDic) in
             print(resultDic)
             UMCommonHandler.checkEnvAvailable { (resultDic) in
-                print(resultDic)
+                print(resultDic ?? "")
                 UMCommonHandler.accelerateLoginPage(withTimeout: 20) { (resultDic) in
                     print(resultDic)
                     let model = UMCustomModel.init()
@@ -34,7 +34,7 @@ class GAUMLoginVeiwController: UIViewController {
                     model.sloganText = NSAttributedString(string: "一切都很好")
                     UMCommonHandler.getLoginToken(withTimeout: 20, controller: self, model: model) { (resultDic) in
                         print(resultDic)
-                        let token = resultDic["token"]
+                        _ = resultDic["token"]
                     }
                 }
             }

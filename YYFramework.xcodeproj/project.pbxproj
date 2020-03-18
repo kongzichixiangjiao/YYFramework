@@ -175,7 +175,7 @@
 		DC2C7E2F236054F000585617 /* GAAreaPickerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7E2B236054F000585617 /* GAAreaPickerTableCell.xib */; };
 		DC2C7E342360558900585617 /* GAAreaPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2C7E322360558900585617 /* GAAreaPickerCollectionCell.swift */; };
 		DC2C7E372360558900585617 /* GAAreaPickerCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7E332360558900585617 /* GAAreaPickerCollectionCell.xib */; };
-		DC2EDC82228BDF9700B5DD2E /* GANormalizeIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDC81228BDF9700B5DD2E /* GANormalizeIconButton.swift */; };
+		DC2EDC82228BDF9700B5DD2E /* GAIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDC81228BDF9700B5DD2E /* GAIconButton.swift */; };
 		DC2EDC86228D510F00B5DD2E /* GACalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDC85228D510F00B5DD2E /* GACalenderView.swift */; };
 		DC2EDC8B228D523400B5DD2E /* GACalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDC89228D523400B5DD2E /* GACalenderViewController.swift */; };
 		DC2EDC8D228D523400B5DD2E /* GACalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2EDC8A228D523400B5DD2E /* GACalenderViewController.xib */; };
@@ -201,8 +201,8 @@
 		DC3152BE21F7118600AA9B54 /* GANormalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3152BD21F7118600AA9B54 /* GANormalizeViewController.swift */; };
 		DC3152C021F713F300AA9B54 /* GANormalizeOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3152BF21F713F300AA9B54 /* GANormalizeOther.swift */; };
 		DC3152C221F71D1200AA9B54 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3152C121F71D1200AA9B54 /* UIFont+Extension.swift */; };
-		DC31534E21F80EF700AA9B54 /* GANormalizeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31534C21F80EF700AA9B54 /* GANormalizeButtonViewController.swift */; };
-		DC31534F21F80EF700AA9B54 /* GANormalizeButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC31534D21F80EF700AA9B54 /* GANormalizeButtonViewController.xib */; };
+		DC31534E21F80EF700AA9B54 /* GAButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31534C21F80EF700AA9B54 /* GAButtonViewController.swift */; };
+		DC31534F21F80EF700AA9B54 /* GAButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC31534D21F80EF700AA9B54 /* GAButtonViewController.xib */; };
 		DC32493521C7B0D300615FF9 /* GAStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32493421C7B0D300615FF9 /* GAStorage.swift */; };
 		DC33188D237D2E07007DAEBB /* GAHotCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33188B237D2E07007DAEBB /* GAHotCityCell.swift */; };
 		DC331890237D2E07007DAEBB /* GAHotCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC33188C237D2E07007DAEBB /* GAHotCityCell.xib */; };
@@ -623,6 +623,8 @@
 		DCAE402E23C5B53C0030F1B7 /* GALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAE402A23C5B53C0030F1B7 /* GALoginViewController.xib */; };
 		DCAE403223C5B6910030F1B7 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAE403123C5B6910030F1B7 /* AuthenticationServices.framework */; };
 		DCAE403523C5B9590030F1B7 /* AppDelegate+AppleIDLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE403423C5B9590030F1B7 /* AppDelegate+AppleIDLogin.swift */; };
+		DCAE67212421BA2A000A1A42 /* GAVantButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE67202421BA2A000A1A42 /* GAVantButtonViewController.swift */; };
+		DCAE67232421BA58000A1A42 /* GAVantButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAE67222421BA58000A1A42 /* GAVantButton.storyboard */; };
 		DCB2E72D22015779009594DB /* GATransitionableTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2E72722015779009594DB /* GATransitionableTabViewController.swift */; };
 		DCB2E72E22015779009594DB /* GAWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2E72822015779009594DB /* GAWebViewViewController.swift */; };
 		DCB2E72F22015779009594DB /* YYDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2E72922015779009594DB /* YYDemoViewController.swift */; };
@@ -784,7 +786,7 @@
 		DCDA15C1237ABAEB00A2151D /* GATitleEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA15C0237ABAEB00A2151D /* GATitleEditView.swift */; };
 		DCDA15C6237AD37B00A2151D /* PXAmountAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA15C4237AD37B00A2151D /* PXAmountAlertViewController.swift */; };
 		DCDA15C9237AD37B00A2151D /* PXAmountAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDA15C5237AD37B00A2151D /* PXAmountAlertViewController.xib */; };
-		DCDC025521F84578005E7A69 /* GANormalizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC025421F84578005E7A69 /* GANormalizeButton.swift */; };
+		DCDC025521F84578005E7A69 /* GAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC025421F84578005E7A69 /* GAButton.swift */; };
 		DCDC3F8021AFB56F00C04F61 /* ZHProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC3F7F21AFB56F00C04F61 /* ZHProductModel.swift */; };
 		DCDC3F8421AFC24000C04F61 /* ZHCalendarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC3F8321AFC24000C04F61 /* ZHCalendarCollectionViewController.swift */; };
 		DCDC3F8621AFC2A100C04F61 /* YYBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC3F8521AFC2A100C04F61 /* YYBaseCollectionViewController.swift */; };
@@ -1057,7 +1059,7 @@
 		DC2C7E2B236054F000585617 /* GAAreaPickerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAAreaPickerTableCell.xib; sourceTree = "<group>"; };
 		DC2C7E322360558900585617 /* GAAreaPickerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAAreaPickerCollectionCell.swift; sourceTree = "<group>"; };
 		DC2C7E332360558900585617 /* GAAreaPickerCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAAreaPickerCollectionCell.xib; sourceTree = "<group>"; };
-		DC2EDC81228BDF9700B5DD2E /* GANormalizeIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeIconButton.swift; sourceTree = "<group>"; };
+		DC2EDC81228BDF9700B5DD2E /* GAIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAIconButton.swift; sourceTree = "<group>"; };
 		DC2EDC85228D510F00B5DD2E /* GACalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GACalenderView.swift; sourceTree = "<group>"; };
 		DC2EDC89228D523400B5DD2E /* GACalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GACalenderViewController.swift; sourceTree = "<group>"; };
 		DC2EDC8A228D523400B5DD2E /* GACalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GACalenderViewController.xib; sourceTree = "<group>"; };
@@ -1083,8 +1085,8 @@
 		DC3152BD21F7118600AA9B54 /* GANormalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeViewController.swift; sourceTree = "<group>"; };
 		DC3152BF21F713F300AA9B54 /* GANormalizeOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeOther.swift; sourceTree = "<group>"; };
 		DC3152C121F71D1200AA9B54 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		DC31534C21F80EF700AA9B54 /* GANormalizeButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeButtonViewController.swift; sourceTree = "<group>"; };
-		DC31534D21F80EF700AA9B54 /* GANormalizeButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANormalizeButtonViewController.xib; sourceTree = "<group>"; };
+		DC31534C21F80EF700AA9B54 /* GAButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAButtonViewController.swift; sourceTree = "<group>"; };
+		DC31534D21F80EF700AA9B54 /* GAButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAButtonViewController.xib; sourceTree = "<group>"; };
 		DC32493421C7B0D300615FF9 /* GAStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAStorage.swift; sourceTree = "<group>"; };
 		DC33188B237D2E07007DAEBB /* GAHotCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAHotCityCell.swift; sourceTree = "<group>"; };
 		DC33188C237D2E07007DAEBB /* GAHotCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAHotCityCell.xib; sourceTree = "<group>"; };
@@ -1517,6 +1519,8 @@
 		DCAE403123C5B6910030F1B7 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		DCAE403323C5B7A60030F1B7 /* YYFramework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YYFramework.entitlements; sourceTree = "<group>"; };
 		DCAE403423C5B9590030F1B7 /* AppDelegate+AppleIDLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppleIDLogin.swift"; sourceTree = "<group>"; };
+		DCAE67202421BA2A000A1A42 /* GAVantButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVantButtonViewController.swift; sourceTree = "<group>"; };
+		DCAE67222421BA58000A1A42 /* GAVantButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GAVantButton.storyboard; sourceTree = "<group>"; };
 		DCB2E72722015779009594DB /* GATransitionableTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATransitionableTabViewController.swift; sourceTree = "<group>"; };
 		DCB2E72822015779009594DB /* GAWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAWebViewViewController.swift; sourceTree = "<group>"; };
 		DCB2E72922015779009594DB /* YYDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYDemoViewController.swift; sourceTree = "<group>"; };
@@ -1681,7 +1685,7 @@
 		DCDA15C0237ABAEB00A2151D /* GATitleEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATitleEditView.swift; sourceTree = "<group>"; };
 		DCDA15C4237AD37B00A2151D /* PXAmountAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAmountAlertViewController.swift; sourceTree = "<group>"; };
 		DCDA15C5237AD37B00A2151D /* PXAmountAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXAmountAlertViewController.xib; sourceTree = "<group>"; };
-		DCDC025421F84578005E7A69 /* GANormalizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeButton.swift; sourceTree = "<group>"; };
+		DCDC025421F84578005E7A69 /* GAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAButton.swift; sourceTree = "<group>"; };
 		DCDC3F7F21AFB56F00C04F61 /* ZHProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHProductModel.swift; sourceTree = "<group>"; };
 		DCDC3F8321AFC24000C04F61 /* ZHCalendarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHCalendarCollectionViewController.swift; sourceTree = "<group>"; };
 		DCDC3F8521AFC2A100C04F61 /* YYBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYBaseCollectionViewController.swift; sourceTree = "<group>"; };
@@ -3316,8 +3320,8 @@
 		DC7120BD2212D2F900064A9B /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				DC31534C21F80EF700AA9B54 /* GANormalizeButtonViewController.swift */,
-				DC31534D21F80EF700AA9B54 /* GANormalizeButtonViewController.xib */,
+				DC31534C21F80EF700AA9B54 /* GAButtonViewController.swift */,
+				DC31534D21F80EF700AA9B54 /* GAButtonViewController.xib */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -3616,6 +3620,8 @@
 			isa = PBXGroup;
 			children = (
 				DCEE8BF122F80ED600439535 /* GA_VantUIViewController.swift */,
+				DCAE67202421BA2A000A1A42 /* GAVantButtonViewController.swift */,
+				DCAE67222421BA58000A1A42 /* GAVantButton.storyboard */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -4162,8 +4168,8 @@
 		DCB4807C21F9996600C0CDEC /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				DCDC025421F84578005E7A69 /* GANormalizeButton.swift */,
-				DC2EDC81228BDF9700B5DD2E /* GANormalizeIconButton.swift */,
+				DCDC025421F84578005E7A69 /* GAButton.swift */,
+				DC2EDC81228BDF9700B5DD2E /* GAIconButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -5083,7 +5089,7 @@
 				DC8EC18D23CEF92C00C403C4 /* GATextFieldEmailAlertCell.xib in Resources */,
 				DC08FDBD221CF34900F08535 /* GANormalizeDatePickerView.xib in Resources */,
 				DC2667B221D4B8D50010AC31 /* GATestViewCell.xib in Resources */,
-				DC31534F21F80EF700AA9B54 /* GANormalizeButtonViewController.xib in Resources */,
+				DC31534F21F80EF700AA9B54 /* GAButtonViewController.xib in Resources */,
 				DC729DD92160D4BE00E0150E /* pxLoginTextfield_code_icon.png in Resources */,
 				DC28B32421BE35C60089BFBC /* YYReuseCollectionCell.xib in Resources */,
 				DCFF9E44231CBB810044716E /* toast_icon_error@2x.png in Resources */,
@@ -5180,6 +5186,7 @@
 				DCD44D8123921B6A00E5E651 /* 9.jpg in Resources */,
 				DCB5096A2314FA5500180E20 /* GAClockRepeatViewController.xib in Resources */,
 				DCAC89B7239E513C00DF449A /* tags_moreBtn_icon_up.png in Resources */,
+				DCAE67232421BA58000A1A42 /* GAVantButton.storyboard in Resources */,
 				DC7120EE2215683D00064A9B /* GANormalizeTestEstimatedTableViewCell.xib in Resources */,
 				DC0202A821A5450800FC8620 /* ZHSortItemCollectionCell.xib in Resources */,
 				DC331890237D2E07007DAEBB /* GAHotCityCell.xib in Resources */,
@@ -5420,7 +5427,7 @@
 				DCBD49A3221EA7C500B9F88F /* GANormalizeTabbarView.swift in Sources */,
 				DC08FDC8221CFB2800F08535 /* ZHDataPickerViewController.swift in Sources */,
 				DC6FCD7323C3055500912802 /* PLShortVideoKitView.swift in Sources */,
-				DC2EDC82228BDF9700B5DD2E /* GANormalizeIconButton.swift in Sources */,
+				DC2EDC82228BDF9700B5DD2E /* GAIconButton.swift in Sources */,
 				DC87C5A4211FD58700E9FA9F /* NSMutableAttributedString+Extension.swift in Sources */,
 				DC911D3622C9FD3600473B51 /* BaseNavViewController.swift in Sources */,
 				DC28B31521BE16510089BFBC /* GAPreviewImage.swift in Sources */,
@@ -5445,7 +5452,7 @@
 				DCC24282235ED33A00DF49FD /* GAVibrationViewController.swift in Sources */,
 				DCCA93D522B2371500E5AC32 /* NSString+NSString.m in Sources */,
 				DCD44D90239297E200E5E651 /* GABannerModel.swift in Sources */,
-				DC31534E21F80EF700AA9B54 /* GANormalizeButtonViewController.swift in Sources */,
+				DC31534E21F80EF700AA9B54 /* GAButtonViewController.swift in Sources */,
 				DC08FDD1221D4B4300F08535 /* ZHDatePickerViewController.swift in Sources */,
 				DC08FDD8221D63DE00F08535 /* GANormalizeScanViewController.swift in Sources */,
 				DCBD498F221E908500B9F88F /* YYMosaicView.swift in Sources */,
@@ -5534,7 +5541,7 @@
 				DC911D4422C9FD3600473B51 /* UITableView.swift in Sources */,
 				DC5611712408B54A00D5B705 /* GAAlertBaseView.swift in Sources */,
 				DCF653A0213A8EC30081BEC8 /* GARegular.swift in Sources */,
-				DCDC025521F84578005E7A69 /* GANormalizeButton.swift in Sources */,
+				DCDC025521F84578005E7A69 /* GAButton.swift in Sources */,
 				DC7EF56623AA23D70039528A /* GACutomVideoViewController.swift in Sources */,
 				DCF94596221A9E350022FBF8 /* GANormalizeTextField.swift in Sources */,
 				DCD44D3F23921B0100E5E651 /* GABannerBaseCell.swift in Sources */,
@@ -5844,6 +5851,7 @@
 				DCCD82102316C41700C740C9 /* GAListPlaceholderView.swift in Sources */,
 				DC911D5A22C9FD3600473B51 /* Font.swift in Sources */,
 				DC1559CC233B53D900D0F30F /* GAWeChat.swift in Sources */,
+				DCAE67212421BA2A000A1A42 /* GAVantButtonViewController.swift in Sources */,
 				DC70412923797F2400142ABC /* GATagsViewModel.swift in Sources */,
 				DCD0BEB9221B995000E05E81 /* GANormalizeRequestViewController.swift in Sources */,
 				DC3D861D22530C220031401D /* GANormalizeTabsViewController.swift in Sources */,

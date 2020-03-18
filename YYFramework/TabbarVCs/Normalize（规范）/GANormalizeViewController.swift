@@ -101,7 +101,7 @@ extension GANormalizeViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         super.tableView(tableView, didSelectRowAt: indexPath)
         let vcs: [String : UIViewController] = [
-            dataSource[0] as! String : GANormalizeButtonViewController(nibName: "GANormalizeButtonViewController", bundle: nil),
+            dataSource[0] as! String : GAButtonViewController(nibName: "GAButtonViewController", bundle: nil),
             dataSource[1] as! String : GANormalizeSwitchViewController(nibName: "GANormalizeSwitchViewController", bundle: nil),
             dataSource[2] as! String : GANormalizeCacheViewController(nibName: "GANormalizeCacheViewController", bundle: nil),
             dataSource[3] as! String : GANormalizeTestCollectionViewController(),

@@ -95,19 +95,18 @@ class GANormalizeTextField: UITextField {
         return newRect
     }
     
-    private func _initPlaceholder()  {
+    private func _initPlaceholder() {
         if let color = placeholderTextColor {
-//            self.setValue(color, forKeyPath: "_placeholderLabel.textColor")
-            self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : color])
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor: color])
         }
         let font = UIFont.systemFont(ofSize: placeholderFontSize)
-        self.setValue(font, forKeyPath: "_placeholderLabel.font")
+        self.attributedPlaceholder = NSAttributedString(string:self.placeholder ?? "", attributes: [NSAttributedString.Key.font: font])
     }
     
     private func _addTarget() {
         self.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
     }
-    var t: String = ""
+    
 }
 
 extension GANormalizeTextField: UITextFieldDelegate {
@@ -139,7 +138,7 @@ extension GANormalizeTextField: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //        print(textField.textInputMode?.primaryLanguage)
-//        let primaryLanguage = textField.textInputMode?.primaryLanguage
+        //        let primaryLanguage = textField.textInputMode?.primaryLanguage
         if let b = mDelegate?.normalizeTextField?(textField, shouldChangeCharactersIn: range, replacementString: string) {
             return b
         }
@@ -230,7 +229,7 @@ extension GANormalizeTextField: GANormalizeTextEditMaxCountProtocol {
     
     func _subString(to: Int) -> String {
         let text: String = self.text!
-//        let endIndex = String.Index.init(encodedOffset: to)
+        //        let endIndex = String.Index.init(encodedOffset: to)
         let endIndex = String.Index.init(utf16Offset: to, in: text)
         let subStr = text[text.startIndex..<endIndex]
         return String(subStr)
