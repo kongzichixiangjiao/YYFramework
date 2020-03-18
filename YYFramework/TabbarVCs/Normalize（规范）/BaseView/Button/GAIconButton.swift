@@ -255,14 +255,16 @@ class GAIconButton: UIView {
         var sX: CGFloat = 40
         var sY: CGFloat = 0
         
-        var img: UIImage = UIImage(named: iconName) ?? UIImage()
+        var img = UIImage(named: iconName)
         
         if iconColor != nil {
-            img = img.iconButton_imageWithTintColor(tintColor: iconColor, blendMode: CGBlendMode.destinationIn)!
+            if let image = img {
+                img = image.iconButton_imageWithTintColor(tintColor: iconColor, blendMode: CGBlendMode.destinationIn)!
+            }
         }
         
-        let imgW = min(img.size.width, iconWidth == -1 ? self.frame.size.width : iconWidth)
-        let imgH = min(img.size.height, iconHeight == -1 ? self.frame.size.width : iconHeight)
+        let imgW = min(img?.size.width ?? 0, iconWidth == -1 ? self.frame.size.width : iconWidth)
+        let imgH = min(img?.size.height ?? 0, iconHeight == -1 ? self.frame.size.width : iconHeight)
         var imgX: CGFloat = 0
         var imgY: CGFloat = 0
         
@@ -307,7 +309,7 @@ class GAIconButton: UIView {
                withAttributes: [NSAttributedString.Key.foregroundColor : titleColor,
                                 NSAttributedString.Key.font : font])
         
-        guard let imgCG = img.cgImage else {
+        guard let imgCG = img?.cgImage else {
             return
         }
         let context = UIGraphicsGetCurrentContext()

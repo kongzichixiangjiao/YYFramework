@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAButtonViewController" customModule="YYFramework" customModuleProvider="target">
             <connections>
+                <outlet property="b2" destination="9s1-uZ-lBk" id="8HK-Ih-QFi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

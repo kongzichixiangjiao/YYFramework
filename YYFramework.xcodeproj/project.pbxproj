@@ -37,10 +37,8 @@
 		DC04020522AF77CD005E357E /* GANormalizeTabsStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04020422AF77CD005E357E /* GANormalizeTabsStackViewController.swift */; };
 		DC04020822AF7836005E357E /* GANormalize_JF_TabsStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04020722AF7836005E357E /* GANormalize_JF_TabsStackViewController.swift */; };
 		DC04020B22AF784C005E357E /* GANormalizeTabsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04020A22AF784C005E357E /* GANormalizeTabsTestViewController.swift */; };
-		DC06244422EE963200C83012 /* testAvi.avi in Resources */ = {isa = PBXBuildFile; fileRef = DC06244322EE963200C83012 /* testAvi.avi */; };
 		DC06244922EE975700C83012 /* GALocalVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06244722EE975700C83012 /* GALocalVideoPlayerViewController.swift */; };
 		DC06244B22EE975700C83012 /* GALocalVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC06244822EE975700C83012 /* GALocalVideoPlayerViewController.xib */; };
-		DC06244E22EE9FA600C83012 /* testMP4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC06244D22EE9FA500C83012 /* testMP4.mp4 */; };
 		DC08FDAD221CEF6C00F08535 /* GANormalizeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08FDAC221CEF6C00F08535 /* GANormalizeCollectionView.swift */; };
 		DC08FDB0221CF09A00F08535 /* GANormalizeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08FDAF221CF09A00F08535 /* GANormalizeTableView.swift */; };
 		DC08FDB5221CF2F700F08535 /* GANormalizePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC08FDB3221CF2F700F08535 /* GANormalizePickerView.xib */; };
@@ -135,11 +133,8 @@
 		DC2219BB23C33EBD00735027 /* pl_back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2219B823C33EBB00735027 /* pl_back_icon@2x.png */; };
 		DC2219BE23C33EBD00735027 /* pl_back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2219B923C33EBC00735027 /* pl_back_icon@3x.png */; };
 		DC2219C123C33EBD00735027 /* pl_back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2219BA23C33EBC00735027 /* pl_back_icon.png */; };
-		DC2312B8224B196A00B60C4D /* apple.docx in Resources */ = {isa = PBXBuildFile; fileRef = DC2312B7224B196A00B60C4D /* apple.docx */; };
 		DC2312BE224B1A2D00B60C4D /* GAWordFileSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2312BD224B1A2D00B60C4D /* GAWordFileSignatureViewController.swift */; };
-		DC2312C5224B20BD00B60C4D /* apple2.docx in Resources */ = {isa = PBXBuildFile; fileRef = DC2312C2224B20BC00B60C4D /* apple2.docx */; };
 		DC2312C7224B20BD00B60C4D /* apple3.docx in Resources */ = {isa = PBXBuildFile; fileRef = DC2312C3224B20BC00B60C4D /* apple3.docx */; };
-		DC2312C9224B20BD00B60C4D /* apple1.docx in Resources */ = {isa = PBXBuildFile; fileRef = DC2312C4224B20BC00B60C4D /* apple1.docx */; };
 		DC25222121AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25221F21AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.swift */; };
 		DC25222221AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC25222021AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.xib */; };
 		DC2667B121D4B8D50010AC31 /* GATestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2667AF21D4B8D50010AC31 /* GATestViewCell.swift */; };
@@ -149,7 +144,6 @@
 		DC2784BA2317C1BE00C73FD4 /* GABD_FaceRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2784B82317C1BE00C73FD4 /* GABD_FaceRootViewController.swift */; };
 		DC2784BC2317C1BE00C73FD4 /* GABD_FaceRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2784B92317C1BE00C73FD4 /* GABD_FaceRootViewController.xib */; };
 		DC27F92722EEEE0200066B0F /* AppDelegate+GIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27F92622EEEE0200066B0F /* AppDelegate+GIO.swift */; };
-		DC27F92A22EFE8E400066B0F /* testTMVB.rmvb in Resources */ = {isa = PBXBuildFile; fileRef = DC27F92922EFE8E400066B0F /* testTMVB.rmvb */; };
 		DC28B2F021BDFE2C0089BFBC /* YYLineProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28B2EE21BDFE2C0089BFBC /* YYLineProgressView.swift */; };
 		DC28B2F121BDFE2C0089BFBC /* YYProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28B2EF21BDFE2C0089BFBC /* YYProgressView.swift */; };
 		DC28B2F421BE12720089BFBC /* YYWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28B2F221BE12720089BFBC /* YYWebView.swift */; };
@@ -208,9 +202,7 @@
 		DC331890237D2E07007DAEBB /* GAHotCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC33188C237D2E07007DAEBB /* GAHotCityCell.xib */; };
 		DC331894237D3A46007DAEBB /* GASelectedCityTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC331893237D3A46007DAEBB /* GASelectedCityTopView.swift */; };
 		DC331898237D3A4E007DAEBB /* GASelectedCityTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC331897237D3A4E007DAEBB /* GASelectedCityTopView.xib */; };
-		DC34686322F2CA3D00156B85 /* test.pptx in Resources */ = {isa = PBXBuildFile; fileRef = DC34686222F2CA3D00156B85 /* test.pptx */; };
 		DC34686922F2CABE00156B85 /* GAWebViewPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34686822F2CABE00156B85 /* GAWebViewPreviewViewController.swift */; };
-		DC34686E22F2CC9100156B85 /* test.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = DC34686D22F2CC9100156B85 /* test.xlsx */; };
 		DC3686AB22D73B6E002F5D01 /* GAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3686AA22D73B6E002F5D01 /* GAImageView.swift */; };
 		DC37DA96230D871C00B7FF83 /* GAClock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC37DA95230D871C00B7FF83 /* GAClock.storyboard */; };
 		DC37DA9A230D889700B7FF83 /* GAClockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37DA99230D889700B7FF83 /* GAClockListViewController.swift */; };
@@ -346,7 +338,6 @@
 		DC61347B239F446500689C5E /* GAPXBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC613477239F446500689C5E /* GAPXBannerCell.xib */; };
 		DC650A6D216C59F600301AF9 /* YYInterlockTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC650A6B216C59F600301AF9 /* YYInterlockTestCell.swift */; };
 		DC650A6E216C59F600301AF9 /* YYInterlockTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC650A6C216C59F600301AF9 /* YYInterlockTestCell.xib */; };
-		DC6911E923F26B5000C5F5F2 /* fugong000.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC6911E823F26B5000C5F5F2 /* fugong000.mp4 */; };
 		DC6911ED23F27B2000C5F5F2 /* fugong001.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC6911EC23F27B2000C5F5F2 /* fugong001.mp4 */; };
 		DC6BA7E721ED8A5300D1ED3C /* ZHCodeStandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BA7E621ED8A5300D1ED3C /* ZHCodeStandardViewController.swift */; };
 		DC6BA86721EEFC9A00D1ED3C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = DC6BA86621EEFC9900D1ED3C /* test.html */; };
@@ -407,7 +398,6 @@
 		DC7120FD2215750400064A9B /* GANoralizeTestTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7120FB2215750400064A9B /* GANoralizeTestTextViewViewController.swift */; };
 		DC7120FF2215750400064A9B /* GANoralizeTestTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7120FC2215750400064A9B /* GANoralizeTestTextViewViewController.xib */; };
 		DC72599C230ED00C001DF613 /* GALocalPushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72599B230ED00C001DF613 /* GALocalPushManager.swift */; };
-		DC7259A0230ED221001DF613 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC72599F230ED221001DF613 /* test.mp3 */; };
 		DC7259A3230ED772001DF613 /* AppDelegate+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7259A2230ED772001DF613 /* AppDelegate+Notification.swift */; };
 		DC729DBE216063C400E0150E /* YYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC729DBD216063C400E0150E /* YYHomeViewController.swift */; };
 		DC729DC32160B3D300E0150E /* AppDelegate+StatusBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC729DC22160B3D300E0150E /* AppDelegate+StatusBarOrientation.swift */; };
@@ -650,6 +640,7 @@
 		DCB42AD7231F4E9400D7B1BE /* GAColletionViewPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB42AD6231F4E9400D7B1BE /* GAColletionViewPageControl.swift */; };
 		DCB42ADC231F4FBA00D7B1BE /* pageControl_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB42ADA231F4FBA00D7B1BE /* pageControl_default@2x.png */; };
 		DCB42ADE231F4FBA00D7B1BE /* pageControl_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB42ADB231F4FBA00D7B1BE /* pageControl_selected@2x.png */; };
+		DCB44C9724225CD70000D3C3 /* recording_icon_ recording.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB44C9624225CD70000D3C3 /* recording_icon_ recording.png */; };
 		DCB4807821F9921500C0CDEC /* GANormalizeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4807721F9921500C0CDEC /* GANormalizeNavigationView.swift */; };
 		DCB4807A21F9922100C0CDEC /* GANormalizeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB4807921F9922100C0CDEC /* GANormalizeNavigationView.xib */; };
 		DCB509682314FA5500180E20 /* GAClockRepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB509662314FA5500180E20 /* GAClockRepeatViewController.swift */; };
@@ -849,11 +840,6 @@
 		DCFAD5612152486200575B93 /* YYNewPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFAD5522152486200575B93 /* YYNewPaperView.swift */; };
 		DCFAD5622152486200575B93 /* YYNewPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFAD5532152486200575B93 /* YYNewPaperViewController.swift */; };
 		DCFAD569215248D800575B93 /* other.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFAD568215248D800575B93 /* other.swift */; };
-		DCFAD57221524FB100575B93 /* launchImage1125-2436.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFAD56D21524FB100575B93 /* launchImage1125-2436.png */; };
-		DCFAD57321524FB100575B93 /* launchImage1242-2208.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFAD56E21524FB100575B93 /* launchImage1242-2208.png */; };
-		DCFAD57421524FB100575B93 /* launchImage640-1136.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFAD56F21524FB100575B93 /* launchImage640-1136.png */; };
-		DCFAD57521524FB100575B93 /* launchImage640-960.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFAD57021524FB100575B93 /* launchImage640-960.png */; };
-		DCFAD57621524FB100575B93 /* launchImage750-1334.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFAD57121524FB100575B93 /* launchImage750-1334.png */; };
 		DCFAE8F4222CBB0200A40DA9 /* GALocalFileCatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFAE8F3222CBB0200A40DA9 /* GALocalFileCatchManager.swift */; };
 		DCFAE8F8222CBEC100A40DA9 /* GALocalFileCatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFAE8F6222CBEC100A40DA9 /* GALocalFileCatchViewController.swift */; };
 		DCFAE8FA222CBEC100A40DA9 /* GALocalFileCatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFAE8F7222CBEC100A40DA9 /* GALocalFileCatchViewController.xib */; };
@@ -919,10 +905,8 @@
 		DC04020422AF77CD005E357E /* GANormalizeTabsStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeTabsStackViewController.swift; sourceTree = "<group>"; };
 		DC04020722AF7836005E357E /* GANormalize_JF_TabsStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalize_JF_TabsStackViewController.swift; sourceTree = "<group>"; };
 		DC04020A22AF784C005E357E /* GANormalizeTabsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeTabsTestViewController.swift; sourceTree = "<group>"; };
-		DC06244322EE963200C83012 /* testAvi.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = testAvi.avi; sourceTree = "<group>"; };
 		DC06244722EE975700C83012 /* GALocalVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GALocalVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		DC06244822EE975700C83012 /* GALocalVideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GALocalVideoPlayerViewController.xib; sourceTree = "<group>"; };
-		DC06244D22EE9FA500C83012 /* testMP4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testMP4.mp4; sourceTree = "<group>"; };
 		DC08FDAC221CEF6C00F08535 /* GANormalizeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeCollectionView.swift; sourceTree = "<group>"; };
 		DC08FDAF221CF09A00F08535 /* GANormalizeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeTableView.swift; sourceTree = "<group>"; };
 		DC08FDB3221CF2F700F08535 /* GANormalizePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GANormalizePickerView.xib; sourceTree = "<group>"; };
@@ -1019,11 +1003,8 @@
 		DC2219B823C33EBB00735027 /* pl_back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pl_back_icon@2x.png"; sourceTree = "<group>"; };
 		DC2219B923C33EBC00735027 /* pl_back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pl_back_icon@3x.png"; sourceTree = "<group>"; };
 		DC2219BA23C33EBC00735027 /* pl_back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pl_back_icon.png; sourceTree = "<group>"; };
-		DC2312B7224B196A00B60C4D /* apple.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.docx; sourceTree = "<group>"; };
 		DC2312BD224B1A2D00B60C4D /* GAWordFileSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAWordFileSignatureViewController.swift; sourceTree = "<group>"; };
-		DC2312C2224B20BC00B60C4D /* apple2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple2.docx; sourceTree = "<group>"; };
 		DC2312C3224B20BC00B60C4D /* apple3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple3.docx; sourceTree = "<group>"; };
-		DC2312C4224B20BC00B60C4D /* apple1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple1.docx; sourceTree = "<group>"; };
 		DC25221F21AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHNewCalendarScrollViewController.swift; sourceTree = "<group>"; };
 		DC25222021AFD1DE003EEAF1 /* ZHNewCalendarScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHNewCalendarScrollViewController.xib; sourceTree = "<group>"; };
 		DC2667AF21D4B8D50010AC31 /* GATestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATestViewCell.swift; sourceTree = "<group>"; };
@@ -1033,7 +1014,6 @@
 		DC2784B82317C1BE00C73FD4 /* GABD_FaceRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GABD_FaceRootViewController.swift; sourceTree = "<group>"; };
 		DC2784B92317C1BE00C73FD4 /* GABD_FaceRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GABD_FaceRootViewController.xib; sourceTree = "<group>"; };
 		DC27F92622EEEE0200066B0F /* AppDelegate+GIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+GIO.swift"; sourceTree = "<group>"; };
-		DC27F92922EFE8E400066B0F /* testTMVB.rmvb */ = {isa = PBXFileReference; lastKnownFileType = file; path = testTMVB.rmvb; sourceTree = "<group>"; };
 		DC28B2EE21BDFE2C0089BFBC /* YYLineProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLineProgressView.swift; sourceTree = "<group>"; };
 		DC28B2EF21BDFE2C0089BFBC /* YYProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYProgressView.swift; sourceTree = "<group>"; };
 		DC28B2F221BE12720089BFBC /* YYWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWebView.swift; sourceTree = "<group>"; };
@@ -1092,9 +1072,7 @@
 		DC33188C237D2E07007DAEBB /* GAHotCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAHotCityCell.xib; sourceTree = "<group>"; };
 		DC331893237D3A46007DAEBB /* GASelectedCityTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASelectedCityTopView.swift; sourceTree = "<group>"; };
 		DC331897237D3A4E007DAEBB /* GASelectedCityTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GASelectedCityTopView.xib; sourceTree = "<group>"; };
-		DC34686222F2CA3D00156B85 /* test.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pptx; sourceTree = "<group>"; };
 		DC34686822F2CABE00156B85 /* GAWebViewPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAWebViewPreviewViewController.swift; sourceTree = "<group>"; };
-		DC34686D22F2CC9100156B85 /* test.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.xlsx; sourceTree = "<group>"; };
 		DC3686AA22D73B6E002F5D01 /* GAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAImageView.swift; sourceTree = "<group>"; };
 		DC37DA95230D871C00B7FF83 /* GAClock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GAClock.storyboard; sourceTree = "<group>"; };
 		DC37DA99230D889700B7FF83 /* GAClockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClockListViewController.swift; sourceTree = "<group>"; };
@@ -1235,7 +1213,6 @@
 		DC650A6C216C59F600301AF9 /* YYInterlockTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYInterlockTestCell.xib; sourceTree = "<group>"; };
 		DC690FEF23F143A400C5F5F2 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		DC690FF023F143AE00C5F5F2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
-		DC6911E823F26B5000C5F5F2 /* fugong000.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fugong000.mp4; sourceTree = "<group>"; };
 		DC6911EC23F27B2000C5F5F2 /* fugong001.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fugong001.mp4; sourceTree = "<group>"; };
 		DC6BA7E621ED8A5300D1ED3C /* ZHCodeStandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHCodeStandardViewController.swift; sourceTree = "<group>"; };
 		DC6BA86621EEFC9900D1ED3C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -1296,7 +1273,6 @@
 		DC7120FB2215750400064A9B /* GANoralizeTestTextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANoralizeTestTextViewViewController.swift; sourceTree = "<group>"; };
 		DC7120FC2215750400064A9B /* GANoralizeTestTextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANoralizeTestTextViewViewController.xib; sourceTree = "<group>"; };
 		DC72599B230ED00C001DF613 /* GALocalPushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GALocalPushManager.swift; sourceTree = "<group>"; };
-		DC72599F230ED221001DF613 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		DC7259A2230ED772001DF613 /* AppDelegate+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Notification.swift"; sourceTree = "<group>"; };
 		DC729DBD216063C400E0150E /* YYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYHomeViewController.swift; sourceTree = "<group>"; };
 		DC729DC22160B3D300E0150E /* AppDelegate+StatusBarOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+StatusBarOrientation.swift"; sourceTree = "<group>"; };
@@ -1546,6 +1522,7 @@
 		DCB42AD6231F4E9400D7B1BE /* GAColletionViewPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAColletionViewPageControl.swift; sourceTree = "<group>"; };
 		DCB42ADA231F4FBA00D7B1BE /* pageControl_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControl_default@2x.png"; sourceTree = "<group>"; };
 		DCB42ADB231F4FBA00D7B1BE /* pageControl_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControl_selected@2x.png"; sourceTree = "<group>"; };
+		DCB44C9624225CD70000D3C3 /* recording_icon_ recording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recording_icon_ recording.png"; sourceTree = "<group>"; };
 		DCB4807721F9921500C0CDEC /* GANormalizeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeNavigationView.swift; sourceTree = "<group>"; };
 		DCB4807921F9922100C0CDEC /* GANormalizeNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANormalizeNavigationView.xib; sourceTree = "<group>"; };
 		DCB509662314FA5500180E20 /* GAClockRepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClockRepeatViewController.swift; sourceTree = "<group>"; };
@@ -1748,11 +1725,6 @@
 		DCFAD5522152486200575B93 /* YYNewPaperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNewPaperView.swift; sourceTree = "<group>"; };
 		DCFAD5532152486200575B93 /* YYNewPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNewPaperViewController.swift; sourceTree = "<group>"; };
 		DCFAD568215248D800575B93 /* other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = other.swift; sourceTree = "<group>"; };
-		DCFAD56D21524FB100575B93 /* launchImage1125-2436.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1125-2436.png"; sourceTree = "<group>"; };
-		DCFAD56E21524FB100575B93 /* launchImage1242-2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1242-2208.png"; sourceTree = "<group>"; };
-		DCFAD56F21524FB100575B93 /* launchImage640-1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage640-1136.png"; sourceTree = "<group>"; };
-		DCFAD57021524FB100575B93 /* launchImage640-960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage640-960.png"; sourceTree = "<group>"; };
-		DCFAD57121524FB100575B93 /* launchImage750-1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage750-1334.png"; sourceTree = "<group>"; };
 		DCFAE8F3222CBB0200A40DA9 /* GALocalFileCatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GALocalFileCatchManager.swift; sourceTree = "<group>"; };
 		DCFAE8F6222CBEC100A40DA9 /* GALocalFileCatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GALocalFileCatchViewController.swift; sourceTree = "<group>"; };
 		DCFAE8F7222CBEC100A40DA9 /* GALocalFileCatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GALocalFileCatchViewController.xib; sourceTree = "<group>"; };
@@ -1959,10 +1931,6 @@
 			isa = PBXGroup;
 			children = (
 				DC6911EC23F27B2000C5F5F2 /* fugong001.mp4 */,
-				DC27F92922EFE8E400066B0F /* testTMVB.rmvb */,
-				DC6911E823F26B5000C5F5F2 /* fugong000.mp4 */,
-				DC06244322EE963200C83012 /* testAvi.avi */,
-				DC06244D22EE9FA500C83012 /* testMP4.mp4 */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -2408,9 +2376,6 @@
 		DC2312BA224B197100B60C4D /* word */ = {
 			isa = PBXGroup;
 			children = (
-				DC2312B7224B196A00B60C4D /* apple.docx */,
-				DC2312C4224B20BC00B60C4D /* apple1.docx */,
-				DC2312C2224B20BC00B60C4D /* apple2.docx */,
 				DC2312C3224B20BC00B60C4D /* apple3.docx */,
 			);
 			path = word;
@@ -2420,7 +2385,6 @@
 			isa = PBXGroup;
 			children = (
 				DCBBDF7824024DD4002C6E22 /* launchAdTest001.png */,
-				DCFAD56C21524FB100575B93 /* launchImage */,
 				DC5E15DE2249FF30008736A5 /* tianmolei.jpg */,
 				DCFC8202223634C8003D8B9B /* newPage */,
 			);
@@ -2717,7 +2681,6 @@
 		DC34686022F2CA0E00156B85 /* ppt */ = {
 			isa = PBXGroup;
 			children = (
-				DC34686222F2CA3D00156B85 /* test.pptx */,
 			);
 			path = ppt;
 			sourceTree = "<group>";
@@ -2725,7 +2688,6 @@
 		DC34686122F2CA1200156B85 /* excel */ = {
 			isa = PBXGroup;
 			children = (
-				DC34686D22F2CC9100156B85 /* test.xlsx */,
 			);
 			path = excel;
 			sourceTree = "<group>";
@@ -3320,6 +3282,7 @@
 		DC7120BD2212D2F900064A9B /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				DCB44C9624225CD70000D3C3 /* recording_icon_ recording.png */,
 				DC31534C21F80EF700AA9B54 /* GAButtonViewController.swift */,
 				DC31534D21F80EF700AA9B54 /* GAButtonViewController.xib */,
 			);
@@ -3404,7 +3367,6 @@
 				DC21E00F23137F510005D424 /* dx07.caf */,
 				DC21E00C23137AB10005D424 /* test.caf */,
 				DC21E009230FEE5A0005D424 /* 4948.MP3 */,
-				DC72599F230ED221001DF613 /* test.mp3 */,
 			);
 			path = audio;
 			sourceTree = "<group>";
@@ -4761,18 +4723,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		DCFAD56C21524FB100575B93 /* launchImage */ = {
-			isa = PBXGroup;
-			children = (
-				DCFAD56D21524FB100575B93 /* launchImage1125-2436.png */,
-				DCFAD56E21524FB100575B93 /* launchImage1242-2208.png */,
-				DCFAD56F21524FB100575B93 /* launchImage640-1136.png */,
-				DCFAD57021524FB100575B93 /* launchImage640-960.png */,
-				DCFAD57121524FB100575B93 /* launchImage750-1334.png */,
-			);
-			path = launchImage;
-			sourceTree = "<group>";
-		};
 		DCFAD57721525C4200575B93 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -4992,7 +4942,6 @@
 				DCAD232B2223D2A3000325C5 /* player_unlock-nor@2x.png in Resources */,
 				DC87C56B211E9E4B00E9FA9F /* LaunchScreen.storyboard in Resources */,
 				DC70411F2379788300142ABC /* tagsEditView_btn_bg_normal_icon@2x.png in Resources */,
-				DC7259A0230ED221001DF613 /* test.mp3 in Resources */,
 				DCD44D7523921B6A00E5E651 /* 6.jpg in Resources */,
 				DCAD231D2223D2A3000325C5 /* player_fullscreen@2x.png in Resources */,
 				DC21E01C2313CB400005D424 /* GAClockDetailsViewController.xib in Resources */,
@@ -5056,7 +5005,6 @@
 				DC6BA86921EF048B00D1ED3C /* problem.html in Resources */,
 				DC37E99B237E4FAF006819DC /* GAPreferenceOrderingView.xib in Resources */,
 				DCBD49B0221EB0A900B9F88F /* GANormalizeCircleViewController.xib in Resources */,
-				DC06244422EE963200C83012 /* testAvi.avi in Resources */,
 				DCD44D292391623100E5E651 /* next_bg@2x.png in Resources */,
 				DC7CE37F23D7FB9C0049BBE0 /* GABarChartCell.xib in Resources */,
 				DC08FDB5221CF2F700F08535 /* GANormalizePickerView.xib in Resources */,
@@ -5075,7 +5023,6 @@
 				DC729DD62160D4BE00E0150E /* pxLoginTextfield_clear_icon.png in Resources */,
 				DCB2E73122015779009594DB /* GAHtmlTagViewController.xib in Resources */,
 				DC1CF57723C4702D007A655D /* GASendEmailViewController.xib in Resources */,
-				DC27F92A22EFE8E400066B0F /* testTMVB.rmvb in Resources */,
 				DC2219A323C33EAD00735027 /* pl_record_start.png in Resources */,
 				DC11462B237C0C71004A17DD /* searchView_icon_glass.png in Resources */,
 				DC331898237D3A4E007DAEBB /* GASelectedCityTopView.xib in Resources */,
@@ -5098,7 +5045,6 @@
 				DC15151D239F469300C9DD6D /* px_banner_001.png in Resources */,
 				DC6BB802237D2B7900218F27 /* selectedCity_icon_location@3x.png in Resources */,
 				DC729DDA2160D4BE00E0150E /* pxLoginTextfield_code_icon@2x.png in Resources */,
-				DCFAD57221524FB100575B93 /* launchImage1125-2436.png in Resources */,
 				DC5E15EE224A0ADF008736A5 /* YYImagesSignatureCell.xib in Resources */,
 				DCC24285235ED33A00DF49FD /* GAVibrationViewController.xib in Resources */,
 				DCCD82132316C43500C740C9 /* GAListPlaceholderView.xib in Resources */,
@@ -5109,9 +5055,9 @@
 				DC37E9AD237E78B7006819DC /* preferenceOrdering_icon_arow.png in Resources */,
 				DCEE8BFB22F8181E00439535 /* GA_VantUICell.xib in Resources */,
 				DC87C566211E9E4A00E9FA9F /* Main.storyboard in Resources */,
+				DCB44C9724225CD70000D3C3 /* recording_icon_ recording.png in Resources */,
 				DC8E40CA21A8F550004DCE29 /* ZHMonthHeaderView.xib in Resources */,
 				DC37E9A1237E511D006819DC /* preferenceOrdering_icon_normal.png in Resources */,
-				DC2312B8224B196A00B60C4D /* apple.docx in Resources */,
 				DC2219BB23C33EBD00735027 /* pl_back_icon@2x.png in Resources */,
 				DC7EF56923AA23D70039528A /* GACutomVideoViewController.xib in Resources */,
 				DC729DD82160D4BE00E0150E /* pxLoginTextfield_clear_icon@3x.png in Resources */,
@@ -5122,14 +5068,11 @@
 				DCAD23232223D2A3000325C5 /* player_play@2x.png in Resources */,
 				DC7041252379788300142ABC /* tagsEditView_btn_bg_normal_icon@3x.png in Resources */,
 				DCD601AF23D185E00058D3D9 /* apple-app-site-association in Resources */,
-				DC34686322F2CA3D00156B85 /* test.pptx in Resources */,
-				DCFAD57421524FB100575B93 /* launchImage640-1136.png in Resources */,
 				DC2EDC8D228D523400B5DD2E /* GACalenderViewController.xib in Resources */,
 				DC9FBD2F238039D50068474C /* GACalenderCell.xib in Resources */,
 				DCD44D6923921B6A00E5E651 /* 14.jpg in Resources */,
 				DC7120C72212D43100064A9B /* GANormalizeTestCollectionViewCell.xib in Resources */,
 				DCFAD55F2152486200575B93 /* YYNewPaperCell.xib in Resources */,
-				DC6911E923F26B5000C5F5F2 /* fugong000.mp4 in Resources */,
 				DC114612237BD142004A17DD /* GAImageViewsViewController.xib in Resources */,
 				DCAAA6AA23601F0900F9E51D /* GAAreaPickerView.xib in Resources */,
 				DCAAAD2022AE0D2900F4B41F /* TabsTestViewController.xib in Resources */,
@@ -5156,7 +5099,6 @@
 				DCC7AB7423D6A5C00071D6E5 /* GASplashScreenView.xib in Resources */,
 				DCC40E3923ACC5110085D545 /* GAFormSectionView.xib in Resources */,
 				DCD44D7823921B6A00E5E651 /* 7.jpg in Resources */,
-				DCFAD57321524FB100575B93 /* launchImage1242-2208.png in Resources */,
 				DC73F00E215CAB87009CB4AF /* YYLoginViewController.xib in Resources */,
 				DC06244B22EE975700C83012 /* GALocalVideoPlayerViewController.xib in Resources */,
 				DCD44D262391623100E5E651 /* next_bg.png in Resources */,
@@ -5169,7 +5111,6 @@
 				DC56A4D723FA8E0D0036C408 /* GAPLPlayerViewController.xib in Resources */,
 				DCCFD48723B5B5690019DED8 /* LFLiveKitViewController.xib in Resources */,
 				DC8EB853239B4795009D940D /* mosaic_bg_alert@2x.png in Resources */,
-				DC2312C5224B20BD00B60C4D /* apple2.docx in Resources */,
 				DCC0AD4224052A3A008F20C0 /* GAToastRootViewController.xib in Resources */,
 				DC729DE02160D4BE00E0150E /* pxLoginTextfield_secret_open_icon@2x.png in Resources */,
 				DC3D861922530A3E0031401D /* GANormalizeTabsCell.xib in Resources */,
@@ -5180,7 +5121,6 @@
 				DC60C6092229885B007D266B /* YYAlertSelectedCell.xib in Resources */,
 				DC1E10852123DBE10096FC86 /* TableViewCell1.xib in Resources */,
 				DC37E98A237D3E98006819DC /* GASelectedCityHeaderView.xib in Resources */,
-				DC06244E22EE9FA600C83012 /* testMP4.mp4 in Resources */,
 				DC37E9A7237E511E006819DC /* preferenceOrdering_icon_normal@3x.png in Resources */,
 				DC2219AF23C33EB500735027 /* pl_record_end.png in Resources */,
 				DCD44D8123921B6A00E5E651 /* 9.jpg in Resources */,
@@ -5193,7 +5133,6 @@
 				DC4888C523B21F0700A66C45 /* GATestPlayerView.xib in Resources */,
 				DCD44D6323921B6A00E5E651 /* 2.jpg in Resources */,
 				DC11462E237C0C71004A17DD /* searchView_icon_glass@3x.png in Resources */,
-				DCFAD57621524FB100575B93 /* launchImage750-1334.png in Resources */,
 				DC5CA14E241B896C00A0A3A3 /* ATAuthSDK.bundle in Resources */,
 				DC9AE3D821AE2916002FBFA4 /* ZHCalendarScrollViewController.xib in Resources */,
 				DC11463E237C309E004A17DD /* GASearchView.xib in Resources */,
@@ -5227,8 +5166,6 @@
 				DCEBC5B32121563E00A268D6 /* img_003.jpg in Resources */,
 				DC37E9B0237E78B7006819DC /* preferenceOrdering_icon_arow@3x.png in Resources */,
 				DC2C7E372360558900585617 /* GAAreaPickerCollectionCell.xib in Resources */,
-				DCFAD57521524FB100575B93 /* launchImage640-960.png in Resources */,
-				DC34686E22F2CC9100156B85 /* test.xlsx in Resources */,
 				DC114637237C0C7A004A17DD /* searchView_icon_arow.png in Resources */,
 				DCC40E6623ADB3A30085D545 /* GAFormHeaderView.xib in Resources */,
 				DC6D96B9237B982B00AC7061 /* GAInvestmentInforView.xib in Resources */,
@@ -5251,7 +5188,6 @@
 				DCBD4993221E908500B9F88F /* YYMosaicViewController.xib in Resources */,
 				DC56A4DD23FBB2960036C408 /* GALiveDetailsViewController.xib in Resources */,
 				DC7120AB2212A4AD00064A9B /* GANormalizeCacheViewController.xib in Resources */,
-				DC2312C9224B20BD00B60C4D /* apple1.docx in Resources */,
 				DCBD4968221E8A5E00B9F88F /* Normal.plist in Resources */,
 				DCD44D8423921B6A00E5E651 /* 3.jpg in Resources */,
 				DC22199723C33EA600735027 /* pl_position_icon@3x.png in Resources */,
