@@ -183,6 +183,8 @@
 		DC2EDCA8228FA49D00B5DD2E /* GACalenderControlHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDCA7228FA49D00B5DD2E /* GACalenderControlHeaderView.swift */; };
 		DC2EDCAF228FD64100B5DD2E /* GACalenderItemSpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EDCAD228FD64100B5DD2E /* GACalenderItemSpaceCell.swift */; };
 		DC2EDCB1228FD64100B5DD2E /* GACalenderItemSpaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2EDCAE228FD64100B5DD2E /* GACalenderItemSpaceCell.xib */; };
+		DC2F405D2423282400C4819C /* GAKeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F405B2423282400C4819C /* GAKeyboardObserver.swift */; };
+		DC2F405E2423282400C4819C /* GAKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F405C2423282400C4819C /* GAKeyboardView.swift */; };
 		DC31145622CC4866005B3AC9 /* GATestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31145522CC4866005B3AC9 /* GATestViewController.swift */; };
 		DC31520021F1A51900AA9B54 /* WKScriptMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3151FF21F1A51900AA9B54 /* WKScriptMessageDelegate.swift */; };
 		DC31520721F1A57500AA9B54 /* DSCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31520221F1A57500AA9B54 /* DSCallInfo.swift */; };
@@ -266,11 +268,11 @@
 		DC52C2FB23900B4F009C966A /* XCTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC52C2FA23900B4F009C966A /* XCTabBarView.xib */; };
 		DC52C300239012C3009C966A /* XCMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52C2FF239012C3009C966A /* XCMineViewController.swift */; };
 		DC52C3052390B2E7009C966A /* GAFloatWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52C3042390B2E7009C966A /* GAFloatWindow.swift */; };
+		DC5482032424A3170041E0BD /* GATableScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5482012424A3170041E0BD /* GATableScrollCell.swift */; };
 		DC5611572407D2CC00D5B705 /* GAGlobal+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5611562407D2CC00D5B705 /* GAGlobal+Log.swift */; };
 		DC5611632407FFF100D5B705 /* SimpleValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5611612407FFF000D5B705 /* SimpleValidation.storyboard */; };
 		DC5611642407FFF100D5B705 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5611622407FFF100D5B705 /* SimpleValidationViewController.swift */; };
 		DC561166240800BF00D5B705 /* GARxSwiftBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC561165240800BF00D5B705 /* GARxSwiftBaseViewController.swift */; };
-		DC5611682408015000D5B705 /* GAGlobal+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5611672408015000D5B705 /* GAGlobal+Alert.swift */; };
 		DC56116B2408023700D5B705 /* GAAlertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56116A2408023700D5B705 /* GAAlertWindow.swift */; };
 		DC56116D240802E300D5B705 /* GANormalAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC56116C240802E300D5B705 /* GANormalAlertView.xib */; };
 		DC56116F2408030300D5B705 /* GANormalAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56116E2408030200D5B705 /* GANormalAlertView.swift */; };
@@ -641,6 +643,8 @@
 		DCB42ADC231F4FBA00D7B1BE /* pageControl_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB42ADA231F4FBA00D7B1BE /* pageControl_default@2x.png */; };
 		DCB42ADE231F4FBA00D7B1BE /* pageControl_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB42ADB231F4FBA00D7B1BE /* pageControl_selected@2x.png */; };
 		DCB44C9724225CD70000D3C3 /* recording_icon_ recording.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB44C9624225CD70000D3C3 /* recording_icon_ recording.png */; };
+		DCB44CAC242314B30000D3C3 /* GAPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB44CAA242314B30000D3C3 /* GAPickerViewController.xib */; };
+		DCB44CAD242314B30000D3C3 /* GAPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB44CAB242314B30000D3C3 /* GAPickerViewController.swift */; };
 		DCB4807821F9921500C0CDEC /* GANormalizeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4807721F9921500C0CDEC /* GANormalizeNavigationView.swift */; };
 		DCB4807A21F9922100C0CDEC /* GANormalizeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB4807921F9922100C0CDEC /* GANormalizeNavigationView.xib */; };
 		DCB509682314FA5500180E20 /* GAClockRepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB509662314FA5500180E20 /* GAClockRepeatViewController.swift */; };
@@ -1053,6 +1057,8 @@
 		DC2EDCA7228FA49D00B5DD2E /* GACalenderControlHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GACalenderControlHeaderView.swift; sourceTree = "<group>"; };
 		DC2EDCAD228FD64100B5DD2E /* GACalenderItemSpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GACalenderItemSpaceCell.swift; sourceTree = "<group>"; };
 		DC2EDCAE228FD64100B5DD2E /* GACalenderItemSpaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GACalenderItemSpaceCell.xib; sourceTree = "<group>"; };
+		DC2F405B2423282400C4819C /* GAKeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAKeyboardObserver.swift; sourceTree = "<group>"; };
+		DC2F405C2423282400C4819C /* GAKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAKeyboardView.swift; sourceTree = "<group>"; };
 		DC31145522CC4866005B3AC9 /* GATestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATestViewController.swift; sourceTree = "<group>"; };
 		DC3151FF21F1A51900AA9B54 /* WKScriptMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKScriptMessageDelegate.swift; sourceTree = "<group>"; };
 		DC31520221F1A57500AA9B54 /* DSCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSCallInfo.swift; sourceTree = "<group>"; };
@@ -1136,6 +1142,7 @@
 		DC52C2FA23900B4F009C966A /* XCTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCTabBarView.xib; sourceTree = "<group>"; };
 		DC52C2FF239012C3009C966A /* XCMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCMineViewController.swift; sourceTree = "<group>"; };
 		DC52C3042390B2E7009C966A /* GAFloatWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAFloatWindow.swift; sourceTree = "<group>"; };
+		DC5482012424A3170041E0BD /* GATableScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATableScrollCell.swift; sourceTree = "<group>"; };
 		DC54D89623E92716005AC72D /* 技术点文档.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "技术点文档.md"; sourceTree = "<group>"; };
 		DC54D89A23E94E3D005AC72D /* Markdown语法.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Markdown语法.md"; sourceTree = "<group>"; };
 		DC54D89C23E94FF9005AC72D /* GA文档.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "GA文档.md"; sourceTree = "<group>"; };
@@ -1143,7 +1150,6 @@
 		DC5611612407FFF000D5B705 /* SimpleValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleValidation.storyboard; sourceTree = "<group>"; };
 		DC5611622407FFF100D5B705 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		DC561165240800BF00D5B705 /* GARxSwiftBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARxSwiftBaseViewController.swift; sourceTree = "<group>"; };
-		DC5611672408015000D5B705 /* GAGlobal+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GAGlobal+Alert.swift"; sourceTree = "<group>"; };
 		DC56116A2408023700D5B705 /* GAAlertWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAAlertWindow.swift; sourceTree = "<group>"; };
 		DC56116C240802E300D5B705 /* GANormalAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANormalAlertView.xib; sourceTree = "<group>"; };
 		DC56116E2408030200D5B705 /* GANormalAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalAlertView.swift; sourceTree = "<group>"; };
@@ -1523,6 +1529,8 @@
 		DCB42ADA231F4FBA00D7B1BE /* pageControl_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControl_default@2x.png"; sourceTree = "<group>"; };
 		DCB42ADB231F4FBA00D7B1BE /* pageControl_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControl_selected@2x.png"; sourceTree = "<group>"; };
 		DCB44C9624225CD70000D3C3 /* recording_icon_ recording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recording_icon_ recording.png"; sourceTree = "<group>"; };
+		DCB44CAA242314B30000D3C3 /* GAPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAPickerViewController.xib; sourceTree = "<group>"; };
+		DCB44CAB242314B30000D3C3 /* GAPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAPickerViewController.swift; sourceTree = "<group>"; };
 		DCB4807721F9921500C0CDEC /* GANormalizeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANormalizeNavigationView.swift; sourceTree = "<group>"; };
 		DCB4807921F9922100C0CDEC /* GANormalizeNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANormalizeNavigationView.xib; sourceTree = "<group>"; };
 		DCB509662314FA5500180E20 /* GAClockRepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClockRepeatViewController.swift; sourceTree = "<group>"; };
@@ -2073,7 +2081,6 @@
 			children = (
 				DC0FCD3B23D31BDD00C5E6BD /* GAGlobal+Runtime.swift */,
 				DC5611562407D2CC00D5B705 /* GAGlobal+Log.swift */,
-				DC5611672408015000D5B705 /* GAGlobal+Alert.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -2595,6 +2602,15 @@
 			path = Calender;
 			sourceTree = "<group>";
 		};
+		DC2F405A2423282400C4819C /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F405B2423282400C4819C /* GAKeyboardObserver.swift */,
+				DC2F405C2423282400C4819C /* GAKeyboardView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		DC31145122CC4728005B3AC9 /* TabbarVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -2993,6 +3009,14 @@
 				DC59A6B32390FA5300050506 /* GAFloatWindowViewController.xib */,
 			);
 			path = "GAFloatButton（浮窗按钮）";
+			sourceTree = "<group>";
+		};
+		DC5481FF2424A3170041E0BD /* GATableScrollCell（侧滑自定义按钮） */ = {
+			isa = PBXGroup;
+			children = (
+				DC5482012424A3170041E0BD /* GATableScrollCell.swift */,
+			);
+			path = "GATableScrollCell（侧滑自定义按钮）";
 			sourceTree = "<group>";
 		};
 		DC54D89523E926DE005AC72D /* TechnicalPoint（技术点纪要） */ = {
@@ -3443,6 +3467,7 @@
 		DC7ADE6823CC4CC7007CC4BA /* GAPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				DCB44CAE242314BF0000D3C3 /* normal */,
 				DCE4B86623C84582006A4B4C /* GAPickerDataCell.swift */,
 				DCE4B86723C84582006A4B4C /* GAPickerDataCell.xib */,
 				DC7ADE5B23CB110E007CC4BA /* GAPickerView.swift */,
@@ -3830,6 +3855,7 @@
 		DC8D6CAB21536F21005869D6 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				DC5481FF2424A3170041E0BD /* GATableScrollCell（侧滑自定义按钮） */,
 				DCC7AB6E23D6A5140071D6E5 /* GASplashScreenView（跳转Flutter界面） */,
 				DC02028321A4FBD700FC8620 /* ADView */,
 				DC428725235EF78900A73B17 /* AreaPickerView（地区选择器） */,
@@ -4116,6 +4142,15 @@
 				DCB42ADB231F4FBA00D7B1BE /* pageControl_selected@2x.png */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		DCB44CAE242314BF0000D3C3 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				DCB44CAB242314B30000D3C3 /* GAPickerViewController.swift */,
+				DCB44CAA242314B30000D3C3 /* GAPickerViewController.xib */,
+			);
+			path = normal;
 			sourceTree = "<group>";
 		};
 		DCB4807B21F9923400C0CDEC /* NavigationView */ = {
@@ -4564,6 +4599,7 @@
 		DCEBC5B82121752B00A268D6 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				DC2F405A2423282400C4819C /* Keyboard */,
 				DC5CA145241B3CA100A0A3A3 /* Speech（语音识别） */,
 				DCAE402023C5ABE40030F1B7 /* KeychainItem.swift */,
 				DCDA15BC237AA41900A2151D /* GAStorageSpace.swift */,
@@ -5186,6 +5222,7 @@
 				DCC40E5523ACFDFF0085D545 /* GAFormLeftItemCell.xib in Resources */,
 				DC729DE12160D4BE00E0150E /* pxLoginTextfield_secret_open_icon@3x.png in Resources */,
 				DCBD4993221E908500B9F88F /* YYMosaicViewController.xib in Resources */,
+				DCB44CAC242314B30000D3C3 /* GAPickerViewController.xib in Resources */,
 				DC56A4DD23FBB2960036C408 /* GALiveDetailsViewController.xib in Resources */,
 				DC7120AB2212A4AD00064A9B /* GANormalizeCacheViewController.xib in Resources */,
 				DCBD4968221E8A5E00B9F88F /* Normal.plist in Resources */,
@@ -5258,7 +5295,7 @@
 			name = "[CP-User] Run Flutter Build Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_yyframework/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_yyframework/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		DCB2E7CB2202AC2E009594DB /* Run Script-Warning */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -5340,7 +5377,6 @@
 				DC08FDBB221CF34900F08535 /* GANormalizeDatePickerView.swift in Sources */,
 				DC0FC8F0216DE45800F3AB12 /* YYInterlockTableView.swift in Sources */,
 				DC59A6B42390FA5300050506 /* GAFloatWindowViewController.swift in Sources */,
-				DC5611682408015000D5B705 /* GAGlobal+Alert.swift in Sources */,
 				DCC40E2E23ACC3230085D545 /* GAFormCell.swift in Sources */,
 				DC911D3C22C9FD3600473B51 /* NavigationView.swift in Sources */,
 				DC51BAA621C37DEC004052E2 /* GAIphoneType.swift in Sources */,
@@ -5374,9 +5410,11 @@
 				DC828841231776DD00038D74 /* View+Toast.swift in Sources */,
 				DC911D3822C9FD3600473B51 /* BaseViewController.swift in Sources */,
 				DC28B33121BE4C780089BFBC /* GAPageControl.swift in Sources */,
+				DCB44CAD242314B30000D3C3 /* GAPickerViewController.swift in Sources */,
 				DC7BDA152154BE5A003F3384 /* YYInterlockTestView.swift in Sources */,
 				DCFAD55E2152486200575B93 /* YYNewPaperCell.swift in Sources */,
 				DC3F97F523838C7700CFE4BB /* GAPreferenceOrderingCell.swift in Sources */,
+				DC2F405D2423282400C4819C /* GAKeyboardObserver.swift in Sources */,
 				DC37DA9A230D889700B7FF83 /* GAClockListViewController.swift in Sources */,
 				DCD44D2D23920C1400E5E651 /* UIApplication+Extension.swift in Sources */,
 				DC02029F21A5448400FC8620 /* ZHSortCollectionCell.swift in Sources */,
@@ -5583,6 +5621,7 @@
 				DCB5096E23150CCC00180E20 /* GAClockTagViewController.swift in Sources */,
 				DCB2E72D22015779009594DB /* GATransitionableTabViewController.swift in Sources */,
 				DC0FC8F2216DF3BC00F3AB12 /* YYXibInterlockView.swift in Sources */,
+				DC2F405E2423282400C4819C /* GAKeyboardView.swift in Sources */,
 				DC02027A21A4F36600FC8620 /* YYCardIOViewController.swift in Sources */,
 				DCB334E021D32C0500AFA1D4 /* GAEstimatedCollectionViewController.swift in Sources */,
 				DC60C61B2229885B007D266B /* YYSelfViewManager.swift in Sources */,
@@ -5623,6 +5662,7 @@
 				DCFF0A2D21D5BF1100DE6004 /* GATagCollectionViewController.swift in Sources */,
 				DC21E01F2313CD140005D424 /* GANavViewController.swift in Sources */,
 				DCB42AD7231F4E9400D7B1BE /* GAColletionViewPageControl.swift in Sources */,
+				DC5482032424A3170041E0BD /* GATableScrollCell.swift in Sources */,
 				DC4DD8B023A0BD6F00947070 /* GAFullScreenPlayerViewController.swift in Sources */,
 				DC6FCD6323C2CC1000912802 /* PLSelectedVideoListViewController.swift in Sources */,
 				DCC40E6223ADB3750085D545 /* GAFormHeaderView.swift in Sources */,

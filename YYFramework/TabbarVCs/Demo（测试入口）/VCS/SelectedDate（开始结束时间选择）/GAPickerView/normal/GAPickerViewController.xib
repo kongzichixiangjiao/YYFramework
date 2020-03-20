@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAPickerViewController" customModule="Need" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="huu-lP-eeD" id="NYM-Qz-iF0"/>
+                <outlet property="bgViewBottomSpace" destination="pjV-tg-1Qh" id="QT4-AG-Ocq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huu-lP-eeD">
+                    <rect key="frame" x="0.0" y="627" width="414" height="235"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDT-7P-t9q">
+                            <rect key="frame" x="354" y="0.0" width="50" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Gm7-Oq-pUs"/>
+                                <constraint firstAttribute="width" constant="50" id="OuI-Qv-bgX"/>
+                            </constraints>
+                            <state key="normal" title=" 确定"/>
+                            <connections>
+                                <action selector="confirmA:" destination="-1" eventType="touchUpInside" id="fp1-t7-GJL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235" id="4Na-kI-4AQ"/>
+                        <constraint firstItem="JDT-7P-t9q" firstAttribute="top" secondItem="huu-lP-eeD" secondAttribute="top" id="7IB-vq-Tym"/>
+                        <constraint firstAttribute="trailing" secondItem="JDT-7P-t9q" secondAttribute="trailing" constant="10" id="d2G-kc-6hp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="huu-lP-eeD" secondAttribute="trailing" id="5GN-wP-sA3"/>
+                <constraint firstItem="huu-lP-eeD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qsq-A0-DtV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="huu-lP-eeD" secondAttribute="bottom" id="pjV-tg-1Qh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

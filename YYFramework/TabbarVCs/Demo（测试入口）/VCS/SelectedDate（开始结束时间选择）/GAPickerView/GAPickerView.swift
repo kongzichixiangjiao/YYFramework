@@ -126,26 +126,17 @@ extension GAPickerView: UIScrollViewDelegate {
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        let t = scrollView as! UITableView
-        let y = t.contentOffset.y
-        let item: CGFloat = y.truncatingRemainder(dividingBy: configModel.kItemHeight)
-        let count = Int(y / configModel.kItemHeight)
-        
-        if count >= 0 {
-            if item < configModel.kItemHeight / 2 {
-                t.scrollToRow(at: IndexPath(item: count + redundantCount, section: 0), at: .middle, animated: true)
-            } else {
-                t.scrollToRow(at: IndexPath(item: count + redundantCount + 1, section: 0), at: .middle, animated: true)
-            }
-        }
+        _setupPosition(scrollView: scrollView)
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         getResultData(scrollView)
+        
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         getResultData(scrollView)
+        _setupPosition(scrollView: scrollView)
     }
     
     private func getResultData(_ scrollView: UIScrollView) {
@@ -163,6 +154,23 @@ extension GAPickerView: UIScrollViewDelegate {
             }
         }
     }
+    
+    private func _setupPosition(scrollView: UIScrollView) {
+        let t = scrollView as! UITableView
+        let y = t.contentOffset.y
+        let item: CGFloat = y.truncatingRemainder(dividingBy: configModel.kItemHeight)
+        let count = Int(y / configModel.kItemHeight)
+        
+        if count >= 0 {
+            if item < configModel.kItemHeight / 2 {
+                t.scrollToRow(at: IndexPath(item: count + redundantCount, section: 0), at: .middle, animated: true)
+            } else {
+                t.scrollToRow(at: IndexPath(item: count + redundantCount + 1, section: 0), at: .middle, animated: true)
+            }
+        }
+    }
+    
+        
 }
 
 extension GAPickerView: UITableViewDelegate, UITableViewDataSource {
