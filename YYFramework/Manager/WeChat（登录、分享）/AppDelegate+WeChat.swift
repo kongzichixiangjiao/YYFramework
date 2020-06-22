@@ -40,7 +40,7 @@ extension AppDelegate {
         if sourse == "com.tencent.ww" {
             return GAWeChat.share.hanleOpen(url: url, sourse: sourse)
         } else if sourse == "com.tencent.ww" {
-            return WXApi.handleOpen(url, delegate: self as? WXApiDelegate)
+            return false
         } else {
             return false 
         }

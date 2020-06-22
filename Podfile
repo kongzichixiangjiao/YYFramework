@@ -28,7 +28,7 @@ target 'YYFramework' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
-  pod 'ReactiveCocoa', '9.0.0'
+  pod 'ReactiveCocoa' # , '9.0.0'
   
   # 绑定
   pod 'Bond'

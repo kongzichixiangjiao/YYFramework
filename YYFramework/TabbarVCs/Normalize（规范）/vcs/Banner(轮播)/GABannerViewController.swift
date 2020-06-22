@@ -14,17 +14,23 @@ class GABannerViewController: GANavViewController {
     var dataSource = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     
     lazy var banner: GABannerView = {
-        let v = GABannerView(frame: CGRect(x: 0, y: 100, width: self.view.width, height: 250))
+        let v = GABannerView(frame: CGRect(x: 0, y: 100, width: self.view.width, height: 150))
         v.delegate = self
         v.dataSource = self
-        v.identifier = "test"
+//        v.identifier = "test"
         v.backgroundColor = UIColor.randomColor()
         return v
     }()
-    
+
     lazy var px_banner: GAPXBanner? = {
-        let v = GAPXBanner(frame: CGRect(x: 0, y: 400, width: self.view.width, height: 134))
+        let v = GAPXBanner(frame: CGRect(x: 0, y: 430, width: self.view.width, height: 134))
+        v.backgroundColor = UIColor.randomColor()
         v.delegate = self
+        return v
+    }()
+    
+    lazy var yyBanner: YYBannerView = {
+        let v = YYBannerView(frame: CGRect(x: 0, y: 300, width: self.view.width, height: 180))
         return v
     }()
     
@@ -37,7 +43,9 @@ class GABannerViewController: GANavViewController {
         
         self.view.addSubview(banner)
         
-        self.view.addSubview(px_banner!)
+//        self.view.addSubview(px_banner!)
+
+        self.view.addSubview(yyBanner)
     }
     
     func showPlayerWindow() {
@@ -52,11 +60,21 @@ class GABannerViewController: GANavViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
     }
     
     deinit {
         print("GABannerViewController")
+    }
+}
+extension GABannerViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(cellClass: GABannerBaseCell.self, for: indexPath)
+        cell.imgView.image = UIImage(named: dataSource[indexPath.row])
+        return cell
     }
 }
 
@@ -119,7 +137,7 @@ extension GABannerViewController: GABannerDelegate, GABannerDataSource {
     func gaBanner(_ banner: GABanner, layoutModel: GABannerLayoutModel) -> GABannerLayoutModel {
         return layoutModel
             .layoutType(GABannerLinearTransform())
-            .itemSize(CGSize(width: 280, height: 250))
+            .itemSize(CGSize(width: kScreenWidth, height: 250))
             .maximumAngle(0.1)
             .itemSpacing(10)
     }

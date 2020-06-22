@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dc546c6-4ae3-4c97-9439-0b1822b8c6bf" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/YYFramework/EXTENSION/Foundation/CGRect+Extension.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/JJCardSliderFlowLayout.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/JJCardSliderFlowLayout.m" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/YYBanner/CardsCollectionViewLayout.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/YYBanner/YYBannerView.swift" />
+      <change beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/Pods/ReactiveKit/Sources/Connectable.swift" afterPath="$PROJECT_DIR$/Pods/ReactiveKit/Sources/Connectable.swift" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YYFramework/Pods-YYFramework-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YYFramework/Pods-YYFramework-frameworks.sh" />
+      <change beforePath="$PROJECT_DIR$/YYFramework.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/YYFramework.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/YYFramework.xcodeproj/xcshareddata/xcschemes/YYFramework.xcscheme" afterPath="$PROJECT_DIR$/YYFramework.xcodeproj/xcshareddata/xcschemes/YYFramework.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Appdelegate/AppDelegate+UM.swift" afterPath="$PROJECT_DIR$/YYFramework/Appdelegate/AppDelegate+UM.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Appdelegate/AppDelegate.swift" afterPath="$PROJECT_DIR$/YYFramework/Appdelegate/AppDelegate.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Base/Storyboard（基类）/BaseKit/CustomCellView.swift" afterPath="$PROJECT_DIR$/YYFramework/Base/Storyboard（基类）/BaseKit/CustomCellView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/EXTENSION/Foundation/String+Extension.swift" afterPath="$PROJECT_DIR$/YYFramework/EXTENSION/Foundation/String+Extension.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/EXTENSION/UIKit/ViewController+CurrentVC.swift" afterPath="$PROJECT_DIR$/YYFramework/EXTENSION/UIKit/ViewController+CurrentVC.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Global/GAGlobal+Runtime.swift" afterPath="$PROJECT_DIR$/YYFramework/Global/GAGlobal+Runtime.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/2.1.1_edc56034f9_20190726183345" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/Headers" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/UMCommon" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/Versions/A/Headers/UMCommon.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/Versions/A/Headers/UMConfigure.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/Versions/A/UMCommon" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Lib/友盟一键登录/UMCommon.framework/Versions/Current" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/GAStorage/GAPlistManager.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/GAStorage/GAPlistManager.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/Keyboard/GAKeyboardObserver.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/Keyboard/GAKeyboardObserver.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/Keyboard/GAKeyboardView.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/Keyboard/GAKeyboardView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/WeChat（登录、分享）/AppDelegate+WeChat.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/WeChat（登录、分享）/AppDelegate+WeChat.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/WeChat（登录、分享）/GAWeChat.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/WeChat（登录、分享）/GAWeChat.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Manager/ZHRequest/ZHRequest.swift" afterPath="$PROJECT_DIR$/YYFramework/Manager/ZHRequest/ZHRequest.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABanner+Extension.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABanner+Extension.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABanner.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABanner.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerBaseCell.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerBaseCell.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerBaseCell.xib" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerBaseCell.xib" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerBaseFlow.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerBaseFlow.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerCellRegister.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerCellRegister.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerLayoutModel.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerLayoutModel.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerModel.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerModel.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerTransformContext.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerTransformContext.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABannerView.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABannerView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GABaseBannerView.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GABaseBannerView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/GATransform.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/GATransform.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/0.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/0.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/1.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/1.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/10.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/10.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/11.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/11.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/12.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/12.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/13.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/13.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/14.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/14.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/15.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/15.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/2.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/2.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/3.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/3.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/4.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/4.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/5.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/5.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/6.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/6.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/7.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/7.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/8.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/8.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GABanner（学习JXBanner）/source/9.jpg" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/Banner（学习JXBanner）/source/9.jpg" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAFloatButton（浮窗按钮）/GAFloatWindow.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GAFloatButton（浮窗按钮）/GAFloatWindow.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAFloatButton（浮窗按钮）/GAFloatWindowViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GAFloatButton（浮窗按钮）/GAFloatWindowViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/GAPXBanner.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/GAPXBanner.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/GAPXBannerCell.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/GAPXBannerCell.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/GAPXBannerCell.xib" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/GAPXBannerCell.xib" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/layout/GABannerLineLayout.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/layout/GABannerLineLayout.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/px_banner_001.png" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/px_banner_001.png" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAPXBanner（普信使用Banner）/px_banner_002.png" afterPath="$PROJECT_DIR$/YYFramework/Public/GABanner/GAPXBanner（普信使用Banner）/px_banner_002.png" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/GAToast（吐司）/toast2/GAShowWindow.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/GAToast（吐司）/toast2/GAShowWindow.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_bottom_shadel@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_brightness@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_lock-nor@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_shrinkscreen@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_slider@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_top_shadel@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerSource/player_unlock-nor@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerView/YYPlayerView.xib" afterPath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/PlayerView/YYPlayerView.xib" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/YYPlayerSlider.swift" afterPath="$PROJECT_DIR$/YYFramework/Public/PlayerView（播放器）/YYPlayerView/YYPlayerSlider.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Back.imagestacklayer/Content.imageset/Back@large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Back.imagestacklayer/Content.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Content.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Content.imageset/Front@large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Content.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Content.imageset/Middle@large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/iphone_alt_small_2x.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/iphone_alt_small_2x.imageset/iphone_alt_small_2x.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/macbookpro_portrait_small_2x.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/macbookpro_portrait_small_2x.imageset/macbookpro_portrait_small_2x.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/watch_alt_portrait_small_2x.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/AppleHomePage/watch_alt_portrait_small_2x.imageset/watch_alt_portrait_small_2x.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/nav/nav_bg.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/nav/nav_bg.imageset/nav_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon01.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon01.imageset/tabbar_icon01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon02.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon02.imageset/tabbar_icon02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon03.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon03.imageset/tabbar_icon03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon05.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon05.imageset/tabbar_icon05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon06.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon06.imageset/tabbar_icon06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon07.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon07.imageset/tabbar_icon07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon08.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Base/tabbar/tabbar_icon08.imageset/tabbar_icon08.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/cityGuide.imageset/316f8e75.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/cityGuide.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/montreal.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/montreal.imageset/photo-1419041082630-1e98debd0a6a.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/toronto.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/toronto.imageset/photo-1437147921639-ef00e030265a.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/vancouver.imageset/316f8e75.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/CityGuide/vancouver.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash0.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash0.imageset/Unsplash0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash0_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash0_thumb.imageset/Unsplash0_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash1.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash1.imageset/Unsplash1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash10.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash10.imageset/Unsplash10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash10_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash10_thumb.imageset/Unsplash10_thumb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash1_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash1_thumb.imageset/Unsplash1_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash2.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash2.imageset/Unsplash2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash2_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash2_thumb.imageset/Unsplash2_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash3.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash3.imageset/Unsplash3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash3_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash3_thumb.imageset/Unsplash3_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash4.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash4.imageset/Unsplash4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash4_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash4_thumb.imageset/Unsplash4_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash5.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash5.imageset/Unsplash5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash5_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash5_thumb.imageset/Unsplash5_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash6.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash6.imageset/Unsplash6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash6_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash6_thumb.imageset/Unsplash6_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash7.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash7.imageset/Unsplash7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash7_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash7_thumb.imageset/Unsplash7_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash8.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash8.imageset/Unsplash8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash8_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash8_thumb.imageset/Unsplash8_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash9.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash9.imageset/Unsplash9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash9_thumb.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Foods/Unsplash9_thumb.imageset/Unsplash9_thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/HeroLogo.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/HeroLogo.imageset/HeroLogo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/HeroLogo.imageset/HeroLogo@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/HeroLogo.imageset/HeroLogo@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_audiotrack_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_audiotrack_48pt.imageset/ic_audiotrack_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_audiotrack_48pt.imageset/ic_audiotrack_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_audiotrack_48pt.imageset/ic_audiotrack_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_chat_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_chat_48pt.imageset/ic_chat_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_chat_48pt.imageset/ic_chat_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_chat_48pt.imageset/ic_chat_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_format_quote_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_format_quote_48pt.imageset/ic_format_quote_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_format_quote_48pt.imageset/ic_format_quote_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_format_quote_48pt.imageset/ic_format_quote_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_gif_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_gif_48pt.imageset/ic_gif_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_gif_48pt.imageset/ic_gif_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_gif_48pt.imageset/ic_gif_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_insert_photo_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_insert_photo_48pt.imageset/ic_insert_photo_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_insert_photo_48pt.imageset/ic_insert_photo_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_insert_photo_48pt.imageset/ic_insert_photo_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_36pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_36pt.imageset/ic_menu_36pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_36pt.imageset/ic_menu_36pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_36pt.imageset/ic_menu_36pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_48pt.imageset/ic_menu_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_48pt.imageset/ic_menu_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_menu_48pt.imageset/ic_menu_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_text_fields_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_text_fields_48pt.imageset/ic_text_fields_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_text_fields_48pt.imageset/ic_text_fields_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_text_fields_48pt.imageset/ic_text_fields_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_videocam_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_videocam_48pt.imageset/ic_videocam_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_videocam_48pt.imageset/ic_videocam_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Menu/ic_videocam_48pt.imageset/ic_videocam_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_forward.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_forward.imageset/ic_fast_forward.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_forward.imageset/ic_fast_forward_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_forward.imageset/ic_fast_forward_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_rewind.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_rewind.imageset/ic_fast_rewind.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_rewind.imageset/ic_fast_rewind_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_fast_rewind.imageset/ic_fast_rewind_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_pause_white.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_pause_white.imageset/ic_pause_white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_pause_white.imageset/ic_pause_white_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_pause_white.imageset/ic_pause_white_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_play_arrow_white.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_play_arrow_white.imageset/ic_play_arrow_white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_play_arrow_white.imageset/ic_play_arrow_white_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_play_arrow_white.imageset/ic_play_arrow_white_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_repeat.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_repeat.imageset/ic_repeat.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_repeat.imageset/ic_repeat_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_repeat.imageset/ic_repeat_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_shuffle.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_shuffle.imageset/ic_shuffle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_shuffle.imageset/ic_shuffle_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/MusicPlayer/ic_shuffle.imageset/ic_shuffle_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/ShortLive/close_back.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/ShortLive/close_back.imageset/close_back@1x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/ShortLive/close_back.imageset/close_back@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/ShortLive/close_back.imageset/close_back@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_home_selected.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_home_selected.imageset/tabbar_home_selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_home_selected.imageset/tabbar_home_selected@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_home_selected.imageset/tabbar_home_selected@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_default.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_default.imageset/tabbar_serve_default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_default.imageset/tabbar_serve_default@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_default.imageset/tabbar_serve_default@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_selected.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_selected.imageset/tabbar_serve_selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_selected.imageset/tabbar_serve_selected@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_serve_selected.imageset/tabbar_serve_selected@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_vantUI_default.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_vantUI_default.imageset/tabbar_vantUI_default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_vantUI_selected.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_vantUI_selected.imageset/tabbar_vantUI_selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_default.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_default.imageset/tabbar_wealth_default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_default.imageset/tabbar_wealth_default@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_default.imageset/tabbar_wealth_default@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_selected.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_selected.imageset/tabbar_wealth_selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_selected.imageset/tabbar_wealth_selected@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/Tabbar/tabbar_wealth_selected.imageset/tabbar_wealth_selected@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/bigbuckbunny.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/bigbuckbunny.imageset/poster.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/buttonIcons/download.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/buttonIcons/download.imageset/download.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_bug_report_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_bug_report_48pt.imageset/ic_bug_report_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_bug_report_48pt.imageset/ic_bug_report_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_bug_report_48pt.imageset/ic_bug_report_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_input_48pt.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_input_48pt.imageset/ic_input_48pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_input_48pt.imageset/ic_input_48pt_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_input_48pt.imageset/ic_input_48pt_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_keyboard_arrow_down.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_keyboard_arrow_down.imageset/ic_keyboard_arrow_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_keyboard_arrow_down.imageset/ic_keyboard_arrow_down_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_keyboard_arrow_down.imageset/ic_keyboard_arrow_down_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_list.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_list.imageset/ic_view_list.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_list.imageset/ic_view_list_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_list.imageset/ic_view_list_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_module.imageset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_module.imageset/ic_view_module.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_module.imageset/ic_view_module_2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/Assets.xcassets/icons/ic_view_module.imageset/ic_view_module_3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/YYFramework-Bridging-Header.h" afterPath="$PROJECT_DIR$/YYFramework/System/YYFramework-Bridging-Header.h" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/System/apple-app-site-association" afterPath="$PROJECT_DIR$/YYFramework/System/apple-app-site-association" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/RootVC/GATestNexttViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/RootVC/GATestNexttViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/RootVC/GATestViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/RootVC/GATestViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/VCS/RunTime（运行时）/GARuntimeViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/VCS/RunTime（运行时）/GARuntimeViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/VCS/一键登录/GAUMLoginViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Demo（测试入口）/VCS/一键登录/GAUMLoginViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/Button/GAIconButton.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/Button/GAIconButton.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/PickerView/GANormalizeDatePickerView.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/PickerView/GANormalizeDatePickerView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/TextView/GANormalizeTextView.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/BaseView/TextView/GANormalizeTextView.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/vcs/Banner(轮播)/GABannerViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/vcs/Banner(轮播)/GABannerViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/vcs/Button/recording_icon_ recording.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/vcs/PickerView/ZHDatePickerViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/Normalize（规范）/vcs/PickerView/ZHDatePickerViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/YYFramework/TabbarVCs/XiangCai（香菜）/Class/XCMineViewController.swift" afterPath="$PROJECT_DIR$/YYFramework/TabbarVCs/XiangCai（香菜）/Class/XCMineViewController.swift" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="140" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="958" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YYFramework" type="1d218c8b:XcodeProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Cidr.FilesView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dc546c6-4ae3-4c97-9439-0b1822b8c6bf" name="Default" comment="" />
+      <created>1592717560551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592717560551</updated>
+      <workItem from="1592717565040" duration="82000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="140" y="43" width="1400" height="958" extended-state="1" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

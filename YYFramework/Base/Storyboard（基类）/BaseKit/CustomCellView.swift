@@ -31,6 +31,7 @@ class CustomCellView: UIView {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
         self.backgroundColor = normalColor
+        
     }
 
 }

@@ -88,16 +88,13 @@ class AppDelegate: FlutterAppDelegate {
         return true
     }
     
-    override func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        guard let sourse = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String else {
-            return true
+    
+   override func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if (url.scheme ?? "").contains("GAWXLib.KEY") {
+            return wx_hanleOpen(url: url, sourse: "")
         }
-        if wx_hanleOpen(url: url, sourse: sourse) {
-            return true
-        } else {
+        return true 
 //        return growingIO_open(url: url)
-            return true
-        }
     }
     
     override func application(_ application: UIApplication, handleOpen url: URL) -> Bool {

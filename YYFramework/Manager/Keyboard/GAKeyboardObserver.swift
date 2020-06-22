@@ -12,7 +12,7 @@ protocol GAKeyboardProtocol {
     
 }
 
-extension GAKeyboardProtocol where Self: KeyboardObserver {
+extension GAKeyboardProtocol where Self: GAKeyboardObserver {
     func keyboard_addObserver(showSelector: Selector, hideSelector: Selector) {
         NotificationCenter.default.addObserver(self,
                                                selector: showSelector,

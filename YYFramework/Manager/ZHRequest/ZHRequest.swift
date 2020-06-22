@@ -282,7 +282,7 @@ open class ZHReuqest {
         }
     }
     
-    private func _download(baseUrlType: ZHUrlType? = .url, zhUrlApi api: String, method: HTTPMethod? = .post, parameters: Parameters? = ["":""], queue: DispatchQueue? = DispatchQueue.global(qos: .utility), encoding: ParameterEncoding? = JSONEncoding.default, headers: HTTPHeaders? = nil) -> DownloadRequest? {
+    func _download(baseUrlType: ZHUrlType? = .url, zhUrlApi api: String, method: HTTPMethod? = .post, parameters: Parameters? = ["":""], queue: DispatchQueue? = DispatchQueue.global(qos: .utility), encoding: ParameterEncoding? = JSONEncoding.default, headers: HTTPHeaders? = nil) -> DownloadRequest? {
         guard let url = _url(baseUrlType: baseUrlType!, api: api) else {
             ZHReuqestLog.errorLog(error: .urlError(message: "url 格式错误"))
             return nil

@@ -6,6 +6,17 @@
 //  Copyright © 2019年 houjianan. All rights reserved.
 //
 
+
+/*
+ let d = YYPresentationDelegate(animationType: .sheet, isShowMaskView: true, maskViewColor: UIColor.randomColor(0.3))
+ let vc = ZHDatePickerViewController(nibName: "ZHDatePickerViewController", bundle: nil, delegate: d)
+ vc.clickedHandler = {
+     tag, model in
+     print(tag, model ?? "model = nil")
+ }
+ 
+ self.present(vc, animated: true, completion: nil)
+ */
 import UIKit
 import GAAlertPresentation
 

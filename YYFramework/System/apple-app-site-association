@@ -3,8 +3,8 @@
         "apps": [],
         "details": [
             {
-                "appID": "HGA4995V4J.jianan.YYFramework",
-                "paths": [ "*" ]
+                "appID": "HGA4995V4J.com.puxin.finance",
+                "paths": ["NOT /*"]
             }
         ]
     }

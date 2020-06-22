@@ -4,7 +4,7 @@
 //
 //  Created by 侯佳男 on 2019/9/25.
 //  Copyright © 2019 houjianan. All rights reserved.
-//  企业微信登录
+//  企业微信登录 / 微信登录
 
 /*
  GAWeChat.share.login(successHandler: { (token) in

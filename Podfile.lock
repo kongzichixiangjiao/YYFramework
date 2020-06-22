@@ -90,7 +90,7 @@ DEPENDENCIES:
   - OCMock
   - Player (~> 0.13.2)
   - PLPlayerKit (from `https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec`)
-  - ReactiveCocoa (= 9.0.0)
+  - ReactiveCocoa
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -114,11 +114,14 @@ SPEC REPOS:
     - Differ
     - Differentiator
     - ESPullToRefresh
+    - GAAlertPresentation
     - HandyJSON
     - JTAppleCalendar
     - Kingfisher
     - MagicalRecord
+    - MJRefresh
     - OCMock
+    - Player
     - ReactiveCocoa
     - ReactiveKit
     - ReactiveSwift
@@ -134,10 +137,6 @@ SPEC REPOS:
     - SwiftyRSA
     - Then
     - TransitionableTab
-  trunk:
-    - GAAlertPresentation
-    - MJRefresh
-    - Player
     - WechatOpenSDK
 
 EXTERNAL SOURCES:
@@ -189,6 +188,6 @@ SPEC CHECKSUMS:
   TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
   WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
 
-PODFILE CHECKSUM: f745b0b0115dee2c8468db5e5ccbf6515ef9d3a8
+PODFILE CHECKSUM: 58f01d3196834e78a27a6b3ebc77fce108d4b904
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

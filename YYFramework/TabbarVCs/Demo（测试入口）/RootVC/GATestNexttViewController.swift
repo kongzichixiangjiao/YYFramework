@@ -10,7 +10,6 @@ class GATestNexttViewController: YYBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initData()
         base_showNavigationView(title: "Demo", isShow: true)
         base_initTableView()
@@ -48,7 +47,8 @@ class GATestNexttViewController: YYBaseTableViewController {
                       "23、JSON转Model Model转JSON",
                       "24、图片适配屏幕",
                       "25、CoreData",
-                      "26、吐司吐司吐司"
+                      "26、吐司吐司吐司",
+                      "27、cell侧滑按钮",
         ]
     }
 }
@@ -96,8 +96,8 @@ extension GATestNexttViewController {
             dataSource[23] as! String : GACodableViewController(nibName: "GACodableViewController", bundle: nil),
             dataSource[24] as! String : GAImageFItViewController(),
             dataSource[25] as! String : GACoreDataViewController(nibName: "GACoreDataViewController", bundle: nil),
-            dataSource[26] as! String : GAToastRootViewController(nibName: "GAToastRootViewController", bundle: nil)
-            
+            dataSource[26] as! String : GAToastRootViewController(nibName: "GAToastRootViewController", bundle: nil),
+            dataSource[27] as! String : GAToastRootViewController(nibName: "GAToastRootViewController", bundle: nil)
         ]
         
         let name = dataSource[indexPath.row] as! String

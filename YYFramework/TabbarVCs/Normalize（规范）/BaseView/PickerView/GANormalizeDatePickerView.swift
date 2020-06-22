@@ -17,7 +17,7 @@ open class GANormalizeDatePickerView: UIView {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var titleLabel: UILabel!
     
-    public var datePickerMode: UIDatePicker.Mode = .dateAndTime {
+    public var datePickerMode: UIDatePicker.Mode = .date {
         didSet {
             datePicker.datePickerMode = datePickerMode
         }

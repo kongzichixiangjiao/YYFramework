@@ -101,25 +101,25 @@ class GAIconButton: UIView {
     func setupNormal() {
         self.backgroundColor = normalBgColor
         self.titleColor = normalTitleColor == nil ? self.titleColor : normalTitleColor
-        self.titleString = titleString.isEmpty ? normalTitle : self.titleString
+        self.titleString = normalTitle.isEmpty ? self.titleString : normalTitle
     }
     
     func setupSelected() {
         self.backgroundColor = selectedBgColor
         self.titleColor = selectedTitleColor == nil ? self.titleColor : selectedTitleColor
-        self.titleString = titleString.isEmpty ? selectedTitle : self.titleString
+        self.titleString = selectedTitle.isEmpty ? self.titleString : selectedTitle
     }
     
     func setupEnabled() {
         self.backgroundColor = disabledBgColor
         self.titleColor = disabledTitleColor == nil ? self.titleColor : disabledTitleColor
-        self.titleString = titleString.isEmpty ? disabledTitle : self.titleString
+        self.titleString = disabledTitle.isEmpty ? self.titleString : disabledTitle
     }
     
     func setupHightlight() {
         self.backgroundColor = highlightBgColor
         self.titleColor = highlightTitleColor == nil ? self.titleColor : highlightTitleColor
-        self.titleString = titleString.isEmpty ? highlightTitle : self.titleString
+        self.titleString = highlightTitle.isEmpty ? self.titleString : highlightTitle
     }
     
     override func awakeFromNib() {
@@ -224,6 +224,10 @@ class GAIconButton: UIView {
         }
     }
     
+    private func _elementSpace() -> CGFloat {
+        return (iconName.isEmpty ? 0 : elementSpace)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         if isEnabled {
@@ -273,12 +277,12 @@ class GAIconButton: UIView {
             imgX = rect.width / 2 - imgW / 2
             sX = rect.width / 2 - sW / 2
             
-            imgY = (elementSpace + imgH + sH) / 2 - rect.height / 2 // img下面做翻转了
-            sY = (rect.height / 2 - (elementSpace + imgH + sH) / 2) + imgH + elementSpace
+            imgY = (_elementSpace() + imgH + sH) / 2 - rect.height / 2 // img下面做翻转了
+            sY = (rect.height / 2 - (_elementSpace() + imgH + sH) / 2) + imgH + _elementSpace()
             break
         case GAIconDirection.right.rawValue:
-            sX = rect.width / 2 - (elementSpace + imgW + sW) / 2
-            imgX = sX + sW + elementSpace
+            sX = rect.width / 2 - (_elementSpace() + imgW + sW) / 2
+            imgX = sX + sW + _elementSpace()
             
             imgY = imgH / 2 - rect.height / 2  // img下面做翻转了
             sY = rect.height / 2 - sH / 2
@@ -287,12 +291,12 @@ class GAIconButton: UIView {
             imgX = rect.width / 2 - imgW / 2
             sX = rect.width / 2 - sW / 2
             
-            sY = (rect.height / 2 - (elementSpace + imgH + sH) / 2)
-            imgY = -(elementSpace + sY + sH) // img下面做翻转了
+            sY = (rect.height / 2 - (_elementSpace() + imgH + sH) / 2)
+            imgY = -(_elementSpace() + sY + sH) // img下面做翻转了
             break
         case GAIconDirection.left.rawValue:
-            imgX = rect.width / 2 - (elementSpace + imgW + sW) / 2
-            sX = imgX + imgW + elementSpace
+            imgX = rect.width / 2 - (_elementSpace() + imgW + sW) / 2
+            sX = imgX + imgW + _elementSpace()
             
             imgY = imgH / 2 - rect.height / 2  // img下面做翻转了
             sY = rect.height / 2 - sH / 2

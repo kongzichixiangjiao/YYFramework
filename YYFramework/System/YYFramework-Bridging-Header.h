@@ -14,7 +14,7 @@
 #import <OCMock/OCMock.h>
 
 // 友盟统计
-#import <UMCommon/UMCommon.h>
+//#import <UMCommon/UMCommon.h>
 #import <UMVerify/UMVerify.h>
 //#import <UMCommonLog/UMCommonLogHeaders.h>
 //#import <UMAnalytics/MobClick.h>
@@ -43,6 +43,7 @@
 // 企业微信 登录分享
 #import "WWKApi.h"
 #import "WWKApiObject.h"
+#import "JJCardSliderFlowLayout.h"
 
 // 百度地图
 //#import <BaiduMapAPI_Base/BMKBaseComponent.h> //引入base相关所有的头文件

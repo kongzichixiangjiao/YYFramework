@@ -23,19 +23,19 @@ class GARuntimeViewController: GANavViewController {
         let arr = global_getClassProperty(cls: GARuntimeModel.self)
         #if DEBUG
         print("oc: == ", arr)
-        resultTextView.mText = resultTextView.mText + arr.ga_jsonString + "\n"
+        resultTextView.text = resultTextView.text + arr.ga_jsonString + "\n"
         #endif
         
         let arr1 = global_getClassIvar(cls: GARuntimeModel.self)
         #if DEBUG
         print("oc: arr1 == ", arr1)
-        resultTextView.mText = resultTextView.mText + arr1.ga_jsonString + "\n"
+        resultTextView.text = resultTextView.text + arr1.ga_jsonString + "\n"
         #endif
         
         let arrSwift = global_getClassProperty(cls: GARuntimeModelSwift.self)
         #if DEBUG
         print("swift: == ", arrSwift)
-        resultTextView.mText = resultTextView.mText + arrSwift.ga_jsonString + "\n"
+        resultTextView.text = resultTextView.text + arrSwift.ga_jsonString + "\n"
         #endif
     }
     

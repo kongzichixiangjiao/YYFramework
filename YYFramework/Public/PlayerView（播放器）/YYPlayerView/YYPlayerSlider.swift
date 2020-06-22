@@ -1,9 +1,9 @@
 //
-//  LYPlayerSlider.swift
+//  YYPlayerSlider.swift
+//  YYPlayer
 //
-//  Copyright © 2017年 ly_coder. All rights reserved.
-//
-//  GitHub地址：https://github.com/LY-Coder/LYPlayer
+//  Created by 侯佳男 on 2018/5/2.
+//  Copyright © 2018年 侯佳男. All rights reserved.
 //
 
 import UIKit

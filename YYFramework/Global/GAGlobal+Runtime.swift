@@ -48,7 +48,6 @@ func global_getClassIvar(cls: AnyClass) -> [String] {
     return names
 }
 
-
 func global_getClassMethod(cls: AnyClass) -> [Selector] {
     var count: UInt32 = 0
     let list = class_copyMethodList(cls, &count)

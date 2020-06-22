@@ -10,7 +10,7 @@ import UIKit
 
 class GAKeyboardView: UIView {
     
-    var keyboardObserver: KeyboardObserver!
+    var keyboardObserver: GAKeyboardObserver!
     typealias TapHandler = () -> ()
     var beginTapHandler: TapHandler!
     var endTapHandler: TapHandler!
@@ -23,7 +23,7 @@ class GAKeyboardView: UIView {
         self.beginTapHandler = beginTapHandler
         self.endTapHandler = endTapHandler
         
-        keyboardObserver = KeyboardObserver(view: self, beginHandler: { (h, dutaion) in
+        keyboardObserver = GAKeyboardObserver(view: self, beginHandler: { (h, dutaion) in
             self.frame = CGRect(x: 0, y: UIScreen.main.bounds.size.height - self.frame.size.height - h, width: UIScreen.main.bounds.size.width, height: self.frame.size.height)
             changedHandler(h)
         }) { (_, dutaion) in

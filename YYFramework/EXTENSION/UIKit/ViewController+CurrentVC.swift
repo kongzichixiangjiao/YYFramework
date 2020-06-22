@@ -38,12 +38,15 @@ extension UIViewController {
         } else if vc.isKind(of: UITabBarController.self) {
             let svc = vc as! UITabBarController
             if (svc.viewControllers?.count ?? 0) > 0 {
-                return UIViewController.findBest(vc: svc.selectedViewController!)
+                if let vc = svc.selectedViewController {
+                    return UIViewController.findBest(vc: vc)
+                }
             } else {
                 return vc
             }
         } else {
             return vc
         }
+        return vc 
     }
 }

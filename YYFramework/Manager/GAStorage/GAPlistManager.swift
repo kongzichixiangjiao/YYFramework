@@ -88,6 +88,18 @@ class GAPlistManager {
         return array
     }
     
+    public func getLocalArray(fileName: String) -> [[String : Any]] {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: "plist") else {
+            #if DEBUG
+            print("fileName 错误")
+            #endif
+            return []
+        }
+        
+        let arr = NSArray.init(contentsOf: URL(fileURLWithPath: path)) as! [[String : Any]]
+        return arr
+    }
+    
     private func writeFileName(fileName: String) {
         var array = yy_fileNames()
         if !array.contains(fileName) {

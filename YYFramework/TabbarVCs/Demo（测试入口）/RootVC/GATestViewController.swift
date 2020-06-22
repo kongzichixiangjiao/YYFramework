@@ -20,6 +20,8 @@ class GATestViewController: YYBaseTableViewController {
         base_showNavigationView(title: "Demo", isShow: true)
         base_initTableView()
         
+        tableView.emptyDelegate = self
+        tableView.ga_reloadData()
     }
     
     override func base_initTableView() {
@@ -108,7 +110,7 @@ extension GATestViewController {
             dataSource[33] as! String : PLShortVideoKitViewController(nibName: "PLShortVideoKitViewController", bundle: nil),
             dataSource[34] as! String : PLSelectedVideoListViewController(),
             dataSource[35] as! String : GASendEmailViewController(nibName: "GASendEmailViewController", bundle: nil),
-            dataSource[35] as! String : GAUMLoginVeiwController()
+            dataSource[36] as! String : GAUMLoginVeiwController()
             
             
         ]
@@ -119,3 +121,25 @@ extension GATestViewController {
     }
 }
 
+extension GATestViewController: UITableViewPlaceHolderDelegate {
+    // 如果有其他样式图片可以重写此方法
+    @objc func tableViewPlaceHolderView() -> UIView {
+        let v = GAListPlaceholderView.ga_xibView()
+        v.imgName = "list_noData"
+        return v
+    }
+    
+    func tableViewEnableScrollWhenPlaceHolderViewShowing() -> Bool {
+        return false
+    }
+    
+    func tableViewClickedPlaceHolderViewRefresh() {
+        
+    }
+    
+    func tableViewPlaceHolder_NoNetWork_View() -> UIView? {
+        let v = GAListPlaceholderView.ga_xibView()
+        v.imgName = "list_noWIFI"
+        return v
+    }
+}

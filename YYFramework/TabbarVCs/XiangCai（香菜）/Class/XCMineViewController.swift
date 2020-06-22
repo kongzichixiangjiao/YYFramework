@@ -67,8 +67,9 @@ extension XCMineViewController: GABannerDelegate, GABannerDataSource {
     func gaBanner(_ banner: GABanner, layoutModel: GABannerLayoutModel) -> GABannerLayoutModel {
         return layoutModel
             .layoutType(GABannerLinearTransform())
-            .itemSize(CGSize(width: 280, height: 250))
+            .itemSize(CGSize(width: kScreenWidth, height: 250))
             .maximumAngle(0.1)
-            .itemSpacing(10)
+            .itemSpacing(0)
+            
     }
 }

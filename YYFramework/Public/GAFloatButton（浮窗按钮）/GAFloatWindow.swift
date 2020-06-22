@@ -21,7 +21,7 @@ enum GAFloatPositionType: Int {
     case right = 1, left = 2, none = 33
 }
 
-var floatWindow: GAFloatWindow!
+var floatWindow: GAFloatWindow?
 
 class GAFloatWindow: UIWindow {
     
@@ -56,18 +56,31 @@ class GAFloatWindow: UIWindow {
     }
     
     // MARK: show
-    static func show(imgName: String = "float_pop_icon", iconColor: UIColor = UIColor.fw_randomColor(), windowLevel: CGFloat = 1000001.0, handler: @escaping GAFLoatHandler) {
+    static func initFloatWindow(imgName: String = "tabbar_icon04", iconColor: UIColor = UIColor.fw_randomColor(), windowLevel: CGFloat = 1000001.0, handler: @escaping GAFLoatHandler) {
         guard let currentWindow = UIApplication.shared.keyWindow else {
+            return
+        }
+        if let _ = floatWindow {
             return
         }
         GAFloatWindow.imgName = imgName
         GAFloatWindow.iconColor = iconColor
         let frame = CGRect(x: UIScreen.main.bounds.width - bW, y: bY, width: bW, height: bH)
         floatWindow = GAFloatWindow(frame: frame, type: .right, handler: handler)
-        floatWindow.makeKeyAndVisible()
-        floatWindow.windowLevel = .init(windowLevel)
-        floatWindow.backgroundColor = UIColor.clear
+        floatWindow?.makeKeyAndVisible()
+        floatWindow?.windowLevel = .init(windowLevel)
+        floatWindow?.backgroundColor = UIColor.clear
+        floatWindow?.isHidden = true
         currentWindow.makeKey()
+    }
+    
+    static func show(handler: @escaping GAFLoatHandler) {
+        initFloatWindow(handler: handler)
+        floatWindow?.isHidden = false
+    }
+    
+    static func hide() {
+        floatWindow?.isHidden = true
     }
     
     var touchBtnX: CGFloat!

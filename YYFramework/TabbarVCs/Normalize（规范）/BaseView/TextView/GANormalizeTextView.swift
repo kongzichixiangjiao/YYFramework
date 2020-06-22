@@ -1,6 +1,6 @@
 //
 //  GANormalizeTextView.swift
-//  YYFramework
+//  GAFramework
 //
 //  Created by 侯佳男 on 2019/2/14.
 //  Copyright © 2019年 houjianan. All rights reserved.
@@ -33,13 +33,15 @@ open class GANormalizeTextView: UITextView {
         }
     }
     
-    // 直接给text赋值不走textViewDidChange代理方法
-    public var mText: String = "" {
-        didSet {
-            self.text = mText
+    open override var text: String! {
+        set {
             _updatePlaceholderView(t: self)
             _limitTextLength()
             mDelegate?.normalizeTextViewDidChange?(textView: self)
+            super.text = newValue
+        }
+        get {
+            return super.text
         }
     }
     
@@ -110,7 +112,7 @@ open class GANormalizeTextView: UITextView {
                 #endif
                 return
             }
-            placeholderView.frame = CGRect(x: self.textContainerInset.left + 4, y: self.textContainerInset.top - 2, width: self.frame.size.width - (self.textContainerInset.left + 2), height: placeholderView.frame.size.height)
+//            placeholderView.frame = CGRect(x: self.textContainerInset.left + placeholderView.x, y: self.textContainerInset.top + placeholderView.y, width: self.frame.size.width - (self.textContainerInset.left + 2), height: placeholderView.frame.size.height)
             _placeholderView = placeholderView
             self.addSubview(_placeholderView!)
         }

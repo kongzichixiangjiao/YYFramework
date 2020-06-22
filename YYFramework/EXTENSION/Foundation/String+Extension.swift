@@ -223,6 +223,11 @@ extension String {
         return numberFormatter.number(from: self)?.floatValue
     }
     
+    func ga_toCGFloat() -> CGFloat? {
+        let double = Double(self)
+        return CGFloat(double ?? 0)
+    }
+    
     // Float字符串 -> CGFloat
     func ga_toCGFloat(digits: Int) -> CGFloat? {
         let arr = self.components(separatedBy: ".")

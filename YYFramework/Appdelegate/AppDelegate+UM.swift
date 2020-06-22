@@ -14,8 +14,8 @@ extension AppDelegate {
         DispatchQueue.global().async {
 //            UMCommonLogManager.setUp()
             // um账号 kongzichixiangjiao
-            UMConfigure.initWithAppkey("5d43cc4a0cafb2603500084d", channel: "App Store")
-            UMConfigure.setLogEnabled(true)
+//            UMConfigure.initWithAppkey("5d43cc4a0cafb2603500084d", channel: "App Store")
+//            UMConfigure.setLogEnabled(true)
             
 //            MobClick.setAutoPageEnabled(false)
         }

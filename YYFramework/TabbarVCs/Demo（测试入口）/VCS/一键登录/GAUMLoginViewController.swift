@@ -30,7 +30,7 @@ class GAUMLoginVeiwController: UIViewController {
                 UMCommonHandler.accelerateLoginPage(withTimeout: 20) { (resultDic) in
                     print(resultDic)
                     let model = UMCustomModel.init()
-                    model.logoImage = UIImage(named: "")!
+                    model.logoImage = UIImage(named: "page_control_point")!
                     model.sloganText = NSAttributedString(string: "一切都很好")
                     UMCommonHandler.getLoginToken(withTimeout: 20, controller: self, model: model) { (resultDic) in
                         print(resultDic)
